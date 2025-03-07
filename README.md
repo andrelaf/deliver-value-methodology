@@ -106,11 +106,11 @@ Detalhamos todos os aspectos do framework em nossa documentação, incluindo pap
 
 Para uma compreensão completa do framework, consulte os seguintes documentos:
 
-- [Princípios e Estrutura](/deliver-value-methodology/pt-BR/principles.md) - Detalhamento dos princípios fundamentais e da estrutura do FDCV
-- [Papéis e Responsabilidades](/deliver-value-methodology/docs/ROLES.md) - Descrição dos papéis essenciais no FDCV
-- [Processos e Fluxos](/deliver-value-methodology/docs/PROCESSES.md) - Mapeamento dos processos e ciclos de trabalho
-- [Artefatos](/deliver-value-methodology/docs/ARTIFACTS.md) - Templates e documentos utilizados no framework
-- [Casos de Estudo](/deliver-value-methodology/docs/CASE_STUDIES.md) - Implementações reais e resultados obtidos
+- [Princípios e Estrutura](/docs/pt-BR/principles.md) - Detalhamento dos princípios fundamentais e da estrutura do FDCV
+- [Papéis e Responsabilidades](/docs/pt-BR/ROLES.md) - Descrição dos papéis essenciais no FDCV
+- [Processos e Fluxos](/docs/pt-BR/practices.md) - Mapeamento dos processos e ciclos de trabalho
+- [Artefatos](/docs/ARTIFACTS.md) - Templates e documentos utilizados no framework
+- [Casos de Estudo](/examples/case-studies/) - Implementações reais e resultados obtidos
 
 ## 🚦 Como Começar
 
