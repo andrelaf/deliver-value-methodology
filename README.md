@@ -114,7 +114,7 @@ Para uma compreensão completa do framework, consulte os seguintes documentos:
 
 ### Traduções
 
-- [English Version](/translations/READMEen.md) - Complete documentation in English
+- [English Version](/translations/README.en.md) - Complete documentation in English
 
 ## 🚦 Como Começar
 
