@@ -1,9 +1,9 @@
 
-# Guia de Contribuição para o FDCV
+# Guia de Contribuição para o (DV)
 
 ## 🙏 Obrigado por contribuir!
 
-Ficamos muito felizes pelo seu interesse em contribuir com o Framework de Desenvolvimento Centrado em Valor (FDCV). Este documento apresenta as diretrizes para contribuir com este projeto. Seguir estas orientações demonstra que você respeita o tempo dos desenvolvedores que gerenciam e desenvolvem este projeto. Em retorno, eles reciprocarão esse respeito abordando sua questão, avaliando mudanças e ajudando você a finalizar suas solicitações de pull.
+Ficamos muito felizes pelo seu interesse em contribuir com o Deliver-Value Framework (DV). Este documento apresenta as diretrizes para contribuir com este projeto. Seguir estas orientações demonstra que você respeita o tempo dos desenvolvedores que gerenciam e desenvolvem este projeto. Em retorno, eles reciprocarão esse respeito abordando sua questão, avaliando mudanças e ajudando você a finalizar suas solicitações de pull.
 
 ## 🌱 Como Começar
 
@@ -12,12 +12,12 @@ Ficamos muito felizes pelo seu interesse em contribuir com o Framework de Desenv
 1. Faça um fork do repositório
 2. Clone o seu fork para sua máquina local:
    ```bash
-   git clone https://github.com/seu-usuario/fdcv.git
-   cd fdcv
+   git clone https://github.com/seu-usuario/deliver-value-methodology.git
+   cd deliver-value-methodology
    ```
 3. Adicione o repositório original como um remote upstream:
    ```bash
-   git remote add upstream https://github.com/repo-original/fdcv.git
+   git remote add upstream https://github.com/andrelaf/deliver-value-methodology.git
    ```
 
 ### 2. Mantenha-se atualizado
@@ -50,7 +50,7 @@ Você pode contribuir de várias formas:
 ### Implementação
 
 - Desenvolvimento de ferramentas que apoiem o framework
-- Modelos e templates para artefatos do FDCV
+- Modelos e templates para artefatos do (DV)
 - Scripts para automação de processos
 
 ### Conceitual
@@ -130,4 +130,4 @@ Este projeto adere ao [Código de Conduta do Contribuidor](CODE_OF_CONDUCT.md). 
 
 ---
 
-Novamente, obrigado por dedicar seu tempo para contribuir com o FDCV. Juntos, podemos melhorar a forma como projetos são desenvolvidos, conciliando as necessidades de negócio com as realidades técnicas.
+Novamente, obrigado por dedicar seu tempo para contribuir com o (DV). Juntos, podemos melhorar a forma como projetos são desenvolvidos, conciliando as necessidades de negócio com as realidades técnicas.

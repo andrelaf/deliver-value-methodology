@@ -1,9 +1,9 @@
 
-# Princípios e Estrutura do FDCV
+# Princípios e Estrutura do (DV)
 
 ## 🌟 Princípios-Chave
 
-O Framework de Desenvolvimento Centrado em Valor (FDCV) se baseia em cinco princípios fundamentais:
+O Deliver-Value Framework (DV) se baseia em cinco princípios fundamentais:
 
 ### 1. Valor sobre Prazo
 
@@ -57,7 +57,7 @@ Manter comunicação clara em todos os níveis do projeto:
 
 ## 🏗️ Estrutura do Framework
 
-O FDCV se estrutura em três pilares fundamentais:
+O (DV) se estrutura em três pilares fundamentais:
 
 ### 1. Pessoas e Papéis
 
@@ -173,7 +173,7 @@ Visualização do andamento do projeto:
 
 ## 📊 Métricas e Indicadores
 
-O FDCV utiliza métricas equilibradas para avaliar o sucesso:
+O (DV) utiliza métricas equilibradas para avaliar o sucesso:
 
 ### Métricas de Valor
 
@@ -195,18 +195,18 @@ O FDCV utiliza métricas equilibradas para avaliar o sucesso:
 
 ## 🔄 Adaptabilidade do Framework
 
-O FDCV não é um conjunto rígido de regras, mas um framework adaptável:
+O (DV) não é um conjunto rígido de regras, mas um framework adaptável:
 
 - Pode ser aplicado em diferentes contextos (produtos, projetos, manutenção)
 - Compatível com metodologias ágeis existentes (Scrum, Kanban, etc.)
 - Escalável para diferentes tamanhos de organizações
 - Personalizável conforme a maturidade da equipe
 
-Incentivamos que cada organização adapte o FDCV à sua realidade, mantendo fidelidade aos princípios fundamentais, mas flexibilizando processos e artefatos conforme necessário.
+Incentivamos que cada organização adapte o (DV) à sua realidade, mantendo fidelidade aos princípios fundamentais, mas flexibilizando processos e artefatos conforme necessário.
 
 ## 🎯 Casos de Uso Ideais
 
-O FDCV é especialmente valioso nos seguintes contextos:
+O (DV) é especialmente valioso nos seguintes contextos:
 
 - Organizações com áreas separadas de Produto e Engenharia
 - Projetos com alto grau de incerteza técnica
@@ -215,4 +215,4 @@ O FDCV é especialmente valioso nos seguintes contextos:
 
 ---
 
-Este documento de princípios serve como guia fundamental para a implementação do FDCV. Os detalhes práticos de implementação, exemplos e templates estão disponíveis na pasta `/docs` do repositório.
+Este documento de princípios serve como guia fundamental para a implementação do (DV). Os detalhes práticos de implementação, exemplos e templates estão disponíveis na pasta `/docs` do repositório.

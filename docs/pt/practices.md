@@ -1,7 +1,6 @@
+# Práticas Recomendadas para o (DV)
 
-# Práticas Recomendadas para o FDCV
-
-Este documento detalha as práticas recomendadas para implementação efetiva do Framework de Desenvolvimento Centrado em Valor (FDCV). Estas práticas foram compiladas a partir de experiências reais e são adaptáveis a diferentes contextos organizacionais.
+Este documento detalha as práticas recomendadas para implementação efetiva do Deliver-Value Framework (DV). Estas práticas foram compiladas a partir de experiências reais e são adaptáveis a diferentes contextos organizacionais.
 
 ## Sumário
 
@@ -56,6 +55,30 @@ Este documento detalha as práticas recomendadas para implementação efetiva do
 - Reduz sobrecarga administrativa sem perder informações essenciais
 - Mantém a rastreabilidade de decisões importantes
 - Permite que novos membros compreendam o histórico do projeto
+
+### 4. Modelos de Diagramas Padronizados
+
+**O que**: Utilize notações padronizadas de diagramas para facilitar a comunicação entre equipes e documentar aspectos do sistema.
+
+**Como implementar**:
+- **C4 Model**: Para documentação de arquitetura em diferentes níveis de abstração (Contexto, Contêineres, Componentes e Código)
+- **BPMN (Business Process Model and Notation)**: Para representação de processos de negócio
+- **UML**: Para documentação detalhada de componentes e interações quando necessário
+- **Entity-Relationship Diagrams (ERD)**: Para modelagem de dados
+- **Diagramas de Sequência**: Para fluxos de interação complexos
+- **Mermaid ou PlantUML**: Para diagramas mantidos como código junto à documentação
+
+**Benefícios**:
+- Estabelece um padrão visual comum para toda a organização
+- Facilita a compreensão rápida de estruturas complexas
+- Permite diferentes níveis de abstração para diferentes públicos
+- Integra-se com práticas de documentação como código
+
+**Recomendações de uso**:
+- Use C4 Model para visões arquiteturais com stakeholders técnicos
+- Use BPMN para discussões de processos com a área de negócio
+- Mantenha diagramas simples e focados em um aspecto específico
+- Considere ferramentas que permitam versionar diagramas junto com código
 
 ## Práticas para Discovery
 
@@ -327,7 +350,7 @@ Este documento detalha as práticas recomendadas para implementação efetiva do
 
 ### 2. Framework de Adaptação Contextual
 
-**O que**: Diretrizes claras sobre como adaptar o FDCV para diferentes contextos.
+**O que**: Diretrizes claras sobre como adaptar o (DV) para diferentes contextos.
 
 **Como implementar**:
 - Crie uma matriz de adaptação baseada em variáveis como tamanho do projeto, criticidade, etc.
@@ -341,7 +364,7 @@ Este documento detalha as práticas recomendadas para implementação efetiva do
 
 ### 3. Métricas de Adoção e Maturidade
 
-**O que**: Sistema para avaliar o nível de adoção e maturidade na implementação do FDCV.
+**O que**: Sistema para avaliar o nível de adoção e maturidade na implementação do (DV).
 
 **Como implementar**:
 - Desenvolva um modelo de maturidade com níveis claros
@@ -364,6 +387,6 @@ Este documento detalha as práticas recomendadas para implementação efetiva do
 - Natureza dos projetos
 - Restrições específicas do domínio
 
-O sucesso do FDCV não está na aplicação literal de todas estas práticas, mas na incorporação de seus princípios fundamentais de uma forma que faça sentido para sua realidade.
+O sucesso do (DV) não está na aplicação literal de todas estas práticas, mas na incorporação de seus princípios fundamentais de uma forma que faça sentido para sua realidade.
 
 Recomendamos começar com um subconjunto destas práticas, avaliar os resultados, e gradualmente incorporar mais elementos conforme a equipe ganha experiência com o framework.
