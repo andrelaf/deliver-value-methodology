@@ -1,162 +1,161 @@
-🚀 Framework de Desenvolvimento Centrado em Valor (FDCV)
+# 🚀 Framework de Desenvolvimento Centrado em Valor (FDCV)
+
 <div align="center">
-🔄 Framework de Desenvolvimento Centrado em Valor 🔄
-Conciliando negócio e tecnologia através do foco no valor
-Show Image
-Show Image
-Show Image
-Show Image
+  
+  # 🔄 Framework de Desenvolvimento Centrado em Valor 🔄
+  ### Conciliando negócio e tecnologia através do foco no valor
+
+  [![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)](https://github.com/seu-usuario/fdcv)
+  [![Licença](https://img.shields.io/badge/Licença-MIT-blue)](LICENSE)
+  [![Contribuições](https://img.shields.io/badge/Contribuições-Bem--vindas-brightgreen)](CONTRIBUTING.md)
+  [![Documentação](https://img.shields.io/badge/Docs-Em%20Construção-orange)](docs/)
+  
 </div>
-📋 Sumário
 
-Visão Geral
-Motivação
-Princípios-Chave
-Estrutura do Framework
-Papéis e Responsabilidades
-Processo de Implementação
-Benefícios
-Como Começar
-Contribuições
-Licença
+## 📋 Sumário
 
-🔎 Visão Geral
-O Framework de Desenvolvimento Centrado em Valor (FDCV) é uma metodologia inovadora que visa conciliar as necessidades de negócio com as realidades técnicas, priorizando sempre o valor real entregue ao cliente. Este framework surge como resposta aos desafios contemporâneos na interface entre as áreas de Produto e Engenharia.
+- [Visão Geral](#-visão-geral)
+- [Motivação](#-motivação)
+- [Princípios-Chave](#-princípios-chave)
+- [Estrutura do Framework](#-estrutura-do-framework)
+- [Papéis e Responsabilidades](#-papéis-e-responsabilidades)
+- [Processo de Implementação](#-processo-de-implementação)
+- [Benefícios](#-benefícios)
+- [Como Começar](#-como-começar)
+- [Contribuições](#-contribuições)
+- [Licença](#-licença)
 
-💡 Motivação
+## 🔎 Visão Geral
+
+O **Framework de Desenvolvimento Centrado em Valor (FDCV)** é uma metodologia inovadora que visa conciliar as necessidades de negócio com as realidades técnicas, priorizando sempre o valor real entregue ao cliente. Este framework surge como resposta aos desafios contemporâneos na interface entre as áreas de Produto e Engenharia.
+
+## 💡 Motivação
+
 A evolução das metodologias de desenvolvimento nos trouxe do modelo Cascata (Waterfall) para abordagens Ágeis como o Scrum. No entanto, essa transição criou novas contradições:
 
-Waterfall: Processos rígidos e feedback tardio, mas com clareza nos papéis e documentação abrangente
-Ágil: Entregas incrementais e adaptação a mudanças, mas com lacunas na tradução entre negócio e tecnologia
+- **Waterfall**: Processos rígidos e feedback tardio, mas com clareza nos papéis e documentação abrangente
+- **Ágil**: Entregas incrementais e adaptação a mudanças, mas com lacunas na tradução entre negócio e tecnologia
 
 O FDCV reconhece que o problema não está nas datas ou no escopo em si, mas na forma como são estabelecidos e na inflexibilidade para ajustá-los quando novos desafios técnicos surgem.
-🌟 Princípios-Chave
 
-Valor sobre Prazo: Priorizar entregas que gerem valor real, não apenas cumprir datas
-Tradução Eficiente: Resgatar o papel de "tradutor" entre negócio e tecnologia
-Avaliação Técnica Preliminar: Avaliar viabilidade técnica antes de comprometer-se com prazos
-Renegociação Formal: Estabelecer mecanismos para ajustar expectativas quando necessário
-Transparência Contínua: Manter comunicação clara sobre limitações, progressos e ajustes
+## 🌟 Princípios-Chave
 
-🏗️ Estrutura do Framework
+1. **Valor sobre Prazo**: Priorizar entregas que gerem valor real, não apenas cumprir datas
+2. **Tradução Eficiente**: Resgatar o papel de "tradutor" entre negócio e tecnologia
+3. **Avaliação Técnica Preliminar**: Avaliar viabilidade técnica antes de comprometer-se com prazos
+4. **Renegociação Formal**: Estabelecer mecanismos para ajustar expectativas quando necessário
+5. **Transparência Contínua**: Manter comunicação clara sobre limitações, progressos e ajustes
+
+## 🏗️ Estrutura do Framework
+
 O FDCV se estrutura em três pilares fundamentais:
-1. Pessoas e Papéis
 
-Analista de Valor: Responsável pela tradução entre negócio e tecnologia
-Tech Lead: Avalia viabilidade técnica e orienta implementação
-Product Owner: Define prioridades baseadas no valor para o cliente
-Time de Desenvolvimento: Implementa soluções com autonomia técnica
+### 1. Pessoas e Papéis
 
-2. Processos
+- **Analista de Valor**: Responsável pela tradução entre negócio e tecnologia
+- **Tech Lead**: Avalia viabilidade técnica e orienta implementação
+- **Product Owner**: Define prioridades baseadas no valor para o cliente
+- **Time de Desenvolvimento**: Implementa soluções com autonomia técnica
 
-Discovery Técnico: Avaliação preliminar de viabilidade
-Negociação de Parâmetros: Definição colaborativa de escopo, prazo e recursos
-Ciclos de Desenvolvimento: Entregas incrementais com feedback constante
-Reavaliação de Valor: Verificação periódica do valor real sendo gerado
+### 2. Processos
 
-3. Artefatos
+- **Discovery Técnico**: Avaliação preliminar de viabilidade
+- **Negociação de Parâmetros**: Definição colaborativa de escopo, prazo e recursos
+- **Ciclos de Desenvolvimento**: Entregas incrementais com feedback constante
+- **Reavaliação de Valor**: Verificação periódica do valor real sendo gerado
 
-Matriz de Valor: Documenta funcionalidades e seu valor para o negócio
-Roadmap Flexível: Visualização de entregas com ajustes planejados
-Documentação Técnica Evolutiva: Cresce com o projeto, sem sobrecarga inicial
+### 3. Artefatos
 
-👥 Papéis e Responsabilidades
-Analista de Valor
+- **Matriz de Valor**: Documenta funcionalidades e seu valor para o negócio
+- **Roadmap Flexível**: Visualização de entregas com ajustes planejados
+- **Documentação Técnica Evolutiva**: Cresce com o projeto, sem sobrecarga inicial
 
-Compreende profundamente o negócio e suas necessidades
-Traduz requisitos de negócio em conceitos técnicos
-Facilita a comunicação entre Product Owner e Tech Lead
+## 👥 Papéis e Responsabilidades
 
-Tech Lead
+### Analista de Valor
+- Compreende profundamente o negócio e suas necessidades
+- Traduz requisitos de negócio em conceitos técnicos
+- Facilita a comunicação entre Product Owner e Tech Lead
 
-Avalia viabilidade técnica das propostas
-Identifica riscos e limitações técnicas antecipadamente
-Orienta decisões arquiteturais e de implementação
+### Tech Lead
+- Avalia viabilidade técnica das propostas
+- Identifica riscos e limitações técnicas antecipadamente
+- Orienta decisões arquiteturais e de implementação
 
-Product Owner
+### Product Owner
+- Define o que gera mais valor para o cliente
+- Prioriza backlog com base no valor e viabilidade técnica
+- Negocia ajustes quando necessário
 
-Define o que gera mais valor para o cliente
-Prioriza backlog com base no valor e viabilidade técnica
-Negocia ajustes quando necessário
+### Time de Desenvolvimento
+- Implementa soluções técnicas
+- Propõe alternativas quando há limitações
+- Mantém qualidade técnica e entrega incremental
 
-Time de Desenvolvimento
+## 🔄 Processo de Implementação
 
-Implementa soluções técnicas
-Propõe alternativas quando há limitações
-Mantém qualidade técnica e entrega incremental
+1. **Fase de Discovery**
+   - Compreensão do negócio e necessidades
+   - Avaliação técnica preliminar
+   - Estabelecimento de parâmetros iniciais
 
-🔄 Processo de Implementação
+2. **Fase de Planejamento**
+   - Definição colaborativa de escopo
+   - Criação da Matriz de Valor
+   - Elaboração do Roadmap Flexível
 
-Fase de Discovery
+3. **Fase de Execução**
+   - Ciclos iterativos de desenvolvimento
+   - Avaliação contínua de progresso e valor
+   - Renegociação formal quando necessário
 
-Compreensão do negócio e necessidades
-Avaliação técnica preliminar
-Estabelecimento de parâmetros iniciais
+4. **Fase de Entrega e Aprendizado**
+   - Validação do valor entregue
+   - Documentação de aprendizados
+   - Preparação para próximos ciclos
 
+## 📈 Benefícios
 
-Fase de Planejamento
+- **Para o Negócio**: Maior previsibilidade e transparência, foco no valor real
+- **Para a Tecnologia**: Clareza nas expectativas, reconhecimento de limitações técnicas
+- **Para os Clientes**: Produtos de maior qualidade e alinhados às necessidades reais
 
-Definição colaborativa de escopo
-Criação da Matriz de Valor
-Elaboração do Roadmap Flexível
+## 🚦 Como Começar
 
+1. **Avalie sua Situação Atual**
+   - Identifique pontos de atrito entre negócio e tecnologia
+   - Mapeie processos existentes que podem ser adaptados
 
-Fase de Execução
+2. **Implemente Gradualmente**
+   - Comece com projetos menores ou times específicos
+   - Introduza os papéis e artefatos fundamentais
 
-Ciclos iterativos de desenvolvimento
-Avaliação contínua de progresso e valor
-Renegociação formal quando necessário
+3. **Adapte ao seu Contexto**
+   - O framework é flexível e deve ser ajustado à sua realidade
+   - Mantenha os princípios, adapte as práticas
 
+## 👐 Contribuições
 
-Fase de Entrega e Aprendizado
-
-Validação do valor entregue
-Documentação de aprendizados
-Preparação para próximos ciclos
-
-
-
-📈 Benefícios
-
-Para o Negócio: Maior previsibilidade e transparência, foco no valor real
-Para a Tecnologia: Clareza nas expectativas, reconhecimento de limitações técnicas
-Para os Clientes: Produtos de maior qualidade e alinhados às necessidades reais
-
-🚦 Como Começar
-
-Avalie sua Situação Atual
-
-Identifique pontos de atrito entre negócio e tecnologia
-Mapeie processos existentes que podem ser adaptados
-
-
-Implemente Gradualmente
-
-Comece com projetos menores ou times específicos
-Introduza os papéis e artefatos fundamentais
-
-
-Adapte ao seu Contexto
-
-O framework é flexível e deve ser ajustado à sua realidade
-Mantenha os princípios, adapte as práticas
-
-
-
-👐 Contribuições
 Contribuições são bem-vindas! Se você tem ideias para melhorar este framework ou quer compartilhar experiências de implementação, fique à vontade para:
 
-Abrir uma issue para discussão
-Enviar um pull request com sugestões
-Compartilhar casos de estudo
+- Abrir uma issue para discussão
+- Enviar um pull request com sugestões
+- Compartilhar casos de estudo
 
-Veja o arquivo CONTRIBUTING.md para mais detalhes.
-📄 Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
+Veja o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para mais detalhes.
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE) - veja o arquivo LICENSE para detalhes.
+
+---
 
 <div align="center">
-Desenvolvido com ❤️ para conciliar negócio e tecnologia
-<a href="https://github.com/seu-usuario/fdcv"><img src="https://img.shields.io/badge/GitHub-FDCV-2ea44f" alt="GitHub - FDCV"></a> •
-<a href="https://github.com/seu-usuario/fdcv/wiki"><img src="https://img.shields.io/badge/Wiki-Documentação-blue" alt="Documentação"></a> •
-<a href="https://github.com/seu-usuario/fdcv/discussions"><img src="https://img.shields.io/badge/Discussions-Participe-orange" alt="Discussions"></a>
+  
+  **Desenvolvido com ❤️ para conciliar negócio e tecnologia**
+  
+  <a href="https://github.com/seu-usuario/fdcv"><img src="https://img.shields.io/badge/GitHub-FDCV-2ea44f" alt="GitHub - FDCV"></a> • 
+  <a href="https://github.com/seu-usuario/fdcv/wiki"><img src="https://img.shields.io/badge/Wiki-Documentação-blue" alt="Documentação"></a> • 
+  <a href="https://github.com/seu-usuario/fdcv/discussions"><img src="https://img.shields.io/badge/Discussions-Participe-orange" alt="Discussions"></a>
+  
 </div>
