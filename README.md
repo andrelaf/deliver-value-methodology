@@ -58,13 +58,13 @@ O Scrum, conforme descrito por Schwaber e Sutherland (2020), trouxe uma abordage
 - Colaboração direta entre equipe e stakeholders
 - Autogerenciamento das equipes
 
-Esta abordagem eliminou a figura centralizada do analista de sistemas, distribuindo a responsabilidade de entender e traduzir o negócio para toda a equipe, com o **Product Owner** assumindo o papel de priorizar o que gera mais valor.
+Esta abordagem eliminou a figura centralizada do analista de sistemas, distribuindo a responsabilidade de entender e traduzir o negócio para toda a equipe, com o **Especialista de Negócio/Produto** assumindo o papel de priorizar o que gera mais valor.
 
 ## 🔍 O Cenário Atual: Desafios e Contradições
 
 Hoje, muitas organizações adotaram estruturas com áreas separadas de **Produto** e **Engenharia**. A área de Produto, frequentemente pressionada pelo negócio, estabelece prazos e escopo (muitas vezes denominado "grau W") sem compreensão profunda dos desafios técnicos envolvidos na implementação.
 
-Neste contexto, surgiu a figura do **Tech Lead**, que passou a assumir informalmente o papel que antes pertencia ao analista de sistemas: traduzir requisitos de negócio em soluções técnicas viáveis. Esta necessidade emergiu porque o modelo ágil, ao distribuir responsabilidades, criou uma lacuna na interface entre negócio e tecnologia.
+Neste contexto, surgiu a figura do **Especialista Técnico** (como Team Leaders, Tech Leads e outros com função similar), que passou a assumir informalmente o papel que antes pertencia ao analista de sistemas: traduzir requisitos de negócio em soluções técnicas viáveis. Esta necessidade emergiu porque o modelo ágil, ao distribuir responsabilidades, criou uma lacuna na interface entre negócio e tecnologia.
 
 À medida que os projetos avançam, surgem complicações:
 
@@ -106,17 +106,17 @@ Detalhamos todos os aspectos do framework em nossa documentação, incluindo pap
 
 Para uma compreensão completa do framework, consulte os seguintes documentos:
 
-- [Princípios e Estrutura](PRINCIPLES.md) - Detalhamento dos princípios fundamentais e da estrutura do FDCV
-- [Papéis e Responsabilidades](docs/ROLES.md) - Descrição dos papéis essenciais no FDCV
-- [Processos e Fluxos](docs/PROCESSES.md) - Mapeamento dos processos e ciclos de trabalho
-- [Artefatos](docs/ARTIFACTS.md) - Templates e documentos utilizados no framework
-- [Casos de Estudo](docs/CASE_STUDIES.md) - Implementações reais e resultados obtidos
+- [Princípios e Estrutura](/deliver-value-methodology/pt-BR/principles.md) - Detalhamento dos princípios fundamentais e da estrutura do FDCV
+- [Papéis e Responsabilidades](/deliver-value-methodology/docs/ROLES.md) - Descrição dos papéis essenciais no FDCV
+- [Processos e Fluxos](/deliver-value-methodology/docs/PROCESSES.md) - Mapeamento dos processos e ciclos de trabalho
+- [Artefatos](/deliver-value-methodology/docs/ARTIFACTS.md) - Templates e documentos utilizados no framework
+- [Casos de Estudo](/deliver-value-methodology/docs/CASE_STUDIES.md) - Implementações reais e resultados obtidos
 
 ## 🚦 Como Começar
 
 1. **Entenda o Framework**
-   - Leia a [documentação de princípios](PRINCIPLES.md)
-   - Familiarize-se com os [papéis e responsabilidades](docs/ROLES.md)
+   - Leia a [documentação de princípios](/deliver-value-methodology/pt-BR/principles.md)
+   - Familiarize-se com os [papéis e responsabilidades](/deliver-value-methodology/docs/ROLES.md)
 
 2. **Avalie sua Organização**
    - Identifique pontos de atrito entre negócio e tecnologia
