@@ -1,10 +1,10 @@
-# 🔄 Deliver-Value Framework (DV)
+# 🔄 Framework de Desenvolvimento Centrado em Valor (FDCV)
 
 <div align="center">
   
   ### Conciliando negócio e tecnologia através do foco no valor
 
-  [![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)](https://github.com/seu-usuario/(DV))
+  [![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)](https://github.com/seu-usuario/fdcv)
   [![Licença](https://img.shields.io/badge/Licença-MIT-blue)](LICENSE)
   [![Contribuições](https://img.shields.io/badge/Contribuições-Bem--vindas-brightgreen)](CONTRIBUTING.md)
   [![Documentação](https://img.shields.io/badge/Docs-Em%20Construção-orange)](docs/)
@@ -15,8 +15,8 @@
 
 - [A História e Evolução das Metodologias](#-a-história-e-evolução-das-metodologias)
 - [O Cenário Atual: Desafios e Contradições](#-o-cenário-atual-desafios-e-contradições)
-- [Nossa Proposta: O (DV)](#-nossa-proposta-o-(DV))
-- [Por Que o (DV)?](#-por-que-o-(DV))
+- [Nossa Proposta: O FDCV](#-nossa-proposta-o-fdcv)
+- [Por Que o FDCV?](#-por-que-o-fdcv)
 - [Documentação](#-documentação)
 - [Como Começar](#-como-começar)
 - [Contribuições](#-contribuições)
@@ -75,13 +75,13 @@ Neste contexto, surgiu a figura do **Especialista Técnico** (como Team Leaders,
 
 O resultado é um ciclo de frustração, com tentativas desesperadas de cumprir prazos cada vez mais irrealistas, sacrificando qualidade, escopo ou ambos.
 
-## 💡 Nossa Proposta: O (DV)
+## 💡 Nossa Proposta: O FDCV
 
-Diante do cenário descrito, nasce o **Deliver-Value Framework (DV)**, uma metodologia que busca conciliar as necessidades de negócio com as realidades técnicas, priorizando o valor da entrega.
+Diante do cenário descrito, nasce o **Framework de Desenvolvimento Centrado em Valor (FDCV)**, uma metodologia que busca conciliar as necessidades de negócio com as realidades técnicas, priorizando o valor da entrega.
 
 Este framework reconhece que o problema não está nas datas ou no escopo em si, mas na forma como são estabelecidos e na inflexibilidade para ajustá-los quando novos desafios técnicos surgem.
 
-Alguns princípios-chave do (DV):
+Alguns princípios-chave do FDCV:
 
 - Resgate do papel de "tradutor" entre negócio e tecnologia através do **Analista de Valor**
 - Processo de avaliação técnica preliminar antes do comprometimento com prazos
@@ -90,9 +90,9 @@ Alguns princípios-chave do (DV):
 
 O framework também reconhece que existem prazos regulatórios e compromissos comerciais que precisam ser respeitados. Nesses casos, propõe um processo transparente de negociação de escopo e recursos, mantendo o foco no valor essencial.
 
-## ✨ Por Que o (DV)?
+## ✨ Por Que o FDCV?
 
-O (DV) preenche uma lacuna crítica nas metodologias atuais:
+O FDCV preenche uma lacuna crítica nas metodologias atuais:
 
 - **Combina o melhor dos dois mundos**: A clareza do Waterfall com a flexibilidade do Ágil
 - **Resolve a desconexão** entre áreas de Produto e Engenharia
@@ -106,16 +106,20 @@ Detalhamos todos os aspectos do framework em nossa documentação, incluindo pap
 
 Para uma compreensão completa do framework, consulte os seguintes documentos:
 
-- [Princípios e Estrutura](/docs/pt/principles.md) - Detalhamento dos princípios fundamentais e da estrutura do (DV)
-- [Papéis e Responsabilidades](/docs/pt/ROLES.md) - Descrição dos papéis essenciais no (DV)
-- [Processos e Fluxos](/docs/pt/practices.md) - Mapeamento dos processos e ciclos de trabalho
-- [Artefatos](/docs/ARTIFACTS.md) - Templates e documentos utilizados no framework
-- [Casos de Estudo](/examples/case-studies/) - Implementações reais e resultados obtidos
+- [Princípios e Estrutura](/deliver-value-methodology/pt-BR/principles.md) - Detalhamento dos princípios fundamentais e da estrutura do FDCV
+- [Práticas Recomendadas](/deliver-value-methodology/pt-BR/practices.md) - Conjunto de práticas para implementação efetiva do framework
+- [Estudos de Caso e Exemplos](/deliver-value-methodology/pt-BR/case-studies.md) - Casos reais e exemplos ilustrativos de aplicação
+- [Papéis e Responsabilidades](/deliver-value-methodology/docs/ROLES.md) - Descrição dos papéis essenciais no FDCV
+- [Perguntas Frequentes](/deliver-value-methodology/pt-BR/faq.md) - Respostas para as dúvidas mais comuns
+
+### Traduções
+
+- [English Version](/translations/READMEen.md) - Complete documentation in English
 
 ## 🚦 Como Começar
 
 1. **Entenda o Framework**
-   - Leia a [documentação de princípios](/deliver-value-methodology/pt/principles.md)
+   - Leia a [documentação de princípios](/deliver-value-methodology/pt-BR/principles.md)
    - Familiarize-se com os [papéis e responsabilidades](/deliver-value-methodology/docs/ROLES.md)
 
 2. **Avalie sua Organização**
@@ -144,8 +148,8 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
   
   **Desenvolvido com ❤️ para conciliar negócio e tecnologia**
   
-  <a href="https://github.com/seu-usuario/(DV)"><img src="https://img.shields.io/badge/GitHub-(DV)-2ea44f" alt="GitHub - (DV)"></a> • 
-  <a href="https://github.com/seu-usuario/(DV)/wiki"><img src="https://img.shields.io/badge/Wiki-Documentação-blue" alt="Documentação"></a> • 
-  <a href="https://github.com/seu-usuario/(DV)/discussions"><img src="https://img.shields.io/badge/Discussions-Participe-orange" alt="Discussions"></a>
+  <a href="https://github.com/seu-usuario/fdcv"><img src="https://img.shields.io/badge/GitHub-FDCV-2ea44f" alt="GitHub - FDCV"></a> • 
+  <a href="https://github.com/seu-usuario/fdcv/wiki"><img src="https://img.shields.io/badge/Wiki-Documentação-blue" alt="Documentação"></a> • 
+  <a href="https://github.com/seu-usuario/fdcv/discussions"><img src="https://img.shields.io/badge/Discussions-Participe-orange" alt="Discussions"></a>
   
 </div>
