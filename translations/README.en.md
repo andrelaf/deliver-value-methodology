@@ -115,8 +115,8 @@ For a complete understanding of the framework, consult the following documents:
 ## 🚦 Getting Started
 
 1. **Understand the Framework**
-   - Read the [principles documentation](/deliver-value-methodology/en/principles.md)
-   - Familiarize yourself with the [roles and responsibilities](/deliver-value-methodology/docs/ROLES.md)
+   - Read the [principles documentation](/docs/en/principles.md)
+   - Familiarize yourself with the [roles and responsibilities](/docs/ROLES.md)
 
 2. **Evaluate Your Organization**
    - Identify friction points between business and technology
