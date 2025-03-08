@@ -106,11 +106,11 @@ Detalhamos todos os aspectos do framework em nossa documentação, incluindo pap
 
 Para uma compreensão completa do framework, consulte os seguintes documentos:
 
-- [Princípios e Estrutura](/deliver-value-methodology/pt/principles.md) - Detalhamento dos princípios fundamentais e da estrutura do FDCV
-- [Práticas Recomendadas](/deliver-value-methodology/pt/practices.md) - Conjunto de práticas para implementação efetiva do framework
-- [Estudos de Caso e Exemplos](/deliver-value-methodology/pt/case-studies.md) - Casos reais e exemplos ilustrativos de aplicação
-- [Papéis e Responsabilidades](/deliver-value-methodology/docs/ROLES.md) - Descrição dos papéis essenciais no FDCV
-- [Perguntas Frequentes](/deliver-value-methodology/pt/faq.md) - Respostas para as dúvidas mais comuns
+- [Princípios e Estrutura](/docs/pt/principles.md) - Detalhamento dos princípios fundamentais e da estrutura do FDCV
+- [Práticas Recomendadas](/docs/pt/practices.md) - Conjunto de práticas para implementação efetiva do framework
+- [Estudos de Caso e Exemplos](/docs/pt/case-studies.md) - Casos reais e exemplos ilustrativos de aplicação
+- [Papéis e Responsabilidades](/docs/docs/ROLES.md) - Descrição dos papéis essenciais no FDCV
+- [Perguntas Frequentes](/docs/pt/faq.md) - Respostas para as dúvidas mais comuns
 
 ### Traduções
 
@@ -119,8 +119,8 @@ Para uma compreensão completa do framework, consulte os seguintes documentos:
 ## 🚦 Como Começar
 
 1. **Entenda o Framework**
-   - Leia a [documentação de princípios](/deliver-value-methodology/pt/principles.md)
-   - Familiarize-se com os [papéis e responsabilidades](/deliver-value-methodology/docs/ROLES.md)
+   - Leia a [documentação de princípios](/docs/pt/principles.md)
+   - Familiarize-se com os [papéis e responsabilidades](/docs/pt/ROLES.md)
 
 2. **Avalie sua Organização**
    - Identifique pontos de atrito entre negócio e tecnologia
