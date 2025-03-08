@@ -91,7 +91,14 @@ Here's a simplified example of how the canvas might be filled for an order syste
 
 ## Other Templates
 
-We are working on more templates to support the Deliver-Value framework implementation. If you have suggestions or would like to contribute a template, please consult our [contribution guide](/deliver-value-methodology/CONTRIBUTING.md).
+
+## Other Templates
+
+We are working on more templates to support the Deliver-Value framework implementation. For a comprehensive overview of available templates, check out our [Templates Guide](/docs/en/templates.md).
+
+If you're interested in practical implementation guidance, visit our [Practical Implementation Guide](/docs/en/practice.md).
+
+If you have suggestions or would like to contribute a template, please consult our [contribution guide](/deliver-value-methodology/CONTRIBUTING.md).
 
 ---
 
