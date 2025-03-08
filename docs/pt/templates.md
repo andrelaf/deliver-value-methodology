@@ -91,8 +91,11 @@ Aqui está um exemplo simplificado de como o canvas pode ser preenchido para um 
 
 ## Outros Templates
 
-Estamos trabalhando em mais templates para apoiar a implementação do framework Deliver-Value. Se você tem sugestões ou gostaria de contribuir com um template, por favor consulte nosso [guia de contribuição](/deliver-value-methodology/CONTRIBUTING.md).
+Estamos trabalhando em mais templates para apoiar a implementação do framework Deliver-Value. Para uma visão abrangente dos templates disponíveis, consulte nosso [Guia de Templates](/docs/pt/templates.md).
 
+Se você está interessado em orientações práticas de implementação, visite nosso [Guia de Implementação Prática](/docs/pt/pratica.md).
+
+Se você tem sugestões ou gostaria de contribuir com um template, por favor consulte nosso [guia de contribuição](/deliver-value-methodology/CONTRIBUTING.md).
 ---
 
 Todos os templates estão disponíveis sob a licença MIT. Você pode usá-los, modificá-los e distribuí-los livremente para suas necessidades.
