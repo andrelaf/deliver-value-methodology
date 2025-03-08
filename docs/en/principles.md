@@ -1,13 +1,5 @@
     # Principles and Structure of the Deliver-Value Framework (DV)
 
-## 📑 Documentation Navigation
-
-- [🏠 Home](/README.md)
-- [🌟 Principles](/docs/en/principles.md)
-- [🛠 Practices](/docs/en/practices.md)
-- [📋 Templates](/docs/en/templates.md)
-- [🤝 Contribution Guide](/CONTRIBUTING.md)
-
     ## 🌟 Key Principles
 
     The Deliver-Value Framework (DV) is based on five fundamental principles:
