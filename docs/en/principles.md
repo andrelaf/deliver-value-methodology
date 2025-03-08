@@ -214,4 +214,4 @@ The DV is especially valuable in the following contexts:
 
 ---
 
-This principles document serves as a fundamental guide for implementing the DV. Practical implementation details, examples, and templates are available in the `/docs` folder of the repository.
+This principles document serves as a fundamental guide for implementing the DV. [Practical implementation details, examples, and templates](/docs/en/practices.md) are available in the `/docs` folder of the repository.
