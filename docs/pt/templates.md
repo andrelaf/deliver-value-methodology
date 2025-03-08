@@ -21,6 +21,9 @@ O canvas está disponível em múltiplos formatos para atender diferentes necess
 - **SVG** ([download](/docs/pt/canvas/value-technology-alignment-canvas.svg)): Formato vetorial ideal para impressão em alta qualidade ou edição
 - **PNG** ([download](/docs/pt/canvas/value-technology-alignment-canvas.png)): Imagem para uso em apresentações ou documentos
 
+### Download do Canvas de Exemplo
+
+- **Canvas Completamente Preenchido** ([download](/docs/en/canvas/value-technology-alignment-canvas-example.png)): Um exemplo abrangente de um canvas concluído demonstrando aplicação em um cenário real
 
 ### Como Utilizar
 
