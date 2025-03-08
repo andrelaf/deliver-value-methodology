@@ -1,217 +1,225 @@
-# Principles and Structure of the Deliver-Value Framework (DV)
+    # Principles and Structure of the Deliver-Value Framework (DV)
 
-## 🌟 Key Principles
+    ## 📑 Documentation Navigation
 
-The Deliver-Value Framework (DV) is based on five fundamental principles:
+    - [🏠 Home](/README.md)
+    - [🌟 Principles](/docs/en/principles.md)
+    - [🛠 Practices](/docs/en/practices.md)
+    - [📋 Templates](/docs/en/templates.md)
+    - [🤝 Contribution Guide](/CONTRIBUTING.md)
 
-### 1. Value Over Deadlines
+    ## 🌟 Key Principles
 
-The main focus should be on the value delivered to the customer, not just meeting deadlines. This implies:
+    The Deliver-Value Framework (DV) is based on five fundamental principles:
 
-- Constant prioritization based on business impact
-- Willingness to reconsider scope when necessary
-- Clarity about what constitutes "value" for specific stakeholders
+    ### 1. Value Over Deadlines
 
-> "It's better to deliver 80% of the value with high quality than 100% while compromising user experience or system maintainability."
+    The main focus should be on the value delivered to the customer, not just meeting deadlines. This implies:
 
-### 2. Efficient Translation
+    - Constant prioritization based on business impact
+    - Willingness to reconsider scope when necessary
+    - Clarity about what constitutes "value" for specific stakeholders
 
-Communication between business and technology requires intentional and structured translation:
+    > "It's better to deliver 80% of the value with high quality than 100% while compromising user experience or system maintainability."
 
-- Creation of shared vocabulary between areas
-- Documentation of the whys, not just the whats
-- Simplification of complex concepts in both directions
+    ### 2. Efficient Translation
 
-> "Translation is not just explaining technical terms to the business, but also transforming business needs into measurable technical parameters."
+    Communication between business and technology requires intentional and structured translation:
 
-### 3. Preliminary Technical Assessment
+    - Creation of shared vocabulary between areas
+    - Documentation of the whys, not just the whats
+    - Simplification of complex concepts in both directions
 
-Before making definitive commitments, an honest technical assessment must occur:
+    > "Translation is not just explaining technical terms to the business, but also transforming business needs into measurable technical parameters."
 
-- Investigation of limitations and dependencies
-- Analysis of the feasibility of proposed solutions
-- Early identification of technical risks
+    ### 3. Preliminary Technical Assessment
 
-> "One day invested in technical assessment can save weeks of rework."
+    Before making definitive commitments, an honest technical assessment must occur:
 
-### 4. Formal Renegotiation
+    - Investigation of limitations and dependencies
+    - Analysis of the feasibility of proposed solutions
+    - Early identification of technical risks
 
-When new challenges arise, a structured renegotiation process should exist:
+    > "One day invested in technical assessment can save weeks of rework."
 
-- Clear channels for escalating impediments
-- Mechanisms to adjust expectations
-- Culture of transparency about difficulties
+    ### 4. Formal Renegotiation
 
-> "Renegotiation is not failure, but recognition of newly discovered realities."
+    When new challenges arise, a structured renegotiation process should exist:
 
-### 5. Continuous Transparency
+    - Clear channels for escalating impediments
+    - Mechanisms to adjust expectations
+    - Culture of transparency about difficulties
 
-Maintain clear communication at all levels of the project:
+    > "Renegotiation is not failure, but recognition of newly discovered realities."
 
-- Visibility of actual progress vs. planned
-- Proactive sharing of impediments
-- Honesty about capabilities and limitations
+    ### 5. Continuous Transparency
 
-> "Transparency builds trust, even when the news is not what was expected."
+    Maintain clear communication at all levels of the project:
 
-## 🏗️ Framework Structure
+    - Visibility of actual progress vs. planned
+    - Proactive sharing of impediments
+    - Honesty about capabilities and limitations
 
-The DV is structured on three fundamental pillars:
+    > "Transparency builds trust, even when the news is not what was expected."
 
-### 1. People and Roles
+    ## 🏗️ Framework Structure
 
-#### Value Analyst
+    The DV is structured on three fundamental pillars:
 
-The Value Analyst is the central translator between business and technology:
+    ### 1. People and Roles
 
-- Deeply understands the business and its needs
-- Translates business requirements into technical concepts
-- Facilitates communication between Business/Product Specialist and Technical Specialist
-- Maps and quantifies the value generated by features
+    #### Value Analyst
 
-#### Technical Specialist
+    The Value Analyst is the central translator between business and technology:
 
-The Technical Specialist (who may be a Team Leader, Tech Lead, or other professional with a similar function) is the guardian of technical feasibility and quality:
+    - Deeply understands the business and its needs
+    - Translates business requirements into technical concepts
+    - Facilitates communication between Business/Product Specialist and Technical Specialist
+    - Maps and quantifies the value generated by features
 
-- Evaluates technical feasibility of proposals
-- Identifies technical risks and limitations early
-- Guides architectural and implementation decisions
-- Ensures non-functional requirements are considered
-- Bridges the gap between the technical team and product/business areas
+    #### Technical Specialist
 
-#### Business/Product Specialist
+    The Technical Specialist (who may be a Team Leader, Tech Lead, or other professional with a similar function) is the guardian of technical feasibility and quality:
 
-The Business/Product Specialist represents the customer and defines priorities:
+    - Evaluates technical feasibility of proposals
+    - Identifies technical risks and limitations early
+    - Guides architectural and implementation decisions
+    - Ensures non-functional requirements are considered
+    - Bridges the gap between the technical team and product/business areas
 
-- Defines what generates the most value for the customer
-- Prioritizes backlog based on value and technical feasibility
-- Negotiates adjustments when necessary
-- Keeps the product vision aligned with business objectives
-- Translates business needs into product requirements
+    #### Business/Product Specialist
 
-#### Development Team
+    The Business/Product Specialist represents the customer and defines priorities:
 
-The team that implements the solutions:
+    - Defines what generates the most value for the customer
+    - Prioritizes backlog based on value and technical feasibility
+    - Negotiates adjustments when necessary
+    - Keeps the product vision aligned with business objectives
+    - Translates business needs into product requirements
 
-- Implements technical solutions
-- Proposes alternatives when there are limitations
-- Maintains technical quality and incremental delivery
-- Provides feedback on complexity and feasibility
+    #### Development Team
 
-### 2. Processes
+    The team that implements the solutions:
 
-#### Discovery Phase
+    - Implements technical solutions
+    - Proposes alternatives when there are limitations
+    - Maintains technical quality and incremental delivery
+    - Provides feedback on complexity and feasibility
 
-Before the formal start of the project:
+    ### 2. Processes
 
-- **Business Discovery**: Deep understanding of the problem to be solved
-- **Technical Discovery**: Assessment of feasibility and initial architecture
-- **Expectation Alignment**: Establishment of realistic parameters
+    #### Discovery Phase
 
-#### Planning Phase
+    Before the formal start of the project:
 
-Collaborative definition of scope and approach:
+    - **Business Discovery**: Deep understanding of the problem to be solved
+    - **Technical Discovery**: Assessment of feasibility and initial architecture
+    - **Expectation Alignment**: Establishment of realistic parameters
 
-- **Value Workshop**: Identification of the core value to be delivered
-- **Technical Mapping**: Detailed assessment of complexity
-- **Parameter Establishment**: Definition of timeline, scope, and resources
+    #### Planning Phase
 
-#### Execution Phase
+    Collaborative definition of scope and approach:
 
-Implementation with feedback cycles:
+    - **Value Workshop**: Identification of the core value to be delivered
+    - **Technical Mapping**: Detailed assessment of complexity
+    - **Parameter Establishment**: Definition of timeline, scope, and resources
 
-- **Iterative Cycles**: Development in sprints or continuous flow
-- **Value Checkpoints**: Periodic verification of generated value
-- **Technical Reassessment**: Adjustments based on new learnings
+    #### Execution Phase
 
-#### Delivery and Learning Phase
+    Implementation with feedback cycles:
 
-Conclusion and reflection:
+    - **Iterative Cycles**: Development in sprints or continuous flow
+    - **Value Checkpoints**: Periodic verification of generated value
+    - **Technical Reassessment**: Adjustments based on new learnings
 
-- **Value Validation**: Confirmation of delivered value
-- **Technical Retrospective**: Lessons learned and improvements
-- **Documentation of Learnings**: Records for future projects
+    #### Delivery and Learning Phase
 
-### 3. Artifacts
+    Conclusion and reflection:
 
-#### Value Matrix
+    - **Value Validation**: Confirmation of delivered value
+    - **Technical Retrospective**: Lessons learned and improvements
+    - **Documentation of Learnings**: Records for future projects
 
-Document that relates features to business value:
+    ### 3. Artifacts
 
-- Prioritized list of features
-- Quantified value for each item
-- Dependencies and prerequisites
-- Acceptance criteria focused on value
+    #### Value Matrix
 
-#### Technical Complexity Map
+    Document that relates features to business value:
 
-Assessment of technical complexities and risks:
+    - Prioritized list of features
+    - Quantified value for each item
+    - Dependencies and prerequisites
+    - Acceptance criteria focused on value
 
-- Points of technical attention
-- Effort estimates
-- Technical dependencies
-- Non-functional requirements
+    #### Technical Complexity Map
 
-#### Flexibility Contract
+    Assessment of technical complexities and risks:
 
-Formal agreement that establishes:
+    - Points of technical attention
+    - Effort estimates
+    - Technical dependencies
+    - Non-functional requirements
 
-- Fixed vs. flexible parameters
-- Checkpoints and reassessment points
-- Process for adjustments to scope or timeline
-- Responsibilities of each party
+    #### Flexibility Contract
 
-#### Value vs. Progress Dashboard
+    Formal agreement that establishes:
 
-Visualization of project progress:
+    - Fixed vs. flexible parameters
+    - Checkpoints and reassessment points
+    - Process for adjustments to scope or timeline
+    - Responsibilities of each party
 
-- Planned vs. delivered value
-- Technical progress
-- Active impediments
-- Updated predictability
+    #### Value vs. Progress Dashboard
 
-## 📊 Metrics and Indicators
+    Visualization of project progress:
 
-The DV uses balanced metrics to evaluate success:
+    - Planned vs. delivered value
+    - Technical progress
+    - Active impediments
+    - Updated predictability
 
-### Value Metrics
+    ## 📊 Metrics and Indicators
 
-- **Value Realization Index**: How much of the planned value was effectively delivered
-- **Time to First Value**: How quickly the customer perceives the first benefits
-- **Customer Satisfaction**: Direct assessment of satisfaction with deliveries
+    The DV uses balanced metrics to evaluate success:
 
-### Technical Quality Metrics
+    ### Value Metrics
 
-- **Technical Debt Generated**: How much technical simplification was necessary
-- **Maintainability**: Ease of evolving the system
-- **Production Incidents**: Stability of deliveries
+    - **Value Realization Index**: How much of the planned value was effectively delivered
+    - **Time to First Value**: How quickly the customer perceives the first benefits
+    - **Customer Satisfaction**: Direct assessment of satisfaction with deliveries
 
-### Process Metrics
+    ### Technical Quality Metrics
 
-- **Predictability**: Accuracy of estimates
-- **Renegotiation Frequency**: How many times it was necessary to adjust expectations
-- **Translation Efficiency**: How well business and technology understood each other
+    - **Technical Debt Generated**: How much technical simplification was necessary
+    - **Maintainability**: Ease of evolving the system
+    - **Production Incidents**: Stability of deliveries
 
-## 🔄 Framework Adaptability
+    ### Process Metrics
 
-The DV is not a rigid set of rules, but an adaptable framework:
+    - **Predictability**: Accuracy of estimates
+    - **Renegotiation Frequency**: How many times it was necessary to adjust expectations
+    - **Translation Efficiency**: How well business and technology understood each other
 
-- Can be applied in different contexts (products, projects, maintenance)
-- Compatible with existing agile methodologies (Scrum, Kanban, etc.)
-- Scalable for different sizes of organizations
-- Customizable according to team maturity
+    ## 🔄 Framework Adaptability
 
-We encourage each organization to adapt the DV to its reality, maintaining fidelity to the fundamental principles, but making processes and artifacts flexible as needed.
+    The DV is not a rigid set of rules, but an adaptable framework:
 
-## 🎯 Ideal Use Cases
+    - Can be applied in different contexts (products, projects, maintenance)
+    - Compatible with existing agile methodologies (Scrum, Kanban, etc.)
+    - Scalable for different sizes of organizations
+    - Customizable according to team maturity
 
-The DV is especially valuable in the following contexts:
+    We encourage each organization to adapt the DV to its reality, maintaining fidelity to the fundamental principles, but making processes and artifacts flexible as needed.
 
-- Organizations with separate Product and Engineering areas
-- Projects with a high degree of technical uncertainty
-- Environments where deadlines are important, but quality is essential
-- Situations where there has been a history of frustration between business and technology
+    ## 🎯 Ideal Use Cases
 
----
+    The DV is especially valuable in the following contexts:
 
-This principles document serves as a fundamental guide for implementing the DV. Practical implementation details, examples, and templates are available in the `/docs` folder of the repository.
+    - Organizations with separate Product and Engineering areas
+    - Projects with a high degree of technical uncertainty
+    - Environments where deadlines are important, but quality is essential
+    - Situations where there has been a history of frustration between business and technology
+
+    ---
+
+    This principles document serves as a fundamental guide for implementing the DV. Practical implementation details, examples, and templates are available in the `/docs` folder of the repository.
