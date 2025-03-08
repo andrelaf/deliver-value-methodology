@@ -18,8 +18,8 @@ O canvas estrutura a conversação em três perspectivas principais:
 
 O canvas está disponível em múltiplos formatos para atender diferentes necessidades:
 
-- **SVG** ([download](/deliver-value-methodology/templates/canvas/value-technology-alignment-canvas.svg)): Formato vetorial ideal para impressão em alta qualidade ou edição
-- **PNG** ([download](/deliver-value-methodology/templates/canvas/value-technology-alignment-canvas.png)): Imagem para uso em apresentações ou documentos
+- **SVG** ([download](/canvas/value-technology-alignment-canvas.svg)): Formato vetorial ideal para impressão em alta qualidade ou edição
+- **PNG** ([download](/canvas/value-technology-alignment-canvas.png)): Imagem para uso em apresentações ou documentos
 
 
 ### Como Utilizar
