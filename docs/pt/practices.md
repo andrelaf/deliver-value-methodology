@@ -90,6 +90,7 @@ Este documento detalha as práticas recomendadas para implementação efetiva do
 - Reúna representantes de negócio, tecnologia e UX
 - Utilize técnicas como Impact Mapping ou Value Proposition Canvas
 - Documente claramente o valor em termos de outcomes (resultados), não outputs (entregas)
+- Utilize o [Canvas de Alinhamento Valor-Tecnologia](/docs/pt/templates.md) como guia visual durante o workshop
 
 **Benefícios**:
 - Alinha todas as áreas em torno do verdadeiro propósito do projeto
