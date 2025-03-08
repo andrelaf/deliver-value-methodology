@@ -20,7 +20,7 @@ O canvas está disponível em múltiplos formatos para atender diferentes necess
 
 - **SVG** ([download](/deliver-value-methodology/templates/canvas/value-technology-alignment-canvas.svg)): Formato vetorial ideal para impressão em alta qualidade ou edição
 - **PNG** ([download](/deliver-value-methodology/templates/canvas/value-technology-alignment-canvas.png)): Imagem para uso em apresentações ou documentos
-- **PDF** ([download](/deliver-value-methodology/templates/canvas/value-technology-alignment-canvas.pdf)): Versão pronta para impressão em papel A3 ou maior
+
 
 ### Como Utilizar
 

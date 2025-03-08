@@ -4,112 +4,112 @@
   
   <!-- Title -->
   <rect x="10" y="10" width="980" height="50" fill="#3498db" rx="4" ry="4"/>
-  <text x="500" y="45" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff">CANVAS DE ALINHAMENTO VALOR-TECNOLOGIA (DV)</text>
+  <text x="500" y="45" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff">VALUE-TECHNOLOGY ALIGNMENT CANVAS (DV)</text>
   
   <!-- Business Perspective Header -->
   <rect x="10" y="70" width="980" height="30" fill="#2980b9" rx="4" ry="4"/>
-  <text x="500" y="92" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">PERSPECTIVA DE NEGÓCIO</text>
+  <text x="500" y="92" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">BUSINESS PERSPECTIVE</text>
   
   <!-- Row 1 - Business Context -->
   <rect x="10" y="110" width="320" height="150" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
   <rect x="10" y="110" width="320" height="40" fill="#3498db" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="170" y="137" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">CONTEXTO DE NEGÓCIO</text>
-  <text x="170" y="165" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Qual problema estamos tentando resolver?</text>
-  <text x="170" y="185" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quem são os usuários/clientes?</text>
-  <text x="170" y="205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Qual é o cenário atual vs. desejado?</text>
+  <text x="170" y="137" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">BUSINESS CONTEXT</text>
+  <text x="170" y="165" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What problem are we trying to solve?</text>
+  <text x="170" y="185" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Who are the users/customers?</text>
+  <text x="170" y="205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What is the current vs. desired scenario?</text>
   
   <!-- Row 1 - Expected Results -->
   <rect x="340" y="110" width="320" height="150" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
   <rect x="340" y="110" width="320" height="40" fill="#3498db" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="500" y="137" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">RESULTADOS ESPERADOS</text>
-  <text x="500" y="165" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quais resultados concretos queremos?</text>
-  <text x="500" y="185" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Como saberemos que tivemos sucesso?</text>
-  <text x="500" y="205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quais são os impactos esperados?</text>
+  <text x="500" y="137" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">EXPECTED RESULTS</text>
+  <text x="500" y="165" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What concrete results do we want?</text>
+  <text x="500" y="185" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• How will we know we've succeeded?</text>
+  <text x="500" y="205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What are the expected impacts?</text>
   
   <!-- Row 1 - Constraints -->
   <rect x="670" y="110" width="320" height="150" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
   <rect x="670" y="110" width="320" height="40" fill="#3498db" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="830" y="137" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">RESTRIÇÕES</text>
-  <text x="830" y="165" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quais são as restrições de tempo/orçamento?</text>
-  <text x="830" y="185" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Existem requisitos regulatórios ou legais?</text>
-  <text x="830" y="205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quais decisões já são imutáveis?</text>
+  <text x="830" y="137" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">CONSTRAINTS</text>
+  <text x="830" y="165" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What are the time/budget constraints?</text>
+  <text x="830" y="185" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Are there regulatory or legal requirements?</text>
+  <text x="830" y="205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Which decisions are already immutable?</text>
   
   <!-- Row 2 - Value Propositions -->
   <rect x="10" y="270" width="320" height="150" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
   <rect x="10" y="270" width="320" height="40" fill="#3498db" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="170" y="297" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">PROPOSTAS DE VALOR</text>
-  <text x="170" y="325" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Que benefícios específicos oferecemos?</text>
-  <text x="170" y="345" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Como nos diferenciamos?</text>
-  <text x="170" y="365" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• O que é essencial vs. desejável?</text>
+  <text x="170" y="297" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">VALUE PROPOSITIONS</text>
+  <text x="170" y="325" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What specific benefits do we offer?</text>
+  <text x="170" y="345" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• How do we differentiate?</text>
+  <text x="170" y="365" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What is essential vs. desirable?</text>
   
   <!-- Row 2 - Success Criteria -->
   <rect x="340" y="270" width="320" height="150" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
   <rect x="340" y="270" width="320" height="40" fill="#3498db" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="500" y="297" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">CRITÉRIOS DE SUCESSO</text>
-  <text x="500" y="325" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quais são os critérios mínimos de aceitação?</text>
-  <text x="500" y="345" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• O que constitui um resultado excelente?</text>
-  <text x="500" y="365" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Como validaremos esses critérios?</text>
+  <text x="500" y="297" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">SUCCESS CRITERIA</text>
+  <text x="500" y="325" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What are the minimum acceptance criteria?</text>
+  <text x="500" y="345" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What constitutes an excellent outcome?</text>
+  <text x="500" y="365" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• How will we validate these criteria?</text>
   
   <!-- Row 2 - Value Metrics -->
   <rect x="670" y="270" width="320" height="150" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
   <rect x="670" y="270" width="320" height="40" fill="#3498db" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="830" y="297" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">MÉTRICAS DE VALOR</text>
-  <text x="830" y="325" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quais KPIs medirão o sucesso?</text>
-  <text x="830" y="345" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Como estabeleceremos a linha de base?</text>
-  <text x="830" y="365" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Com que frequência avaliaremos?</text>
+  <text x="830" y="297" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">VALUE METRICS</text>
+  <text x="830" y="325" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Which KPIs will measure success?</text>
+  <text x="830" y="345" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• How will we establish the baseline?</text>
+  <text x="830" y="365" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• How often will we evaluate?</text>
   
   <!-- Technical Perspective Header -->
   <rect x="10" y="430" width="980" height="30" fill="#16a085" rx="4" ry="4"/>
-  <text x="500" y="452" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">PERSPECTIVA TÉCNICA</text>
+  <text x="500" y="452" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">TECHNICAL PERSPECTIVE</text>
   
   <!-- Row 3 - Technical Capabilities -->
   <rect x="10" y="470" width="320" height="150" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
   <rect x="10" y="470" width="320" height="40" fill="#1abc9c" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="170" y="497" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">CAPACIDADES TÉCNICAS ATUAIS</text>
-  <text x="170" y="525" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quais sistemas já temos disponíveis?</text>
-  <text x="170" y="545" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quais competências a equipe possui?</text>
-  <text x="170" y="565" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• O que pode ser reutilizado?</text>
+  <text x="170" y="497" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">CURRENT TECHNICAL CAPABILITIES</text>
+  <text x="170" y="525" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What systems do we already have available?</text>
+  <text x="170" y="545" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What skills does the team possess?</text>
+  <text x="170" y="565" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What can be reused?</text>
   
   <!-- Row 3 - Technical Challenges -->
   <rect x="340" y="470" width="320" height="150" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
   <rect x="340" y="470" width="320" height="40" fill="#1abc9c" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="500" y="497" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">DESAFIOS TÉCNICOS</text>
-  <text x="500" y="525" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quais aspectos são mais complexos?</text>
-  <text x="500" y="545" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Onde temos gaps de conhecimento?</text>
-  <text x="500" y="565" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• O que exigirá mais esforço/tempo?</text>
+  <text x="500" y="497" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">TECHNICAL CHALLENGES</text>
+  <text x="500" y="525" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Which aspects are most complex?</text>
+  <text x="500" y="545" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Where do we have knowledge gaps?</text>
+  <text x="500" y="565" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What will require more effort/time?</text>
   
   <!-- Row 3 - Technical Risks -->
   <rect x="670" y="470" width="320" height="150" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
   <rect x="670" y="470" width="320" height="40" fill="#1abc9c" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="830" y="497" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">RISCOS TÉCNICOS</text>
-  <text x="830" y="525" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quais são os principais riscos?</text>
-  <text x="830" y="545" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Qual a probabilidade e impacto?</text>
-  <text x="830" y="565" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quais sinais indicarão materialização?</text>
+  <text x="830" y="497" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">TECHNICAL RISKS</text>
+  <text x="830" y="525" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What are the main risks?</text>
+  <text x="830" y="545" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What is their probability and impact?</text>
+  <text x="830" y="565" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What signals will indicate materialization?</text>
   
   <!-- Alignment Header -->
   <rect x="10" y="630" width="980" height="30" fill="#9b59b6" rx="4" ry="4"/>
-  <text x="500" y="652" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">ALINHAMENTO E ACORDOS</text>
+  <text x="500" y="652" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">ALIGNMENT AND AGREEMENTS</text>
   
   <!-- Row 4 - Flexibility Agreements -->
   <rect x="10" y="670" width="320" height="70" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
   <rect x="10" y="670" width="320" height="30" fill="#8e44ad" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="170" y="692" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">ACORDOS DE FLEXIBILIDADE</text>
-  <text x="170" y="715" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• O que é fixo vs. flexível?</text>
-  <text x="170" y="732" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quais trade-offs aceitamos?</text>
+  <text x="170" y="692" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">FLEXIBILITY AGREEMENTS</text>
+  <text x="170" y="715" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What is fixed vs. flexible?</text>
+  <text x="170" y="732" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What trade-offs do we accept?</text>
   
   <!-- Row 4 - Checkpoint Points -->
   <rect x="340" y="670" width="320" height="70" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
   <rect x="340" y="670" width="320" height="30" fill="#8e44ad" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="500" y="692" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">PONTOS DE CHECKPOINT</text>
-  <text x="500" y="715" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quando faremos avaliações conjuntas?</text>
-  <text x="500" y="732" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quais gatilhos exigirão renegociações?</text>
+  <text x="500" y="692" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">CHECKPOINT POINTS</text>
+  <text x="500" y="715" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• When will we conduct joint assessments?</text>
+  <text x="500" y="732" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What triggers will require renegotiations?</text>
   
   <!-- Row 4 - Next Steps -->
   <rect x="670" y="670" width="320" height="70" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
   <rect x="670" y="670" width="320" height="30" fill="#8e44ad" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="830" y="692" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">PRÓXIMOS PASSOS</text>
-  <text x="830" y="715" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quais são as ações concretas?</text>
-  <text x="830" y="732" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Quem é responsável? Quando?</text>
+  <text x="830" y="692" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">NEXT STEPS</text>
+  <text x="830" y="715" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• What are the concrete actions?</text>
+  <text x="830" y="732" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">• Who is responsible? When?</text>
   
   <!-- Footer branding -->
   <text x="980" y="745" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#7f8c8d">Deliver-Value Framework (DV) - www.deliver-value.com</text>
