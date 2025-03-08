@@ -1,12 +1,12 @@
     # Principles and Structure of the Deliver-Value Framework (DV)
 
-    ## 📑 Documentation Navigation
+## 📑 Documentation Navigation
 
-    - [🏠 Home](/README.md)
-    - [🌟 Principles](/docs/en/principles.md)
-    - [🛠 Practices](/docs/en/practices.md)
-    - [📋 Templates](/docs/en/templates.md)
-    - [🤝 Contribution Guide](/CONTRIBUTING.md)
+- [🏠 Home](/README.md)
+- [🌟 Principles](/docs/en/principles.md)
+- [🛠 Practices](/docs/en/practices.md)
+- [📋 Templates](/docs/en/templates.md)
+- [🤝 Contribution Guide](/CONTRIBUTING.md)
 
     ## 🌟 Key Principles
 
