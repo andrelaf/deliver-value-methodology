@@ -215,4 +215,4 @@ O (DV) é especialmente valioso nos seguintes contextos:
 
 ---
 
-Este documento de princípios serve como guia fundamental para a implementação do (DV). [Os detalhes práticos de implementação, exemplos e templates](/docs/en/practices.md) estão disponíveis na pasta `/docs` do repositório.
+Este documento de princípios serve como guia fundamental para a implementação do (DV). [Os detalhes práticos de implementação, exemplos e templates](/docs/pt/practices.md) estão disponíveis na pasta `/docs` do repositório.
