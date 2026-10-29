@@ -1,4 +1,4 @@
-# 🔄 Framework de Desenvolvimento Centrado em Valor (FDCV)
+# 🔄 Deliver-Value Framework (DV)
 
 <div align="center">
   
@@ -15,8 +15,9 @@
 
 - [A História e Evolução das Metodologias](#-a-história-e-evolução-das-metodologias)
 - [O Cenário Atual: Desafios e Contradições](#-o-cenário-atual-desafios-e-contradições)
-- [Nossa Proposta: O FDCV](#-nossa-proposta-o-fdcv)
-- [Por Que o FDCV?](#-por-que-o-fdcv)
+- [Nossa Proposta: O DV Framework](#-nossa-proposta-o-dv-framework)
+- [Por Que o DV Framework?](#-por-que-o-dv-framework)
+- [Manifesto para Reconexão de Valor](#-manifesto-para-reconexão-de-valor)
 - [Documentação](#-documentação)
 - [Como Começar](#-como-começar)
 - [Contribuições](#-contribuições)
@@ -75,13 +76,13 @@ Neste contexto, surgiu a figura do **Especialista Técnico** (como Team Leaders,
 
 O resultado é um ciclo de frustração, com tentativas desesperadas de cumprir prazos cada vez mais irrealistas, sacrificando qualidade, escopo ou ambos.
 
-## 💡 Nossa Proposta: O FDCV
+## 💡 Nossa Proposta: O DV Framework
 
-Diante do cenário descrito, nasce o **Framework de Desenvolvimento Centrado em Valor (FDCV)**, uma metodologia que busca conciliar as necessidades de negócio com as realidades técnicas, priorizando o valor da entrega.
+Diante do cenário descrito, nasce o **Deliver-Value Framework (DV)**, uma metodologia que busca conciliar as necessidades de negócio com as realidades técnicas, priorizando o valor da entrega.
 
 Este framework reconhece que o problema não está nas datas ou no escopo em si, mas na forma como são estabelecidos e na inflexibilidade para ajustá-los quando novos desafios técnicos surgem.
 
-Alguns princípios-chave do FDCV:
+Alguns princípios-chave do DV Framework:
 
 - Resgate do papel de "tradutor" entre negócio e tecnologia através do **Analista de Valor**
 - Processo de avaliação técnica preliminar antes do comprometimento com prazos
@@ -90,9 +91,9 @@ Alguns princípios-chave do FDCV:
 
 O framework também reconhece que existem prazos regulatórios e compromissos comerciais que precisam ser respeitados. Nesses casos, propõe um processo transparente de negociação de escopo e recursos, mantendo o foco no valor essencial.
 
-## ✨ Por Que o FDCV?
+## ✨ Por Que o DV Framework?
 
-O FDCV preenche uma lacuna crítica nas metodologias atuais:
+O DV Framework preenche uma lacuna crítica nas metodologias atuais:
 
 - **Combina o melhor dos dois mundos**: A clareza do Waterfall com a flexibilidade do Ágil
 - **Resolve a desconexão** entre áreas de Produto e Engenharia
@@ -102,14 +103,36 @@ O FDCV preenche uma lacuna crítica nas metodologias atuais:
 
 Detalhamos todos os aspectos do framework em nossa documentação, incluindo papéis, processos, artefatos e métricas para uma implementação bem-sucedida.
 
+## 🌟 Manifesto para Reconexão de Valor
+
+Nossa preocupação central é com profissionais de produto que adotam metodologias sem manter o foco na entrega de valor, frequentemente comprometendo a qualidade técnica em favor de prazos arbitrários. Este manifesto visa reorientar as práticas de desenvolvimento para o que realmente importa.
+
+### Nossos princípios fundamentais
+
+1. **Problema acima de tudo**: Compreender profundamente o problema antes de comprometer-se com soluções e prazos
+2. **Qualidade sustentável**: Valorizar a excelência técnica e a sustentabilidade do código como investimento de longo prazo
+3. **Prazos justificáveis**: Estabelecer prazos baseados em necessidades técnicas reais, não apenas em pressões de mercado
+4. **Reconexão técnica**: Integrar conhecimento técnico nas decisões de produto desde o início
+5. **Valor como métrica**: Medir sucesso pelo valor real entregue ao usuário, não pelo cumprimento de rituais ou prazos
+
+### Na prática, isso significa:
+
+- Questionar ativamente prazos que comprometam a qualidade técnica
+- Investir tempo adequado na compreensão do problema antes de iniciar a implementação
+- Aproximar equipes técnicas e de produto para decisões colaborativas
+- Adaptar metodologias para servir à entrega de valor, não o contrário
+- Criar espaço para reflexão técnica e refinamento contínuo
+
+Este manifesto não propõe abandonar metodologias estabelecidas, mas sim recuperar sua essência original: adaptabilidade, foco no cliente e excelência técnica, reconectando as práticas ao propósito fundamental de resolver problemas reais com qualidade.
+
 ## 📚 Documentação
 
 Para uma compreensão completa do framework, consulte os seguintes documentos:
 
-- [Princípios e Estrutura](/docs/pt/principles.md) - Detalhamento dos princípios fundamentais e da estrutura do FDCV
+- [Princípios e Estrutura](/docs/pt/principles.md) - Detalhamento dos princípios fundamentais e da estrutura do DV
 - [Práticas Recomendadas](/docs/pt/practices.md) - Conjunto de práticas para implementação efetiva do framework
 - [Estudos de Caso e Exemplos](/docs/pt/case-studies.md) - Casos reais e exemplos ilustrativos de aplicação
-- [Papéis e Responsabilidades](/docs/docs/ROLES.md) - Descrição dos papéis essenciais no FDCV
+- [Papéis e Responsabilidades](/docs/docs/ROLES.md) - Descrição dos papéis essenciais no DV
 - [Perguntas Frequentes](/docs/pt/faq.md) - Respostas para as dúvidas mais comuns
 
 ### Traduções
@@ -148,7 +171,7 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
   
   **Desenvolvido com ❤️ para conciliar negócio e tecnologia**
   
-  <a href="https://github.com/seu-usuario/fdcv"><img src="https://img.shields.io/badge/GitHub-FDCV-2ea44f" alt="GitHub - FDCV"></a> • 
+  <a href="https://github.com/seu-usuario/fdcv"><img src="https://img.shields.io/badge/GitHub-DV-2ea44f" alt="GitHub - DV"></a> • 
   <a href="https://github.com/seu-usuario/fdcv/wiki"><img src="https://img.shields.io/badge/Wiki-Documentação-blue" alt="Documentação"></a> • 
   <a href="https://github.com/seu-usuario/fdcv/discussions"><img src="https://img.shields.io/badge/Discussions-Participe-orange" alt="Discussions"></a>
   
