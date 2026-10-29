@@ -1,101 +1,23 @@
-# Templates e Ferramentas do Framework Deliver-Value
+# Templates
 
-Esta seção contém templates visuais e ferramentas práticas para facilitar a implementação do Deliver-Value Framework (DV).
+Todos os templates são Markdown simples, então podem ser copiados para o seu repositório e lidos tanto por pessoas quanto por agentes de código.
 
-## Canvas de Alinhamento Valor-Tecnologia
+| Template | Para que serve |
+|---|---|
+| [Value Spec](../../templates/pt/value-spec.md) | O artefato central. Uma por item relevante: problema, valor, critérios de sucesso, restrições, validação, decisões, verificação de valor e instruções para agentes. |
+| [Value Spec: exemplo preenchido](../../templates/pt/value-spec-example.md) | Um exemplo fictício e ilustrativo para mostrar o nível de detalhe. |
+| [Snippet de contexto para agentes](../../templates/pt/agents-snippet.md) | Um bloco para AGENTS.md / CLAUDE.md / rules que aponta os agentes para a Value Spec. |
+| [Canvas de Alinhamento Valor-Tecnologia](./canvas/value-technology-alignment-canvas.svg) | Ferramenta opcional de workshop para iniciativas maiores ([PNG](./canvas/value-technology-alignment-canvas.png), [exemplo preenchido](./canvas/value-technology-alignment-canvas-example.png)). |
 
-O Canvas de Alinhamento Valor-Tecnologia é uma ferramenta visual para facilitar workshops de integração entre as perspectivas de negócio e tecnologia, seguindo os princípios do framework Deliver-Value.
+## Onde guardar as Value Specs
 
-### Visão Geral
+Um formato comum é uma pasta `specs/` na raiz do repositório, com um arquivo por spec: `specs/VS-014-invoice-download.md`. Se você usa Spec Kit ou Kiro, mantenha a Value Spec ao lado dos arquivos que essas ferramentas geram e ligue-os por meio de `links.design`.
 
-O canvas estrutura a conversação em três perspectivas principais:
+## Usando o Canvas
 
-1. **Perspectiva de Negócio**: Captura o contexto de negócio, resultados esperados e o valor a ser entregue
-2. **Perspectiva Técnica**: Explora capacidades atuais, desafios e riscos técnicos
-3. **Alinhamento e Acordos**: Estabelece o que é flexível, pontos de verificação e próximos passos
+1. **Prepare.** Convide Produto, o Tech Lead e um ou dois stakeholders-chave. Reserve de 60 a 90 minutos.
+2. **Preencham juntos**: primeiro os blocos de negócio, depois os técnicos e, por fim, os riscos.
+3. **Transforme em Value Specs.** Cada resultado distinto vira uma spec candidata.
+4. **Volte a ele** quando uma iniciativa mudar de direção.
 
-### Formatos Disponíveis
-
-O canvas está disponível em múltiplos formatos para atender diferentes necessidades:
-
-- **SVG** ([download](/docs/pt/canvas/value-technology-alignment-canvas.svg)): Formato vetorial ideal para impressão em alta qualidade ou edição
-- **PNG** ([download](/docs/pt/canvas/value-technology-alignment-canvas.png)): Imagem para uso em apresentações ou documentos
-
-### Download do Canvas de Exemplo
-
-- **Canvas Completamente Preenchido** ([download](/docs/en/canvas/value-technology-alignment-canvas-example.png)): Um exemplo abrangente de um canvas concluído demonstrando aplicação em um cenário real
-
-### Como Utilizar
-
-#### 1. Preparação
-- Imprima o canvas em tamanho grande (recomendado A1 ou A0) ou prepare-o em uma ferramenta digital como Miro, Mural ou Figma
-- Convide representantes de negócio e tecnologia para o workshop
-- Reserve 2-4 horas para o preenchimento inicial
-
-#### 2. Facilitação
-- Comece explicando o propósito e a estrutura do canvas
-- Preencha primeiro a perspectiva de negócio, depois a técnica, e finalmente os acordos
-- Use post-its ou notas digitais para preencher cada seção
-- Facilite a discussão usando as perguntas orientadoras incluídas no canvas
-
-#### 3. Documentação
-- Fotografe ou exporte o canvas preenchido
-- Documente os principais pontos discutidos
-- Compartilhe com todos os envolvidos e mantenha o canvas visível durante o projeto
-
-#### 4. Revisão
-- Revise o canvas nos checkpoints definidos
-- Atualize conforme o projeto evolui e novos aprendizados surgem
-
-### Integração com o DV Framework
-
-Este canvas apoia diretamente os princípios do Deliver-Value:
-
-- **Valor sobre Prazo**: Foca na definição clara do valor antes das questões técnicas
-- **Tradução Eficiente**: Cria um vocabulário visual compartilhado entre negócio e tecnologia
-- **Avaliação Técnica Preliminar**: Estrutura a exploração técnica de forma sistemática
-- **Renegociação Formal**: Estabelece acordos de flexibilidade e pontos de checkpoint
-- **Transparência Contínua**: Documenta visualmente compromissos e expectativas
-
-### Exemplo de Uso
-
-Aqui está um exemplo simplificado de como o canvas pode ser preenchido para um projeto de renovação de sistema de pedidos:
-
-**Contexto de Negócio:**
-- Sistema atual lento e propenso a erros
-- Clientes abandonando pedidos por frustração
-- Equipe de atendimento sobrecarregada com correções manuais
-
-**Resultados Esperados:**
-- Redução de 50% no tempo de processamento
-- Diminuição de 70% nos erros
-- Aumento de 30% na taxa de conversão
-
-**Capacidades Técnicas Atuais:**
-- Equipe com experiência em React e Node.js
-- APIs existentes para integração com ERP
-- Infraestrutura em nuvem escalável
-
-**Desafios Técnicos:**
-- Integração com sistema legado de inventário
-- Migração de dados históricos
-- Requisitos de alta disponibilidade
-
-## Matriz de Valor
-
-*Em breve: Template para a Matriz de Valor que ajuda a quantificar e priorizar funcionalidades com base no valor para o negócio e complexidade técnica.*
-
-## Contrato de Flexibilidade
-
-*Em breve: Template para o Contrato de Flexibilidade que formaliza o que é fixo vs. flexível em um projeto.*
-
-## Outros Templates
-
-Estamos trabalhando em mais templates para apoiar a implementação do framework Deliver-Value. Para uma visão abrangente dos templates disponíveis, consulte nosso [Guia de Templates](/docs/pt/templates.md).
-
-Se você está interessado em orientações práticas de implementação, visite nosso [Guia de Implementação Prática](/docs/pt/pratica.md).
-
-Se você tem sugestões ou gostaria de contribuir com um template, por favor consulte nosso [guia de contribuição](/deliver-value-methodology/CONTRIBUTING.md).
----
-
-Todos os templates estão disponíveis sob a licença MIT. Você pode usá-los, modificá-los e distribuí-los livremente para suas necessidades.
+Os templates da v1 (Matriz de Valor, Contrato de Flexibilidade) agora fazem parte da Value Spec. Os originais estão em [docs/archive/v1](../archive/v1/pt/templates.md).

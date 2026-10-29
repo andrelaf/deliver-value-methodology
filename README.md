@@ -1,155 +1,94 @@
-# 🔄 Framework de Desenvolvimento Centrado em Valor (FDCV)
+<p align="center">
+  <img src="assets/brand/logo-horizontal.svg" alt="Value-First Development" width="360">
+</p>
 
-<div align="center">
-  
-  ### Conciliando negócio e tecnologia através do foco no valor
+<p align="center"><strong>From ritual to value, from spec to software.</strong></p>
 
-  [![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)](https://github.com/seu-usuario/fdcv)
-  [![Licença](https://img.shields.io/badge/Licença-MIT-blue)](LICENSE)
-  [![Contribuições](https://img.shields.io/badge/Contribuições-Bem--vindas-brightgreen)](CONTRIBUTING.md)
-  [![Documentação](https://img.shields.io/badge/Docs-Em%20Construção-orange)](docs/)
-  
-</div>
-
-## 📋 Sumário
-
-- [A História e Evolução das Metodologias](#-a-história-e-evolução-das-metodologias)
-- [O Cenário Atual: Desafios e Contradições](#-o-cenário-atual-desafios-e-contradições)
-- [Nossa Proposta: O FDCV](#-nossa-proposta-o-fdcv)
-- [Por Que o FDCV?](#-por-que-o-fdcv)
-- [Documentação](#-documentação)
-- [Como Começar](#-como-começar)
-- [Contribuições](#-contribuições)
-- [Licença](#-licença)
-
-## 📜 A História e Evolução das Metodologias
-
-### O Modelo Cascata (Waterfall): Origens e Limitações
-
-No início da era do desenvolvimento de software, predominava o **modelo Cascata (Waterfall)**, formalizado por Winston Royce em 1970. Este modelo estabelecia um fluxo linear e sequencial de desenvolvimento, onde cada fase deveria ser completamente finalizada antes do início da próxima:
-
-1. Levantamento de requisitos
-2. Análise e design
-3. Implementação (codificação)
-4. Testes
-5. Implantação
-6. Manutenção
-
-O **analista de sistemas** era a figura central deste modelo, atuando como ponte entre o negócio e os desenvolvedores. Responsável por documentar exaustivamente os requisitos e transformá-los em especificações técnicas, este profissional desempenhava um papel crucial de tradução entre dois mundos.
-
-Embora oferecesse **documentação abrangente**, **processos bem definidos** e **clareza nos entregáveis**, o Waterfall sofria de problemas críticos:
-
-- Inflexibilidade para acomodar mudanças
-- Feedback tardio do cliente (apenas nas fases finais)
-- Longo tempo até a primeira entrega funcional
-- Riscos acumulados nas fases finais do projeto
-
-Como destacado por Boehm (1988), o custo de correção de um defeito aumenta exponencialmente à medida que o projeto avança. Pressman (2014) também observou que projetos que seguem rigidamente o modelo Waterfall frequentemente falham em atender às expectativas dos usuários finais.
-
-### A Revolução Ágil e o Scrum
-
-Em resposta às limitações do modelo Cascata, surgiu o **movimento Ágil**, formalizado em 2001 com o Manifesto Ágil. Entre as metodologias ágeis, o **Scrum** se destacou como uma das mais adotadas, propondo um desenvolvimento iterativo e incremental.
-
-O Scrum, conforme descrito por Schwaber e Sutherland (2020), trouxe uma abordagem radicalmente diferente:
-
-- Ciclos curtos de desenvolvimento (Sprints)
-- Entregas incrementais e funcionais
-- Adaptação constante às mudanças
-- Colaboração direta entre equipe e stakeholders
-- Autogerenciamento das equipes
-
-Esta abordagem eliminou a figura centralizada do analista de sistemas, distribuindo a responsabilidade de entender e traduzir o negócio para toda a equipe, com o **Especialista de Negócio/Produto** assumindo o papel de priorizar o que gera mais valor.
-
-## 🔍 O Cenário Atual: Desafios e Contradições
-
-Hoje, muitas organizações adotaram estruturas com áreas separadas de **Produto** e **Engenharia**. A área de Produto, frequentemente pressionada pelo negócio, estabelece prazos e escopo (muitas vezes denominado "grau W") sem compreensão profunda dos desafios técnicos envolvidos na implementação.
-
-Neste contexto, surgiu a figura do **Especialista Técnico** (como Team Leaders, Tech Leads e outros com função similar), que passou a assumir informalmente o papel que antes pertencia ao analista de sistemas: traduzir requisitos de negócio em soluções técnicas viáveis. Esta necessidade emergiu porque o modelo ágil, ao distribuir responsabilidades, criou uma lacuna na interface entre negócio e tecnologia.
-
-À medida que os projetos avançam, surgem complicações:
-
-- Limitações técnicas são descobertas tardiamente
-- Regras de negócio se revelam mais complexas que o inicialmente compreendido
-- Requisitos não-funcionais (desempenho, segurança, escalabilidade) impõem restrições não previstas
-- Times são formados sem direcionamento claro, tanto técnico quanto de negócio
-
-O resultado é um ciclo de frustração, com tentativas desesperadas de cumprir prazos cada vez mais irrealistas, sacrificando qualidade, escopo ou ambos.
-
-## 💡 Nossa Proposta: O FDCV
-
-Diante do cenário descrito, nasce o **Framework de Desenvolvimento Centrado em Valor (FDCV)**, uma metodologia que busca conciliar as necessidades de negócio com as realidades técnicas, priorizando o valor da entrega.
-
-Este framework reconhece que o problema não está nas datas ou no escopo em si, mas na forma como são estabelecidos e na inflexibilidade para ajustá-los quando novos desafios técnicos surgem.
-
-Alguns princípios-chave do FDCV:
-
-- Resgate do papel de "tradutor" entre negócio e tecnologia através do **Analista de Valor**
-- Processo de avaliação técnica preliminar antes do comprometimento com prazos
-- Mecanismos formais para renegociação quando surgem limitações técnicas
-- Foco constante no valor real para o cliente, não apenas no cumprimento de datas
-
-O framework também reconhece que existem prazos regulatórios e compromissos comerciais que precisam ser respeitados. Nesses casos, propõe um processo transparente de negociação de escopo e recursos, mantendo o foco no valor essencial.
-
-## ✨ Por Que o FDCV?
-
-O FDCV preenche uma lacuna crítica nas metodologias atuais:
-
-- **Combina o melhor dos dois mundos**: A clareza do Waterfall com a flexibilidade do Ágil
-- **Resolve a desconexão** entre áreas de Produto e Engenharia
-- **Formaliza processos** que já acontecem informalmente em muitas organizações
-- **Prioriza o valor real** sobre a simples entrega de features
-- **Reduz frustração e burnout** das equipes, estabelecendo expectativas realistas
-
-Detalhamos todos os aspectos do framework em nossa documentação, incluindo papéis, processos, artefatos e métricas para uma implementação bem-sucedida.
-
-## 📚 Documentação
-
-Para uma compreensão completa do framework, consulte os seguintes documentos:
-
-- [Princípios e Estrutura](/docs/pt/principles.md) - Detalhamento dos princípios fundamentais e da estrutura do FDCV
-- [Práticas Recomendadas](/docs/pt/practices.md) - Conjunto de práticas para implementação efetiva do framework
-- [Estudos de Caso e Exemplos](/docs/pt/case-studies.md) - Casos reais e exemplos ilustrativos de aplicação
-- [Papéis e Responsabilidades](/docs/docs/ROLES.md) - Descrição dos papéis essenciais no FDCV
-- [Perguntas Frequentes](/docs/pt/faq.md) - Respostas para as dúvidas mais comuns
-
-### Traduções
-
-- [English Version](/translations/README.en.md) - Complete documentation in English
-
-## 🚦 Como Começar
-
-1. **Entenda o Framework**
-   - Leia a [documentação de princípios](/docs/pt/principles.md)
-   - Familiarize-se com os [papéis e responsabilidades](/docs/pt/ROLES.md)
-
-2. **Avalie sua Organização**
-   - Identifique pontos de atrito entre negócio e tecnologia
-   - Mapeie processos existentes que podem ser adaptados
-
-3. **Implemente Gradualmente**
-   - Comece com um projeto piloto
-   - Adapte o framework à sua realidade organizacional
-
-4. **Meça e Aprenda**
-   - Documente aprendizados e adaptações
-   - Compartilhe suas experiências com a comunidade
-
-## 👐 Contribuições
-
-Contribuições são bem-vindas! Se você tem ideias para melhorar este framework ou quer compartilhar experiências de implementação, consulte nosso [guia de contribuição](CONTRIBUTING.md).
-
-## 📄 Licença
-
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
+<p align="center">
+  <a href="README.pt-BR.md">Português</a> ·
+  <a href="docs/en/why.md">Why</a> ·
+  <a href="docs/en/principles.md">Principles</a> ·
+  <a href="templates/en/value-spec.md">Value Spec template</a> ·
+  <a href="LICENSE">MIT</a>
+</p>
 
 ---
 
-<div align="center">
-  
-  **Desenvolvido com ❤️ para conciliar negócio e tecnologia**
-  
-  <a href="https://github.com/seu-usuario/fdcv"><img src="https://img.shields.io/badge/GitHub-FDCV-2ea44f" alt="GitHub - FDCV"></a> • 
-  <a href="https://github.com/seu-usuario/fdcv/wiki"><img src="https://img.shields.io/badge/Wiki-Documentação-blue" alt="Documentação"></a> • 
-  <a href="https://github.com/seu-usuario/fdcv/discussions"><img src="https://img.shields.io/badge/Discussions-Participe-orange" alt="Discussions"></a>
-  
-</div>
+**Value-First Development makes the value of each piece of work explicit, shared and measurable before anyone builds it, so that people and coding agents build the right thing, not only build it fast.**
+
+It's a light layer on top of the way you already work, whether that's Scrum, Kanban or your own process. You keep your cadence and tools. It adds one short, living document per item of value, written by Product and the Tech Lead together.
+
+## The problem
+
+In many teams, the ceremonies stay and the purpose fades. Stories arrive describing *what*, rarely *why*, and almost never the constraints or how success will be measured. Someone fills that gap, and it's usually the Tech Lead: translating, completing and deciding, mostly unseen.
+
+That used to be a nuisance. With coding agents, it's a bottleneck. A colleague compensates for a vague spec with conversation and judgement. An agent executes what's written and guesses the rest. **A vague spec now produces the wrong code faster.**
+
+DORA's 2025 research describes AI as an amplifier of the system it lands in. Without a focus on users, adopting it can hurt team performance ([DORA 2025](https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report)).
+
+→ [Why Value-First](docs/en/why.md) · [Specs in the AI era](docs/en/ai-and-specs.md)
+
+## The idea
+
+![Before and now: from product to spec to code](assets/diagrams/before-after-en.svg)
+
+| | |
+|---|---|
+| **Value Spec** | One page per item: problem, expected value, measurable success criteria, constraints, what's fixed and what's flexible. Versioned next to the code. Readable by people and agents. |
+| **Value Pair** | Product owns the problem and the value. The Tech Lead owns feasibility and makes the spec buildable. The translation work gets a name and a partner. |
+| **The cycle** | Specify → Validate → Build → Check value, then back to the spec. It runs inside the cadence you already have. |
+
+## Six principles
+
+1. **Value is explicit before the work starts.**
+2. **The spec is a value contract, and it lives.**
+3. **Validate before you build.** Cheap prototypes, often AI-generated, answer one question at a time.
+4. **Product and Tech specify together.**
+5. **A changed plan is information, not failure.**
+6. **People own the outcome; AI speeds it up.**
+
+→ [Principles](docs/en/principles.md) · [Practices](docs/en/practices.md)
+
+## You're Value-First if…
+
+- every item in progress has a Value Spec with at least one measurable success criterion;
+- every spec has two named owners, Product and Tech;
+- specs live in the repo and your agent instructions point to them;
+- risky items get a prototype or spike before the commitment;
+- scope changes show up as spec changes, with a reason;
+- you check value after delivery, and can name what *didn't* work;
+- people review all AI-generated code.
+
+→ [Full checklist and maturity model](docs/en/adoption.md)
+
+## How it relates to what you use
+
+Value-First doesn't compete with Scrum, Kanban, Shape Up or spec-driven tools like GitHub Spec Kit and Kiro. It sits above them: it decides *what is worth building and how we'll know*, and they handle the rest. Its closest relative is Shape Up, and it borrows openly from Specification by Example and outcome-focused product work.
+
+→ [Honest comparison](docs/en/comparison.md)
+
+## Start this week
+
+1. Pick one upcoming item with real value and some uncertainty.
+2. Write a [Value Spec](templates/en/value-spec.md) as a pair. Keep it to a page.
+3. Validate the riskiest assumption with the cheapest prototype.
+4. Add the [agent snippet](templates/en/agents-snippet.md) to your AGENTS.md or CLAUDE.md.
+5. Build, then check the value on the date you set.
+
+## Documentation
+
+| | |
+|---|---|
+| [Why Value-First](docs/en/why.md) | The thesis and the Tech Lead's role |
+| [Specs in the AI era](docs/en/ai-and-specs.md) | Spec-driven development, agents, limits and risks |
+| [Principles](docs/en/principles.md) · [Practices](docs/en/practices.md) | The core |
+| [Roles and artifacts](docs/en/roles-and-artifacts.md) | Value Pair, Value Spec, agent snippet, Canvas |
+| [Adoption](docs/en/adoption.md) | Checklist, maturity model, first week, when not to use it |
+| [Comparison](docs/en/comparison.md) · [FAQ](docs/en/faq.md) | Scrum, Kanban, Shape Up, SDD |
+| [Scenarios](docs/en/case-studies.md) · [Templates](docs/en/templates.md) · [Sources](docs/en/sources.md) | Examples and references |
+
+## Contributing
+
+Ideas, critiques, translations and real-world experience are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) and the [changelog](CHANGELOG.md).
+
+Created by [André Lara Amorim](https://github.com/andrelaf). Formerly *Deliver-Value Framework*. The v1 text is preserved in [docs/archive/v1](docs/archive/v1/). Licensed under [MIT](LICENSE).
