@@ -6,7 +6,7 @@ Como começar, como saber se vocês estão praticando e como evoluir.
 
 Um time pratica Value-First quando dá para **ver** estas coisas. São sinais no trabalho, não declarações de intenção:
 
-- [ ] Todo item em andamento aponta para uma Value Spec com pelo menos **um critério de sucesso mensurável**.
+- [ ] Todo item relevante em andamento (veja [quando não usar](#quando-não-usar)) aponta para uma Value Spec com pelo menos **um critério de sucesso mensurável**.
 - [ ] Toda Value Spec tem **dois donos nomeados**: Produto e Tech Lead.
 - [ ] As specs são **versionadas no repositório** e as instruções dos seus agentes (AGENTS.md, CLAUDE.md, rules) **apontam para elas**.
 - [ ] Itens de alta incerteza têm um **protótipo ou spike registrado antes** do compromisso.
@@ -18,7 +18,7 @@ Se vocês marcarem os sete, estão praticando Value-First, seja qual for o seu q
 
 ### Sinais de alerta
 
-- Uma spec com mais de algumas páginas que ninguém atualiza.
+- Uma spec com mais de duas páginas que ninguém atualiza.
 - "Valor" escrito como "melhorar a experiência", sem nenhuma métrica.
 - O Tech Lead escrevendo a spec sozinho, de novo.
 - A Value Spec virou mais um formulário de aprovação.

@@ -24,7 +24,7 @@ Before committing, reduce the biggest uncertainty in the cheapest way: a convers
 
 The spec has two owners. Product owns the problem and the value. The Tech Lead owns feasibility, constraints and making the spec buildable, by people and by agents. The translation work the Tech Lead already does gets a name and a partner.
 
-*Builds on:* the Agile principle "business people and developers must work together daily" ([agilemanifesto.org](https://agilemanifesto.org/principles.html)); the product trio in continuous discovery.
+*Builds on:* the Agile principle "business people and developers must work together daily" ([agilemanifesto.org](https://agilemanifesto.org/principles.html)); the product trio (product, design, engineering) in continuous discovery ([Torres](https://www.producttalk.org/2021/08/product-discovery/)).
 
 ## 5. A changed plan is information, not failure
 
@@ -36,7 +36,7 @@ What's fixed and what's flexible is agreed at the start. When reality changes, t
 
 Agents help to specify, prototype and build. Decisions, code review, security and technical debt remain human responsibilities. We measure outcomes, not the amount of code or tickets.
 
-*Builds on:* DORA's finding that AI amplifies the system it lands in, and that stability needs attention as throughput grows ([DORA 2024](https://cloud.google.com/blog/products/devops-sre/announcing-the-2024-dora-report), [DORA 2025](https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report)).
+*Builds on:* DORA's finding that AI amplifies the system it lands in, and that delivery stability suffered as AI adoption grew, even when throughput improved ([DORA 2024](https://cloud.google.com/blog/products/devops-sre/announcing-the-2024-dora-report), [DORA 2025](https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report)).
 
 ---
 

@@ -13,7 +13,7 @@ An honest comparison. Every approach below solves real problems well. Value-Firs
 | **Cadence** | None of its own. Uses yours. | Fixed sprints of a month or less | Continuous | 6-week cycles + 2-week cool-down | None of its own |
 | **Roles** | Value Pair (Product + Tech Lead), no new titles | Product Owner, Scrum Master, Developers | None required | Shapers, builders, betting table | None required |
 | **Central artifact** | Value Spec (living, in the repo) | Product Backlog, Sprint Backlog, Increment | Board, WIP limits, explicit policies | Pitch | Spec, plan, tasks |
-| **How value is measured** | Success criteria with metric, baseline, target and a value check date | Product Goal; Sprint Review inspects the Increment | Flow metrics (lead time, throughput) | Appetite and hill charts. Not prescriptive about outcome metrics | Not covered |
+| **How value is measured** | Success criteria with metric, baseline, target and a value check date | Product Goal; Sprint Review inspects the Increment | Flow metrics (WIP, throughput, cycle time, work item age) | Appetite and hill charts. Not prescriptive about outcome metrics | Not covered |
 | **AI agents** | The spec is written to be read by agents | Not covered (tool-agnostic) | Not covered (tool-agnostic) | Not covered | Core purpose |
 | **Relationship** | — | **Complementary**: improves sprint input and adds a later value check | **Complementary**: the readiness check becomes a column policy | **Closest relative**: overlaps on shaping, complementary on the rest | **Complementary**: Value-First sits above it |
 
@@ -39,7 +39,7 @@ Sources: [Scrum Guide 2020](https://scrumguides.org/scrum-guide.html) · [Kanban
 **How Value-First fits:** above it. Value-First decides *what is worth building and how we'll know*. SDD tools handle *spec → code*. A Value Spec can feed Spec Kit's `specify` step or Kiro's requirements phase. See [Specs in the AI era](./ai-and-specs.md).
 
 ### SAFe
-**What it does well:** coordination at scale, portfolio and strategic alignment ([scaledagileframework.com](https://scaledagileframework.com/)).
+**What it does well:** coordination at scale, portfolio and strategic alignment ([framework.scaledagile.com](https://framework.scaledagile.com/)).
 **How Value-First fits:** different scope. Value-First works at the level of a team and an item, not the portfolio. Value Specs can feed SAFe features.
 
 ## What Value-First doesn't claim

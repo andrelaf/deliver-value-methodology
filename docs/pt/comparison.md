@@ -13,7 +13,7 @@ Uma comparação honesta. Cada abordagem abaixo resolve bem problemas reais. O V
 | **Cadência** | Nenhuma própria. Usa a sua. | Sprints fixas de um mês ou menos | Contínua | Ciclos de 6 semanas + 2 semanas de cool-down | Nenhuma própria |
 | **Papéis** | Par de Valor (Produto + Tech Lead), sem cargos novos | Product Owner, Scrum Master, Developers | Nenhum obrigatório | Shapers, builders, betting table | Nenhum obrigatório |
 | **Artefato central** | Value Spec (viva, no repositório) | Product Backlog, Sprint Backlog, Increment | Quadro, limites de WIP, políticas explícitas | Pitch | Spec, plano, tarefas |
-| **Como o valor é medido** | Critérios de sucesso com métrica, linha de base, meta e data de verificação de valor | Product Goal; a Sprint Review inspeciona o Increment | Métricas de fluxo (lead time, vazão) | Apetite e hill charts. Não prescreve métricas de resultado | Não abordado |
+| **Como o valor é medido** | Critérios de sucesso com métrica, linha de base, meta e data de verificação de valor | Product Goal; a Sprint Review inspeciona o Increment | Métricas de fluxo (WIP, vazão, cycle time, idade do item) | Apetite e hill charts. Não prescreve métricas de resultado | Não abordado |
 | **Agentes de IA** | A spec é escrita para ser lida por agentes | Não abordado (agnóstico a ferramentas) | Não abordado (agnóstico a ferramentas) | Não abordado | Propósito central |
 | **Relação** | — | **Complementar**: melhora a entrada da sprint e acrescenta uma verificação de valor posterior | **Complementar**: a checagem de prontidão vira uma política de coluna | **Parente mais próximo**: sobrepõe-se no shaping, complementar no resto | **Complementar**: o Value-First fica acima dele |
 
@@ -39,7 +39,7 @@ Fontes: [Scrum Guide 2020](https://scrumguides.org/scrum-guide.html) · [Kanban 
 **Como o Value-First se encaixa:** acima dele. O Value-First decide *o que vale a pena construir e como vamos saber*. As ferramentas de SDD cuidam de *spec → código*. Uma Value Spec pode alimentar a etapa `specify` do Spec Kit ou a fase de requisitos do Kiro. Veja [Specs na era da IA](./ai-and-specs.md).
 
 ### SAFe
-**O que faz bem:** coordenação em escala, alinhamento de portfólio e estratégico ([scaledagileframework.com](https://scaledagileframework.com/)).
+**O que faz bem:** coordenação em escala, alinhamento de portfólio e estratégico ([framework.scaledagile.com](https://framework.scaledagile.com/)).
 **Como o Value-First se encaixa:** escopo diferente. O Value-First trabalha no nível de um time e de um item, não do portfólio. As Value Specs podem alimentar as features do SAFe.
 
 ## O que o Value-First não afirma

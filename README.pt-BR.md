@@ -20,7 +20,7 @@
 
 ## O problema
 
-Em muitos times, as cerimônias continuam e o propósito se perde. As histórias chegam descrevendo *o quê*, raramente o *porquê*, e quase nunca as restrições ou como o sucesso será medido. Alguém preenche esse abismo, e geralmente é o Tech Lead: traduzindo, completando e decidindo, quase sempre sem que ninguém veja.
+Na nossa experiência, em muitos times as cerimônias continuam enquanto o propósito se perde. As histórias chegam descrevendo *o quê*, raramente o *porquê*, e quase nunca as restrições ou como o sucesso será medido. Alguém preenche esse abismo, e geralmente é o Tech Lead: traduzindo, completando e decidindo, quase sempre sem que ninguém veja.
 
 Antes isso era um incômodo. Com agentes de código, virou um gargalo. Um colega compensa uma spec vaga com conversa e bom senso. Um agente executa o que está escrito e adivinha o resto. **Uma spec vaga agora produz o código errado mais rápido.**
 
@@ -51,7 +51,7 @@ A pesquisa do DORA de 2025 descreve a IA como um amplificador do sistema em que 
 
 ## Você é Value-First se…
 
-- todo item em andamento tem uma Value Spec com pelo menos um critério de sucesso mensurável;
+- todo item relevante em andamento tem uma Value Spec com pelo menos um critério de sucesso mensurável;
 - toda spec tem dois responsáveis nomeados, um de Produto e um de Tecnologia;
 - as specs ficam no repositório e as instruções dos seus agentes apontam para elas;
 - itens arriscados passam por um protótipo ou spike antes do compromisso;

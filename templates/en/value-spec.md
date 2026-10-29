@@ -96,7 +96,7 @@ links:
 | YYYY-MM-DD | <decision> | <rationale / alternatives considered> | <names> | <SC/A/scope IDs> |
 
 ## 11. Change log
-<!-- Living spec: every change to value, criteria, scope or constraints gets a line. Scope or criteria changes are a formal renegotiation and need both owners. -->
+<!-- Living spec: every change to value, criteria, scope or constraints gets a line. Scope or criteria changes need both owners' agreement. -->
 | Version | Date | Change | Reason (feedback, code, data) | Approved by |
 |---|---|---|---|---|
 | 0.1.0 | YYYY-MM-DD | Initial draft | — | product + tech |

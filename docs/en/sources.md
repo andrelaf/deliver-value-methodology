@@ -1,6 +1,6 @@
 # Sources
 
-The references used across the Value-First docs. Links checked on 2026-10-28. For notes on how each source is used and its limits, see the [annotated research file](../research/sources.md).
+The references cited across the Value-First docs, plus further reading. Links checked on 2026-10-28. For notes on how each source is used and its limits, see the [annotated research file](../research/sources.md).
 
 ## Agile, Scrum and their origins
 - Beck et al. [Manifesto for Agile Software Development](https://agilemanifesto.org/) and [Principles](https://agilemanifesto.org/principles.html), 2001.
@@ -12,7 +12,7 @@ The references used across the Value-First docs. Links checked on 2026-10-28. Fo
 - Dave Thomas. [Agile is Dead (Long Live Agility)](https://pragdave.me/thoughts/active/2014-03-04-time-to-kill-agile.html), 2014.
 - David J. Anderson. *Kanban: Successful Evolutionary Change for Your Technology Business*, Blue Hole Press, 2010. · [The Kanban Guide](https://kanbanguides.org/english/).
 - Ryan Singer. [Shape Up](https://basecamp.com/shapeup), Basecamp, 2019.
-- [Scaled Agile Framework](https://scaledagileframework.com/).
+- [Scaled Agile Framework](https://framework.scaledagile.com/).
 
 ## Product thinking
 - Marty Cagan. [Product vs. Feature Teams](https://www.svpg.com/product-vs-feature-teams/), 2019; *INSPIRED*, *EMPOWERED*, *TRANSFORMED* ([SVPG books](https://www.svpg.com/books/)).

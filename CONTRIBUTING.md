@@ -67,3 +67,7 @@ Obrigado pelo interesse. O Value-First é um framework jovem, e as contribuiçõ
 3. Abra um pull request explicando **o que** mudou e **por quê**.
 
 Para mudanças maiores, como um princípio ou uma prática nova, abra uma issue antes para conversarmos.
+
+## Estrutura do repositório
+
+A mesma da seção [Repository layout](#repository-layout) acima: `README.pt-BR.md`, `docs/pt`, `templates/pt`, `assets/`, `site/`, `docs/archive/v1`, `DECISIONS.md` e `CHANGELOG.md`.

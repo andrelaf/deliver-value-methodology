@@ -40,10 +40,13 @@ B2B customers can't get past invoices from the portal. They open support tickets
 
 ## 5. Scope, non-goals and flexibility
 - **In scope:** list + download of existing PDFs.
-- **Non-goals:** editing invoices, payment, CSV export, invoices older than 24 months.
+- **Non-goals:** editing invoices, payment, CSV export, invoices older than 24 months, date filtering (VS-015).
 - **Fixed:** the outcome (fewer invoice tickets); account-scoped access; no direct bucket access.
 - **Flexible:** list layout; the 24-month window (could shrink if SC-4 is at risk); release date within September.
 - **Revisit this spec if:** tickets don't drop by week 3, or the billing API can't meet SC-4.
+
+## Readiness check
+- [x] Problem · [x] For whom · [x] Expected value · [x] How we measure · [x] Fixed vs. flexible
 
 ## 6. Constraints
 - **Technical:** read PDFs through the billing service API. No direct bucket access from the portal.
@@ -63,7 +66,7 @@ B2B customers can't get past invoices from the portal. They open support tickets
 - **Riskiest assumption:** A-1.
 - **Prototype:** AI-generated clickable flow with fake data, 1-day timebox.
 - **Evidence to proceed:** ≥ 4 of 6 customers say they would stop emailing support.
-- **Result:** 5/6 yes. Two asked for date filtering (deferred, see D-2).
+- **Result:** 5/6 yes. Two asked for date filtering (deferred, see the decisions log, 2026-09-12).
 
 ## 10. Decisions log
 | Date | Decision | Why | Decided by | Affects |

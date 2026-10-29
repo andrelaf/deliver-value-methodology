@@ -52,13 +52,13 @@ Value-First doesn't reinvent these. They're good ways to fill in a Value Spec:
 
 | Technique | Use it for | Source |
 |---|---|---|
-| Specification by Example / BDD | Writing success criteria as concrete examples | Gojko Adzic, *Specification by Example* (Manning, 2011), [gojko.net](https://gojko.net/books/specification-by-example/) |
+| Specification by Example / BDD | Writing success criteria as concrete examples | Gojko Adzic, *Specification by Example* (Manning, 2011), [gojko.net](https://gojko.net/books/specification-by-example/); BDD: Dan North, [Introducing BDD](https://dannorth.net/introducing-bdd/) (2006) |
 | EARS | Writing behavioral criteria an agent can map to tasks | Alistair Mavin, [alistairmavin.com/ears](https://alistairmavin.com/ears/) |
 | Impact Mapping | Linking a deliverable to a business goal | Gojko Adzic (2012), [impactmapping.org](https://www.impactmapping.org/) |
 | User Story Mapping | Building shared understanding of the whole journey before slicing | Jeff Patton (O'Reilly, 2014), [jpattonassociates.com](https://jpattonassociates.com/story-mapping/) |
 | Continuous discovery | Interviews and assumption tests to fill "expected value" | Teresa Torres, [producttalk.org](https://www.producttalk.org/2021/08/product-discovery/) |
 | Shaping and appetite | Deciding how much a problem is worth before you solve it | Ryan Singer, *Shape Up* (2019), [basecamp.com/shapeup](https://basecamp.com/shapeup) |
-| Event Storming, Domain Storytelling | Exploring a complex domain before writing specs | Alberto Brandolini, [eventstorming.com](https://www.eventstorming.com/); Hofer & Schwentner, [domainstorytelling.org](https://domainstorytelling.org/) |
+| Event Storming, Domain Storytelling | Exploring a complex domain before writing specs | Alberto Brandolini, [eventstorming.com](https://www.eventstorming.com/); Hofer & Schwentner, *Domain Storytelling* (Addison-Wesley, 2021), [domainstorytelling.org](https://domainstorytelling.org/) |
 | ADRs | Recording technical decisions the spec links to | Michael Nygard, [cognitect.com](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions) |
 
 ---

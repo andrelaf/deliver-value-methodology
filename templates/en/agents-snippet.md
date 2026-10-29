@@ -10,7 +10,7 @@ Context files are guidance, not enforcement. Agents can still ignore them, so hu
 This project uses Value Specs as the source of intent: `specs/VS-*.md`.
 
 Before you plan or change code for a feature:
-1. Find the Value Spec for it (ask if there isn't one). Read sections 1–9.
+1. Find the Value Spec for it (ask if there isn't one). Read it all, especially the criteria, non-goals, open questions, decisions and agent instructions.
 2. Implement only what the success criteria (SC-n) require, within scope.
    Non-goals are hard boundaries.
 3. If something is ambiguous, contradicts the code, or touches an Open

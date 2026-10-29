@@ -40,10 +40,13 @@ Clientes B2B não conseguem obter faturas antigas pelo portal. Eles abrem ticket
 
 ## 5. Escopo, fora do escopo e flexibilidade
 - **No escopo:** listagem + download dos PDFs existentes.
-- **Fora do escopo:** edição de faturas, pagamento, exportação em CSV, faturas com mais de 24 meses.
+- **Fora do escopo:** edição de faturas, pagamento, exportação em CSV, faturas com mais de 24 meses, filtro por data (VS-015).
 - **Fixo:** o resultado (menos tickets de fatura); acesso restrito à conta; nenhum acesso direto ao bucket.
 - **Flexível:** o layout da lista; a janela de 24 meses (pode diminuir se o SC-4 estiver em risco); a data de lançamento dentro de setembro.
 - **Revisite esta spec se:** os tickets não caírem até a semana 3, ou se a API de faturamento não conseguir atender ao SC-4.
+
+## Checagem de prontidão
+- [x] Problema · [x] Para quem · [x] Valor esperado · [x] Como medir · [x] Fixo vs. flexível
 
 ## 6. Restrições
 - **Técnicas:** ler os PDFs pela API do serviço de faturamento. Nenhum acesso direto ao bucket a partir do portal.
@@ -63,7 +66,7 @@ Clientes B2B não conseguem obter faturas antigas pelo portal. Eles abrem ticket
 - **Premissa mais arriscada:** A-1.
 - **Protótipo:** fluxo clicável gerado por IA com dados falsos, timebox de 1 dia.
 - **Evidência para seguir em frente:** ≥ 4 de 6 clientes dizem que deixariam de mandar e-mail para o suporte.
-- **Resultado:** 5/6 sim. Dois pediram filtro por data (adiado, veja D-2).
+- **Resultado:** 5/6 sim. Dois pediram filtro por data (adiado, veja o registro de decisões, 2026-09-12).
 
 ## 10. Registro de decisões
 | Data | Decisão | Por quê | Decidido por | Afeta |

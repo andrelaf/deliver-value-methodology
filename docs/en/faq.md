@@ -10,7 +10,7 @@ No. It keeps your cadence, events and board. Value Specs improve what goes into 
 No. Every principle works without agents. Agents make the need more visible, because they execute what's written and can't fill gaps the way a colleague does.
 
 ### Isn't this just writing more documents?
-It shouldn't be. A Value Spec fits on about one page, covers one item of value and lives next to the code. If it grows past a couple of pages, split it. The aim is to learn sooner what's worth building and write down only that. See the waterfall critique in [Specs in the AI era](./ai-and-specs.md#limits-and-risks).
+It shouldn't be. A Value Spec fits on about one page, covers one item of value and lives next to the code. Aim for one page. Past two, split it. The aim is to learn sooner what's worth building and write down only that. See the waterfall critique in [Specs in the AI era](./ai-and-specs.md#limits-and-risks).
 
 ### Who writes the Value Spec?
 The Value Pair: Product and the Tech Lead, together. The team reviews it. See [roles](./roles-and-artifacts.md).
@@ -31,7 +31,7 @@ Start with one observable signal you can agree on, even a rough one: support tic
 A Value Spec can be the input for Spec Kit's `specify` step or Kiro's requirements phase. Its constraints can feed a Spec Kit constitution, steering files or AGENTS.md. Value-First decides *what and why*. The tools handle *spec → code*.
 
 ### Does it work in regulated environments?
-Yes. Compliance requirements go into the "Constraints" section and stay fixed. The decisions log and change log give you an audit trail.
+It's designed to. Compliance requirements go into the "Constraints" section and stay fixed, and the decisions log and change log give you an audit trail. We don't have reports from regulated teams yet. If you try it, please share what happened.
 
 ### Is there evidence that it works?
 Not yet as outcome data for Value-First itself. The framework rests on published research (DORA, Agile and product literature, listed in [sources](./sources.md)) and on practice. If you adopt it, we'd like to hear what happened: [CONTRIBUTING](../../CONTRIBUTING.md).

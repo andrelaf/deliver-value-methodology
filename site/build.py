@@ -80,7 +80,7 @@ T = {
         "check_h": "You're Value-First if…",
         "check_lead": "Signals you can see in the work, not statements of intent.",
         "check": [
-            "Every item in progress has a Value Spec with at least one measurable success criterion.",
+            "Every relevant item in progress has a Value Spec with at least one measurable success criterion.",
             "Every spec has two named owners: Product and Tech Lead.",
             "Specs live in the repo, and your agent instructions point to them.",
             "Risky items get a prototype or spike before the commitment.",
@@ -151,7 +151,7 @@ T = {
         "check_h": "Você é Value-First se…",
         "check_lead": "Sinais que dá para ver no trabalho, não declarações de intenção.",
         "check": [
-            "Todo item em andamento tem uma Value Spec com pelo menos um critério de sucesso mensurável.",
+            "Todo item relevante em andamento tem uma Value Spec com pelo menos um critério de sucesso mensurável.",
             "Toda spec tem dois donos nomeados: Produto e Tech Lead.",
             "As specs ficam no repositório, e as instruções dos seus agentes apontam para elas.",
             "Itens arriscados ganham um protótipo ou spike antes do compromisso.",

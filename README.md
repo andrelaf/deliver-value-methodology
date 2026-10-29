@@ -20,7 +20,7 @@ It's a light layer on top of the way you already work, whether that's Scrum, Kan
 
 ## The problem
 
-In many teams, the ceremonies stay and the purpose fades. Stories arrive describing *what*, rarely *why*, and almost never the constraints or how success will be measured. Someone fills that gap, and it's usually the Tech Lead: translating, completing and deciding, mostly unseen.
+In our experience, in many teams the ceremonies stay while the purpose fades. Stories arrive describing *what*, rarely *why*, and almost never the constraints or how success will be measured. Someone fills that gap, and it's usually the Tech Lead: translating, completing and deciding, mostly unseen.
 
 That used to be a nuisance. With coding agents, it's a bottleneck. A colleague compensates for a vague spec with conversation and judgement. An agent executes what's written and guesses the rest. **A vague spec now produces the wrong code faster.**
 
@@ -51,10 +51,10 @@ DORA's 2025 research describes AI as an amplifier of the system it lands in. Wit
 
 ## You're Value-First if…
 
-- every item in progress has a Value Spec with at least one measurable success criterion;
+- every relevant item in progress has a Value Spec with at least one measurable success criterion;
 - every spec has two named owners, Product and Tech;
 - specs live in the repo and your agent instructions point to them;
-- risky items get a prototype or spike before the commitment;
+- risky items get a prototype or spike (a short technical experiment) before the commitment;
 - scope changes show up as spec changes, with a reason;
 - you check value after delivery, and can name what *didn't* work;
 - people review all AI-generated code.
@@ -84,7 +84,7 @@ Value-First doesn't compete with Scrum, Kanban, Shape Up or spec-driven tools li
 | [Principles](docs/en/principles.md) · [Practices](docs/en/practices.md) | The core |
 | [Roles and artifacts](docs/en/roles-and-artifacts.md) | Value Pair, Value Spec, agent snippet, Canvas |
 | [Adoption](docs/en/adoption.md) | Checklist, maturity model, first week, when not to use it |
-| [Comparison](docs/en/comparison.md) · [FAQ](docs/en/faq.md) | Scrum, Kanban, Shape Up, SDD |
+| [Comparison](docs/en/comparison.md) · [FAQ](docs/en/faq.md) | Scrum, Kanban, Shape Up, spec-driven development |
 | [Scenarios](docs/en/case-studies.md) · [Templates](docs/en/templates.md) · [Sources](docs/en/sources.md) | Examples and references |
 
 ## Contributing

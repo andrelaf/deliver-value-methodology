@@ -52,13 +52,13 @@ O Value-First não reinventa estas técnicas. Elas são boas formas de preencher
 
 | Técnica | Use para | Fonte |
 |---|---|---|
-| Specification by Example / BDD | Escrever critérios de sucesso como exemplos concretos | Gojko Adzic, *Specification by Example* (Manning, 2011), [gojko.net](https://gojko.net/books/specification-by-example/) |
+| Specification by Example / BDD | Escrever critérios de sucesso como exemplos concretos | Gojko Adzic, *Specification by Example* (Manning, 2011), [gojko.net](https://gojko.net/books/specification-by-example/); BDD: Dan North, [Introducing BDD](https://dannorth.net/introducing-bdd/) (2006) |
 | EARS | Escrever critérios de comportamento que um agente consegue relacionar a tarefas | Alistair Mavin, [alistairmavin.com/ears](https://alistairmavin.com/ears/) |
 | Impact Mapping | Ligar uma entrega a um objetivo de negócio | Gojko Adzic (2012), [impactmapping.org](https://www.impactmapping.org/) |
 | User Story Mapping | Construir um entendimento compartilhado da jornada inteira antes de fatiar | Jeff Patton (O'Reilly, 2014), [jpattonassociates.com](https://jpattonassociates.com/story-mapping/) |
 | Descoberta contínua | Entrevistas e testes de premissas para preencher o "valor esperado" | Teresa Torres, [producttalk.org](https://www.producttalk.org/2021/08/product-discovery/) |
 | Shaping e apetite | Decidir quanto um problema vale antes de resolvê-lo | Ryan Singer, *Shape Up* (2019), [basecamp.com/shapeup](https://basecamp.com/shapeup) |
-| Event Storming, Domain Storytelling | Explorar um domínio complexo antes de escrever specs | Alberto Brandolini, [eventstorming.com](https://www.eventstorming.com/); Hofer & Schwentner, [domainstorytelling.org](https://domainstorytelling.org/) |
+| Event Storming, Domain Storytelling | Explorar um domínio complexo antes de escrever specs | Alberto Brandolini, [eventstorming.com](https://www.eventstorming.com/); Hofer & Schwentner, *Domain Storytelling* (Addison-Wesley, 2021), [domainstorytelling.org](https://domainstorytelling.org/) |
 | ADRs | Registrar decisões técnicas às quais a spec faz referência | Michael Nygard, [cognitect.com](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions) |
 
 ---

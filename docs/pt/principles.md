@@ -24,7 +24,7 @@ Antes de se comprometer, reduza a maior incerteza da forma mais barata: uma conv
 
 A spec tem dois donos. Produto é dono do problema e do valor. O Tech Lead é dono da viabilidade, das restrições e de tornar a spec construível, por pessoas e por agentes. O trabalho de tradução que o Tech Lead já faz ganha um nome e um parceiro.
 
-*Baseado em:* o princípio ágil "pessoas de negócio e desenvolvedores devem trabalhar juntos diariamente" ([agilemanifesto.org](https://agilemanifesto.org/principles.html)); o trio de produto da descoberta contínua.
+*Baseado em:* o princípio ágil "pessoas de negócio e desenvolvedores devem trabalhar juntos diariamente" ([agilemanifesto.org](https://agilemanifesto.org/principles.html)); o trio de produto (produto, design, engenharia) da descoberta contínua ([Torres](https://www.producttalk.org/2021/08/product-discovery/)).
 
 ## 5. Um plano que muda é informação, não fracasso
 
@@ -36,7 +36,7 @@ O que é fixo e o que é flexível é combinado no início. Quando a realidade m
 
 Agentes ajudam a especificar, prototipar e construir. Decisões, revisão de código, segurança e dívida técnica continuam sendo responsabilidades humanas. Medimos resultados (outcomes), não a quantidade de código ou de tickets.
 
-*Baseado em:* a constatação do DORA de que a IA amplifica o sistema em que é inserida, e de que a estabilidade precisa de atenção à medida que a vazão cresce ([DORA 2024](https://cloud.google.com/blog/products/devops-sre/announcing-the-2024-dora-report), [DORA 2025](https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report)).
+*Baseado em:* a constatação do DORA de que a IA amplifica o sistema em que é inserida, e de que a estabilidade de entrega piorou com o aumento da adoção de IA, mesmo quando a vazão melhorou ([DORA 2024](https://cloud.google.com/blog/products/devops-sre/announcing-the-2024-dora-report), [DORA 2025](https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report)).
 
 ---
 

@@ -10,7 +10,7 @@ Arquivos de contexto são orientação, não imposição. Os agentes ainda podem
 Este projeto usa Value Specs como fonte da intenção: `specs/VS-*.md`.
 
 Antes de planejar ou alterar código de uma funcionalidade:
-1. Encontre a Value Spec dela (pergunte se não houver uma). Leia as seções 1 a 9.
+1. Encontre a Value Spec dela (pergunte se não houver uma). Leia tudo, principalmente critérios, fora do escopo, perguntas em aberto, decisões e instruções para agentes.
 2. Implemente apenas o que os critérios de sucesso (SC-n) exigem, dentro do escopo.
    O que está fora do escopo é um limite rígido.
 3. Se algo for ambíguo, contradisser o código ou tocar em uma Pergunta em

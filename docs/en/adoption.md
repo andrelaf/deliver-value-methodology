@@ -6,7 +6,7 @@ How to start, how to tell whether you're practicing it, and how to grow.
 
 A team practices Value-First when you can **see** these things. These are signals in the work, not statements of intent:
 
-- [ ] Every item in progress points to a Value Spec with at least **one measurable success criterion**.
+- [ ] Every relevant item in progress (see [when not to use it](#when-not-to-use-it)) points to a Value Spec with at least **one measurable success criterion**.
 - [ ] Every Value Spec has **two named owners**: Product and Tech Lead.
 - [ ] Specs are **versioned in the repository** and your agent instructions (AGENTS.md, CLAUDE.md, rules) **point to them**.
 - [ ] High-uncertainty items have a **prototype or spike recorded before** the commitment.
@@ -18,7 +18,7 @@ If you tick all seven, you're practicing Value-First, whatever your board or cad
 
 ### Warning signs
 
-- A spec longer than a couple of pages that nobody updates.
+- A spec longer than two pages that nobody updates.
 - "Value" written as "improve the experience", with no metric.
 - The Tech Lead writing the spec alone, again.
 - The Value Spec has turned into one more approval form.
@@ -35,7 +35,7 @@ Three levels. Find yourself on each line separately: most teams are at different
 | **Value** | Items describe features. Value is implied. | Most items state expected value and a metric. | Every relevant item has a baseline, a target and a date to check. Priorities change based on value checks. |
 | **Spec** | Tickets and conversations. Context lives in people's heads. | Value Specs exist for larger items, written by the pair. | Value Specs are the input for people and agents. They're versioned, cited in PRs and kept up to date. |
 | **Validation** | Build first, find out later. | Spikes or prototypes for the riskiest items. | Prototypes answer one value question before every high-uncertainty commitment, and decisions go into the spec. |
-| **Pair** | Product writes and the TL translates alone. | Product and TL write specs together for big items. | The pair is the default. The team challenges specs before building. |
+| **Pair** | Product writes and the Tech Lead translates alone. | Product and Tech Lead write specs together for big items. | The pair is the default. The team challenges specs before building. |
 | **Change** | Changes show up as delays. | Changes are discussed but not recorded. | Changes go into the spec with a reason and are visible to stakeholders. |
 | **Closing the loop** | No look back after release. | Occasional reviews of results. | Value checks are scheduled and recorded, and they feed the backlog. |
 | **AI** | Ad hoc use. No shared context. | Agent context file exists. Code review covers AI output. | Agents read the Value Spec, ask about open questions, and trace work to criterion IDs. Stability is tracked. |

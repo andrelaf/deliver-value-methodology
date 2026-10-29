@@ -96,7 +96,7 @@ links:
 | AAAA-MM-DD | <decisão> | <justificativa / alternativas consideradas> | <nomes> | <IDs de SC/A/escopo> |
 
 ## 11. Registro de mudanças
-<!-- Spec viva: toda mudança de valor, critérios, escopo ou restrições ganha uma linha. Mudanças de escopo ou de critérios são uma renegociação formal e precisam dos dois donos. -->
+<!-- Spec viva: toda mudança de valor, critérios, escopo ou restrições ganha uma linha. Mudanças de escopo ou de critérios precisam do acordo dos dois donos. -->
 | Versão | Data | Mudança | Motivo (feedback, código, dados) | Aprovado por |
 |---|---|---|---|---|
 | 0.1.0 | AAAA-MM-DD | Rascunho inicial | — | produto + tech |

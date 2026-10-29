@@ -10,7 +10,7 @@
 
 Cada forma de trabalhar que usamos hoje foi uma resposta a um problema real.
 
-- **Escrever antes de construir** (o que hoje chamamos de Waterfall) nos deu a disciplina de declarar a intenção antes de construir. O próprio artigo de Winston Royce, de 1970, muitas vezes citado como sua origem, alertava contra a versão de passagem única e recomendava iterar ([Royce, via Wikipedia](https://en.wikipedia.org/wiki/Winston_W._Royce)).
+- **Escrever antes de construir** (o que hoje chamamos de Waterfall) nos deu a disciplina de declarar a intenção antes de começar. O próprio artigo de Winston Royce, de 1970, muitas vezes citado como sua origem, alertava contra a versão de passagem única e recomendava iterar ([Royce, via Wikipedia](https://en.wikipedia.org/wiki/Winston_W._Royce)).
 - **Agile** nos deu ciclos curtos de feedback e uma prioridade clara: "entrega antecipada e contínua de software de valor" ([princípios do Manifesto Ágil, 2001](https://agilemanifesto.org/principles.html)).
 - **Scrum** nos deu uma cadência estável e três pilares: transparência, inspeção e adaptação. O próprio Scrum Guide descreve o Scrum como um framework para "gerar valor por meio de soluções adaptativas para problemas complexos" ([Scrum Guide, 2020](https://scrumguides.org/scrum-guide.html)).
 
@@ -44,7 +44,7 @@ Funciona, muitas vezes bem. Mas tem custos:
 
 Agentes de código leem specs e agem a partir delas. Uma pessoa compensa uma história vaga com conversa e intuição. Um agente executa o que está escrito e adivinha o resto. Como o GitHub disse ao lançar o Spec Kit, modelos de linguagem são "excepcionais em completar padrões, mas não em ler mentes" ([GitHub Blog, 2025](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/)).
 
-A pesquisa do DORA aponta na mesma direção. O relatório de 2025 descreve a IA como um amplificador que "magnifica os pontos fortes das organizações de alto desempenho e as disfunções das que enfrentam dificuldades", e conclui que, sem foco no usuário, a adoção de IA pode prejudicar o desempenho do time ([DORA 2025](https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report)).
+A pesquisa do DORA aponta na mesma direção. O relatório de 2025 descreve a IA como um amplificador que "amplia os pontos fortes das organizações de alto desempenho e as disfunções das que enfrentam dificuldades", e conclui que, sem foco no usuário, a adoção de IA pode prejudicar o desempenho do time ([DORA 2025](https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report)).
 
 Então o abismo deixou de ser um incômodo e virou um gargalo. **Uma spec vaga agora produz o código errado mais rápido.** O argumento completo, com fontes e limites, está em [Specs na era da IA](./ai-and-specs.md).
 
