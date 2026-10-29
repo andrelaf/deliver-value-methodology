@@ -92,6 +92,24 @@ ol.steps li{margin-bottom:8px}
 .verb{display:flex;align-items:center;justify-content:center;gap:8px;margin:10px 0;color:var(--vf-muted);font-size:var(--vf-text-sm);font-style:italic}
 .verb::before,.verb::after{content:"";height:1px;width:40px;background:var(--vf-border)}
 .zoom{border-top:1px dashed var(--vf-border);margin-top:16px;padding-top:4px}
+.guide{position:sticky;top:70px;z-index:2;background:var(--vf-primary);color:var(--vf-on-primary);border-radius:var(--vf-radius);padding:12px 16px;margin-bottom:var(--vf-space-4);box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.guide[hidden]{display:none}
+.gtop{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.glabel{font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;opacity:.9}
+.gbtn{display:flex;gap:6px}
+.gbtn button{font:inherit;font-size:var(--vf-text-sm);font-weight:600;color:inherit;background:transparent;border:1px solid currentColor;border-radius:999px;padding:3px 12px;cursor:pointer;min-width:36px}
+.gbtn button:hover{background:rgba(255,255,255,.15)}
+.ghint{margin:8px 0 0;max-width:none;font-size:var(--vf-text-base);line-height:1.45;min-height:2.9em}
+.map.js .fld{display:grid}
+.map.js .fld::after{content:attr(data-full);visibility:hidden;grid-area:1/1;white-space:pre-wrap}
+.map.js .fld>.t{grid-area:1/1}
+.map.js [data-s]:not(.fld){transition:opacity .35s,box-shadow .35s}
+.map.js .dim{opacity:.28}
+.map.js .box.cur{box-shadow:0 0 0 4px color-mix(in srgb,var(--vf-accent-mark) 55%,transparent)}
+.map.js .box.slice.on:not(.cur){box-shadow:none}
+.typing>.t::after{content:"";display:inline-block;width:2px;height:1em;margin-left:1px;vertical-align:-.12em;background:var(--vf-ink);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.map.js [data-s]{transition:none}.typing>.t::after{animation:none}}
 .mapfoot{display:grid;gap:var(--vf-space-8);grid-template-columns:1fr;margin-top:var(--vf-space-8)}
 @media (min-width:900px){.mapfoot{grid-template-columns:1fr 1fr}}
 .mapfoot ol{padding-left:1.3em;margin:0}.mapfoot li{margin-bottom:6px}
@@ -157,20 +175,22 @@ footer p{max-width:none}
 <h2 id="map-h">Mapa de Valor</h2>
 <p class="lead">Para iniciativas maiores que uma spec. Como o C4 faz com a arquitetura: três níveis de zoom, quatro regras, e dá para desenhar no quadro branco.</p>
 <ol class="levels"><li><span class="num" aria-hidden="true">1</span><b>Resultado</b><span>Por quê, e como saberemos?</span></li><li><span class="num" aria-hidden="true">2</span><b>Fatias</b><span>O que primeiro, e em que apostamos?</span></li><li><span class="num" aria-hidden="true">3</span><b>Critérios</b><span>Como sabemos que esta fatia funciona?</span></li></ol>
-<div class="map">
+<div class="map" data-demo>
+<script type="application/json">{"hints": ["Comece pelo topo. Escreva a mudança que vocês querem ver, do ponto de vista de quem usa. Não é o nome de uma feature.", "Uma frase: quem tem o problema hoje, e qual é. Se houver dado, melhor.", "Uma métrica só, com linha de base, meta e prazo. Se não houver acordo sobre ela, provavelmente são duas iniciativas.", "Diga o que fica de fora. É o que impede a iniciativa de crescer sem ninguém perceber.", "Agora as fatias. Cada uma deve conseguir mover a métrica sozinha. Comece pela que ensina mais rápido e escreva a aposta mais arriscada dela.", "A próxima fatia pode ser uma aposta menor, com evidência parcial. Diga quantas pessoas pediram.", "“Não validada” é uma resposta honesta. Mostra ao time onde está o risco antes de alguém construir.", "Dê zoom só na fatia que vai ser construída agora. Os critérios ficam na Value Spec, e cada um diz o que o verifica.", "Pronto. Cada fatia vira uma Value Spec. Depois de cada verificação de valor, atualize o status e a ordem das fatias."], "step": "Passo {n} de {t}", "play": "Continuar", "pause_l": "Pausar", "restart": "Ver de novo", "prev": "Passo anterior", "next": "Próximo passo"}</script>
+<div class="guide" hidden><div class="gtop"><span class="glabel">Como preencher · <span class="gstep"></span></span><span class="gbtn"><button type="button" data-a="prev" aria-label="Passo anterior">←</button><button type="button" data-a="play" class="gplay">Pausar</button><button type="button" data-a="next" aria-label="Próximo passo">→</button></span></div><p class="ghint" aria-live="polite"></p></div>
 <p class="ex">Exemplo fictício, baseado no exemplo de template da VS-014.</p>
-<div class="lvl lvl-1"><div class="box out"><span class="ty">1 · Resultado</span><b>Clientes obtêm as próprias faturas</b><p>Contatos financeiros pedem faturas ao suporte.</p><p class="m">Tickets de fatura: ~120 → ≤ 40 / semana, 6 semanas após o lançamento</p><small>Fora: pagamento, edição de faturas</small></div></div>
-<p class="verb">↑ contribuem para</p>
-<div class="lvl"><div class="box slice on"><span class="ty">2 · VS-014</span><b>Baixar faturas no portal</b><p>Aposta: clientes usam o portal em vez de mandar e-mail ao suporte (validada 5/6)</p><span class="st">Em construção</span></div><div class="box slice"><span class="ty">2 · VS-015</span><b>Filtrar faturas por data</b><p>Aposta: auditorias precisam de intervalos de datas (2 de 6 pediram)</p><span class="st">Próxima</span></div><div class="box slice"><span class="ty">2 · VS-016</span><b>Fatura mensal por e-mail</b><p>Aposta: receber é melhor que procurar (não validada)</p><span class="st">Talvez</span></div></div>
-<div class="zoom"><p class="verb">↓ zoom na VS-014</p>
-<div class="lvl"><div class="box sc"><span class="ty">3 · SC-1</span><b>Lista os últimos 24 meses da conta</b><small>verificado por: teste ponta a ponta</small></div><div class="box sc"><span class="ty">3 · SC-2</span><b>Entrega o PDF armazenado sem alterações</b><small>verificado por: teste de integração</small></div><div class="box sc"><span class="ty">3 · SC-3</span><b>403 sem billing_admin, tentativa registrada</b><small>verificado por: teste de segurança</small></div><div class="box sc"><span class="ty">3 · SC-4</span><b>p95 &lt; 1 s com até 500 faturas</b><small>verificado por: teste de carga</small></div></div></div>
+<div class="lvl lvl-1"><div class="box out" data-s="1"><span class="ty">1 · Resultado</span><b class="fld" data-s="1">Clientes obtêm as próprias faturas</b><p class="fld" data-s="2">Contatos financeiros pedem faturas ao suporte.</p><p class="m fld" data-s="3">Tickets de fatura: ~120 → ≤ 40 / semana, 6 semanas após o lançamento</p><small class="fld" data-s="4">Fora: pagamento, edição de faturas</small></div></div>
+<p class="verb" data-s="5">↑ contribuem para</p>
+<div class="lvl"><div class="box slice on" data-s="5"><span class="ty">2 · VS-014</span><b class="fld" data-s="5">Baixar faturas no portal</b><p class="fld" data-s="5">Aposta: clientes usam o portal em vez de mandar e-mail ao suporte (validada 5/6)</p><span class="st fld" data-s="5">Em construção</span></div><div class="box slice" data-s="6"><span class="ty">2 · VS-015</span><b class="fld" data-s="6">Filtrar faturas por data</b><p class="fld" data-s="6">Aposta: auditorias precisam de intervalos de datas (2 de 6 pediram)</p><span class="st fld" data-s="6">Próxima</span></div><div class="box slice" data-s="7"><span class="ty">2 · VS-016</span><b class="fld" data-s="7">Fatura mensal por e-mail</b><p class="fld" data-s="7">Aposta: receber é melhor que procurar (não validada)</p><span class="st fld" data-s="7">Talvez</span></div></div>
+<div class="zoom" data-s="8"><p class="verb">↓ zoom na VS-014</p>
+<div class="lvl"><div class="box sc" data-s="8"><span class="ty">3 · SC-1</span><b class="fld" data-s="8">Lista os últimos 24 meses da conta</b><small class="fld" data-s="8">verificado por: teste ponta a ponta</small></div><div class="box sc" data-s="8"><span class="ty">3 · SC-2</span><b class="fld" data-s="8">Entrega o PDF armazenado sem alterações</b><small class="fld" data-s="8">verificado por: teste de integração</small></div><div class="box sc" data-s="8"><span class="ty">3 · SC-3</span><b class="fld" data-s="8">403 sem billing_admin, tentativa registrada</b><small class="fld" data-s="8">verificado por: teste de segurança</small></div><div class="box sc" data-s="8"><span class="ty">3 · SC-4</span><b class="fld" data-s="8">p95 &lt; 1 s com até 500 faturas</b><small class="fld" data-s="8">verificado por: teste de carga</small></div></div></div>
 </div>
 <div class="mapfoot"><div>
 <h3>Quatro regras</h3>
 <ol><li>Toda caixa tem tipo, nome e uma frase.</li><li>Todo resultado e toda fatia têm uma métrica ou um sinal.</li><li>Toda seta tem um verbo.</li><li>Um desenho por nível. Aproxime só onde precisar.</li></ol>
 <p class="note" style="margin-top:12px">O nível 4, código, não se desenha: testes e PRs citam os IDs dos SC.</p>
 </div><div>
-<div class="ctas" style="margin-top:0"><a class="btn primary" href="map.html">Mapa em branco para imprimir</a></div>
+<div class="ctas" style="margin-top:0"><a class="btn primary" href="map.html">Preencher o seu mapa</a></div>
 <a class="more" style="margin-top:0" href="https://github.com/andrelaf/deliver-value-methodology/blob/main/docs/pt/value-map.md">Como conduzir uma sessão de Mapa de Valor →</a>
 </div></div>
 </div></section>
@@ -184,5 +204,51 @@ footer p{max-width:none}
 <footer><div class="wrap">
 <p>Value-First Development, antes Deliver-Value Framework. Criado por André Lara Amorim. Licença MIT. · <a href="https://github.com/andrelaf/deliver-value-methodology/blob/main/docs/pt/sources.md">Fontes</a> · <a href="https://github.com/andrelaf/deliver-value-methodology">GitHub</a></p>
 </div></footer>
+<script>
+(function(){
+var root=document.querySelector('[data-demo]');if(!root)return;
+var cfg=JSON.parse(root.querySelector('script[type="application/json"]').textContent);
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var flds=[].slice.call(root.querySelectorAll('.fld'));
+flds.forEach(function(f){f.setAttribute('data-full',f.textContent);f.innerHTML='<span class="t"></span>';});
+var parts=[].slice.call(root.querySelectorAll('[data-s]:not(.fld)'));
+var guide=root.querySelector('.guide');guide.hidden=false;root.classList.add('js');
+var stepEl=guide.querySelector('.gstep'),hint=guide.querySelector('.ghint'),playB=guide.querySelector('.gplay');
+var N=cfg.hints.length,cur=1,playing=!reduce,timer=null,token=0;
+function txt(f,v){f.firstChild.textContent=v;}
+function setBtn(){playB.textContent=(cur===N&&!playing)?cfg.restart:(playing?cfg.pause_l:cfg.play);}
+function render(n,mode){
+  token++;var my=token;clearTimeout(timer);cur=n;
+  stepEl.textContent=cfg.step.replace('{n}',n).replace('{t}',N);hint.textContent=cfg.hints[n-1];
+  parts.forEach(function(p){var s=+p.getAttribute('data-s');p.classList.toggle('dim',s>n);p.classList.toggle('cur',s===n&&p.classList.contains('box'));});
+  var q=[];
+  flds.forEach(function(f){var s=+f.getAttribute('data-s');f.classList.remove('typing');
+    if(s<n||(s===n&&mode==='show'))txt(f,f.getAttribute('data-full'));
+    else{txt(f,'');if(s===n&&mode==='type')q.push(f);}});
+  setBtn();
+  if(mode!=='wait')typeAll(q,my);
+}
+function typeAll(q,my){
+  if(my!==token)return;
+  if(!q.length){if(playing&&cur<N)timer=setTimeout(function(){render(cur+1,'type');},1800);else if(cur===N){playing=false;setBtn();}return;}
+  var f=q[0],full=f.getAttribute('data-full'),i=0;f.classList.add('typing');
+  (function tick(){if(my!==token)return;i++;txt(f,full.slice(0,i));
+    if(i<full.length)timer=setTimeout(tick,22+Math.random()*45);
+    else timer=setTimeout(function(){f.classList.remove('typing');typeAll(q.slice(1),my);},300);})();
+}
+guide.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var act=b.getAttribute('data-a');
+  if(act==='play'){
+    if(cur===N&&!playing){playing=true;render(1,reduce?'show':'type');}
+    else if(playing){playing=false;render(cur,'show');}
+    else{playing=true;render(cur<N?cur+1:cur,reduce?'show':'type');}
+  }else if(act==='prev'){playing=false;render(Math.max(1,cur-1),'show');}
+  else if(act==='next'){playing=false;render(Math.min(N,cur+1),reduce?'show':'type');}
+  setBtn();});
+render(1,reduce?'show':'wait');
+if(reduce)return;
+var go=function(){render(1,'type');};
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){io.disconnect();go();}},{threshold:.35});io.observe(root);}else go();
+})();
+</script>
 </body>
 </html>

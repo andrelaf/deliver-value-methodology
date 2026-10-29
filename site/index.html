@@ -92,6 +92,24 @@ ol.steps li{margin-bottom:8px}
 .verb{display:flex;align-items:center;justify-content:center;gap:8px;margin:10px 0;color:var(--vf-muted);font-size:var(--vf-text-sm);font-style:italic}
 .verb::before,.verb::after{content:"";height:1px;width:40px;background:var(--vf-border)}
 .zoom{border-top:1px dashed var(--vf-border);margin-top:16px;padding-top:4px}
+.guide{position:sticky;top:70px;z-index:2;background:var(--vf-primary);color:var(--vf-on-primary);border-radius:var(--vf-radius);padding:12px 16px;margin-bottom:var(--vf-space-4);box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.guide[hidden]{display:none}
+.gtop{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.glabel{font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;opacity:.9}
+.gbtn{display:flex;gap:6px}
+.gbtn button{font:inherit;font-size:var(--vf-text-sm);font-weight:600;color:inherit;background:transparent;border:1px solid currentColor;border-radius:999px;padding:3px 12px;cursor:pointer;min-width:36px}
+.gbtn button:hover{background:rgba(255,255,255,.15)}
+.ghint{margin:8px 0 0;max-width:none;font-size:var(--vf-text-base);line-height:1.45;min-height:2.9em}
+.map.js .fld{display:grid}
+.map.js .fld::after{content:attr(data-full);visibility:hidden;grid-area:1/1;white-space:pre-wrap}
+.map.js .fld>.t{grid-area:1/1}
+.map.js [data-s]:not(.fld){transition:opacity .35s,box-shadow .35s}
+.map.js .dim{opacity:.28}
+.map.js .box.cur{box-shadow:0 0 0 4px color-mix(in srgb,var(--vf-accent-mark) 55%,transparent)}
+.map.js .box.slice.on:not(.cur){box-shadow:none}
+.typing>.t::after{content:"";display:inline-block;width:2px;height:1em;margin-left:1px;vertical-align:-.12em;background:var(--vf-ink);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.map.js [data-s]{transition:none}.typing>.t::after{animation:none}}
 .mapfoot{display:grid;gap:var(--vf-space-8);grid-template-columns:1fr;margin-top:var(--vf-space-8)}
 @media (min-width:900px){.mapfoot{grid-template-columns:1fr 1fr}}
 .mapfoot ol{padding-left:1.3em;margin:0}.mapfoot li{margin-bottom:6px}
@@ -157,20 +175,22 @@ footer p{max-width:none}
 <h2 id="map-h">Value Map</h2>
 <p class="lead">For initiatives bigger than one spec. Like C4 does for architecture: three levels of zoom, four rules, and you can draw it on a whiteboard.</p>
 <ol class="levels"><li><span class="num" aria-hidden="true">1</span><b>Outcome</b><span>Why, and how will we know?</span></li><li><span class="num" aria-hidden="true">2</span><b>Slices</b><span>What first, and what are we betting on?</span></li><li><span class="num" aria-hidden="true">3</span><b>Criteria</b><span>How do we know this slice works?</span></li></ol>
-<div class="map">
+<div class="map" data-demo>
+<script type="application/json">{"hints": ["Start at the top. Write the change you want to see, from the user's point of view. Not the name of a feature.", "One sentence: who has the problem today, and what it is. Data helps.", "One metric, with a baseline, a target and a date. If you can't agree on it, you probably have two initiatives.", "Say what's out. It stops the initiative from growing without anyone noticing.", "Now the slices. Each one should move the metric on its own. Start with the one that teaches you fastest, and write its riskiest bet.", "The next slice can be a smaller bet with partial evidence. Say how many people asked for it.", "“Not validated” is an honest answer. It shows the team where the risk is before anyone builds.", "Zoom in only on the slice you're building now. The criteria live in the Value Spec, and each one says what verifies it.", "Done. Each slice becomes a Value Spec. After each value check, update the status and the order of the slices."], "step": "Step {n} of {t}", "play": "Play", "pause_l": "Pause", "restart": "Watch again", "prev": "Previous step", "next": "Next step"}</script>
+<div class="guide" hidden><div class="gtop"><span class="glabel">How to fill it in · <span class="gstep"></span></span><span class="gbtn"><button type="button" data-a="prev" aria-label="Previous step">←</button><button type="button" data-a="play" class="gplay">Pause</button><button type="button" data-a="next" aria-label="Next step">→</button></span></div><p class="ghint" aria-live="polite"></p></div>
 <p class="ex">Fictional example, based on the VS-014 template example.</p>
-<div class="lvl lvl-1"><div class="box out"><span class="ty">1 · Outcome</span><b>Customers get their invoices on their own</b><p>Billing contacts ask support for invoices.</p><p class="m">Invoice tickets: ~120 → ≤ 40 / week, 6 weeks after launch</p><small>Out: payments, invoice editing</small></div></div>
-<p class="verb">↑ contribute to</p>
-<div class="lvl"><div class="box slice on"><span class="ty">2 · VS-014</span><b>Download invoices in the portal</b><p>Bet: customers use the portal instead of emailing support (validated 5/6)</p><span class="st">In build</span></div><div class="box slice"><span class="ty">2 · VS-015</span><b>Filter invoices by date</b><p>Bet: audits need date ranges (2 of 6 asked)</p><span class="st">Next</span></div><div class="box slice"><span class="ty">2 · VS-016</span><b>Monthly invoice by email</b><p>Bet: receiving beats searching (not validated)</p><span class="st">Maybe</span></div></div>
-<div class="zoom"><p class="verb">↓ zoom into VS-014</p>
-<div class="lvl"><div class="box sc"><span class="ty">3 · SC-1</span><b>Lists the account&#x27;s last 24 months</b><small>verified by: end-to-end test</small></div><div class="box sc"><span class="ty">3 · SC-2</span><b>Delivers the stored PDF unchanged</b><small>verified by: integration test</small></div><div class="box sc"><span class="ty">3 · SC-3</span><b>403 without billing_admin, attempt logged</b><small>verified by: security test</small></div><div class="box sc"><span class="ty">3 · SC-4</span><b>p95 &lt; 1 s up to 500 invoices</b><small>verified by: load test</small></div></div></div>
+<div class="lvl lvl-1"><div class="box out" data-s="1"><span class="ty">1 · Outcome</span><b class="fld" data-s="1">Customers get their invoices on their own</b><p class="fld" data-s="2">Billing contacts ask support for invoices.</p><p class="m fld" data-s="3">Invoice tickets: ~120 → ≤ 40 / week, 6 weeks after launch</p><small class="fld" data-s="4">Out: payments, invoice editing</small></div></div>
+<p class="verb" data-s="5">↑ contribute to</p>
+<div class="lvl"><div class="box slice on" data-s="5"><span class="ty">2 · VS-014</span><b class="fld" data-s="5">Download invoices in the portal</b><p class="fld" data-s="5">Bet: customers use the portal instead of emailing support (validated 5/6)</p><span class="st fld" data-s="5">In build</span></div><div class="box slice" data-s="6"><span class="ty">2 · VS-015</span><b class="fld" data-s="6">Filter invoices by date</b><p class="fld" data-s="6">Bet: audits need date ranges (2 of 6 asked)</p><span class="st fld" data-s="6">Next</span></div><div class="box slice" data-s="7"><span class="ty">2 · VS-016</span><b class="fld" data-s="7">Monthly invoice by email</b><p class="fld" data-s="7">Bet: receiving beats searching (not validated)</p><span class="st fld" data-s="7">Maybe</span></div></div>
+<div class="zoom" data-s="8"><p class="verb">↓ zoom into VS-014</p>
+<div class="lvl"><div class="box sc" data-s="8"><span class="ty">3 · SC-1</span><b class="fld" data-s="8">Lists the account&#x27;s last 24 months</b><small class="fld" data-s="8">verified by: end-to-end test</small></div><div class="box sc" data-s="8"><span class="ty">3 · SC-2</span><b class="fld" data-s="8">Delivers the stored PDF unchanged</b><small class="fld" data-s="8">verified by: integration test</small></div><div class="box sc" data-s="8"><span class="ty">3 · SC-3</span><b class="fld" data-s="8">403 without billing_admin, attempt logged</b><small class="fld" data-s="8">verified by: security test</small></div><div class="box sc" data-s="8"><span class="ty">3 · SC-4</span><b class="fld" data-s="8">p95 &lt; 1 s up to 500 invoices</b><small class="fld" data-s="8">verified by: load test</small></div></div></div>
 </div>
 <div class="mapfoot"><div>
 <h3>Four rules</h3>
 <ol><li>Every box has a type, a name and one sentence.</li><li>Every outcome and slice has a metric or a signal.</li><li>Every arrow has a verb.</li><li>One drawing per level. Zoom in only where you need to.</li></ol>
 <p class="note" style="margin-top:12px">Level 4, code, isn&#x27;t drawn: tests and PRs cite the SC IDs.</p>
 </div><div>
-<div class="ctas" style="margin-top:0"><a class="btn primary" href="map.html">Blank map to print</a></div>
+<div class="ctas" style="margin-top:0"><a class="btn primary" href="map.html">Fill in your own map</a></div>
 <a class="more" style="margin-top:0" href="https://github.com/andrelaf/deliver-value-methodology/blob/main/docs/en/value-map.md">How to run a Value Map session →</a>
 </div></div>
 </div></section>
@@ -184,5 +204,51 @@ footer p{max-width:none}
 <footer><div class="wrap">
 <p>Value-First Development, formerly Deliver-Value Framework. Created by André Lara Amorim. MIT License. · <a href="https://github.com/andrelaf/deliver-value-methodology/blob/main/docs/en/sources.md">Sources</a> · <a href="https://github.com/andrelaf/deliver-value-methodology">GitHub</a></p>
 </div></footer>
+<script>
+(function(){
+var root=document.querySelector('[data-demo]');if(!root)return;
+var cfg=JSON.parse(root.querySelector('script[type="application/json"]').textContent);
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var flds=[].slice.call(root.querySelectorAll('.fld'));
+flds.forEach(function(f){f.setAttribute('data-full',f.textContent);f.innerHTML='<span class="t"></span>';});
+var parts=[].slice.call(root.querySelectorAll('[data-s]:not(.fld)'));
+var guide=root.querySelector('.guide');guide.hidden=false;root.classList.add('js');
+var stepEl=guide.querySelector('.gstep'),hint=guide.querySelector('.ghint'),playB=guide.querySelector('.gplay');
+var N=cfg.hints.length,cur=1,playing=!reduce,timer=null,token=0;
+function txt(f,v){f.firstChild.textContent=v;}
+function setBtn(){playB.textContent=(cur===N&&!playing)?cfg.restart:(playing?cfg.pause_l:cfg.play);}
+function render(n,mode){
+  token++;var my=token;clearTimeout(timer);cur=n;
+  stepEl.textContent=cfg.step.replace('{n}',n).replace('{t}',N);hint.textContent=cfg.hints[n-1];
+  parts.forEach(function(p){var s=+p.getAttribute('data-s');p.classList.toggle('dim',s>n);p.classList.toggle('cur',s===n&&p.classList.contains('box'));});
+  var q=[];
+  flds.forEach(function(f){var s=+f.getAttribute('data-s');f.classList.remove('typing');
+    if(s<n||(s===n&&mode==='show'))txt(f,f.getAttribute('data-full'));
+    else{txt(f,'');if(s===n&&mode==='type')q.push(f);}});
+  setBtn();
+  if(mode!=='wait')typeAll(q,my);
+}
+function typeAll(q,my){
+  if(my!==token)return;
+  if(!q.length){if(playing&&cur<N)timer=setTimeout(function(){render(cur+1,'type');},1800);else if(cur===N){playing=false;setBtn();}return;}
+  var f=q[0],full=f.getAttribute('data-full'),i=0;f.classList.add('typing');
+  (function tick(){if(my!==token)return;i++;txt(f,full.slice(0,i));
+    if(i<full.length)timer=setTimeout(tick,22+Math.random()*45);
+    else timer=setTimeout(function(){f.classList.remove('typing');typeAll(q.slice(1),my);},300);})();
+}
+guide.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var act=b.getAttribute('data-a');
+  if(act==='play'){
+    if(cur===N&&!playing){playing=true;render(1,reduce?'show':'type');}
+    else if(playing){playing=false;render(cur,'show');}
+    else{playing=true;render(cur<N?cur+1:cur,reduce?'show':'type');}
+  }else if(act==='prev'){playing=false;render(Math.max(1,cur-1),'show');}
+  else if(act==='next'){playing=false;render(Math.min(N,cur+1),reduce?'show':'type');}
+  setBtn();});
+render(1,reduce?'show':'wait');
+if(reduce)return;
+var go=function(){render(1,'type');};
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){io.disconnect();go();}},{threshold:.35});io.observe(root);}else go();
+})();
+</script>
 </body>
 </html>

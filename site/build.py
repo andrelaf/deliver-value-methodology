@@ -4,8 +4,9 @@ Run:     python site/build.py
 Preview: python -m http.server 8000 -d site   →  http://localhost:8000/
 
 Writes site/index.html (EN), site/pt/index.html (PT) and copies brand assets,
-diagrams and the canvas into site/assets/. No external JS, no build tools.
+diagrams and the canvas into site/assets/. Small inline JS only as progressive enhancement (Value Map demo and fillable map); no build tools.
 """
+import json
 import shutil
 from html import escape
 from pathlib import Path
@@ -109,13 +110,29 @@ T = {
         "map_rules_h": "Four rules",
         "map_rules": ["Every box has a type, a name and one sentence.", "Every outcome and slice has a metric or a signal.", "Every arrow has a verb.", "One drawing per level. Zoom in only where you need to."],
         "map_code": "Level 4, code, isn't drawn: tests and PRs cite the SC IDs.",
-        "map_blank": "Blank map to print",
+        "map_blank": "Fill in your own map",
         "map_more": "How to run a Value Map session",
+        "demo_label": "How to fill it in",
+        "demo_ui": {"step": "Step {n} of {t}", "play": "Play", "pause_l": "Pause", "restart": "Watch again", "prev": "Previous step", "next": "Next step"},
+        "demo_hints": [
+            "Start at the top. Write the change you want to see, from the user's point of view. Not the name of a feature.",
+            "One sentence: who has the problem today, and what it is. Data helps.",
+            "One metric, with a baseline, a target and a date. If you can't agree on it, you probably have two initiatives.",
+            "Say what's out. It stops the initiative from growing without anyone noticing.",
+            "Now the slices. Each one should move the metric on its own. Start with the one that teaches you fastest, and write its riskiest bet.",
+            "The next slice can be a smaller bet with partial evidence. Say how many people asked for it.",
+            "“Not validated” is an honest answer. It shows the team where the risk is before anyone builds.",
+            "Zoom in only on the slice you're building now. The criteria live in the Value Spec, and each one says what verifies it.",
+            "Done. Each slice becomes a Value Spec. After each value check, update the status and the order of the slices.",
+        ],
+        "blank_hints_outcome": ["The change you want, not a feature. E.g. Customers get their invoices on their own", "Who has the problem today, and what it is", "E.g. invoice tickets ~120 → ≤ 40 / week, 6 weeks after launch", "What this initiative won't do"],
+        "blank_hints_slice": ["VS-___ · what this slice delivers", "Why this slice, on its own, moves the metric", "What must be true? How do we check it cheaply?", "idea · next · in build · delivered · not delivered"],
+        "blank_ui": {"print": "Print", "md": "Download Markdown", "clear": "Clear", "clear2": "Click again to clear", "title_ph": "initiative", "md_title": "Value Map", "md_l1": "Level 1 · Outcome", "md_l2": "Level 2 · Slices", "md_order": "Order", "file": "value-map.md"},
         "blank_title": "Value Map (blank)",
         "blank_slice": "Slice",
         "blank_fields_outcome": ["Name", "Problem and for whom", "Metric: baseline → target, by when", "Out of scope"],
-        "blank_fields_slice": ["VS-___  ·  Delivers", "How it moves the metric", "Riskiest bet (value or tech)", "Status"],
-        "blank_print": "Print this page (landscape). Level 3 lives in each Value Spec.",
+        "blank_fields_slice": ["Value Spec · Delivers", "How it moves the metric", "Riskiest bet (value or tech)", "Status"],
+        "blank_print": "Fill it in here or print it blank (landscape). Drafts are saved in this browser only. Level 3 lives in each Value Spec.",
         "blank_back": "Back to Value-First",
         "cta_h": "Try it on one item this week",
         "cta_steps": ["Pick one upcoming item with real value and some uncertainty.", "Write a Value Spec as a pair. Keep it to a page.", "Validate the riskiest assumption with the cheapest prototype.", "Build, then check the value on the date you set."],
@@ -206,13 +223,29 @@ T = {
         "map_rules_h": "Quatro regras",
         "map_rules": ["Toda caixa tem tipo, nome e uma frase.", "Todo resultado e toda fatia têm uma métrica ou um sinal.", "Toda seta tem um verbo.", "Um desenho por nível. Aproxime só onde precisar."],
         "map_code": "O nível 4, código, não se desenha: testes e PRs citam os IDs dos SC.",
-        "map_blank": "Mapa em branco para imprimir",
+        "map_blank": "Preencher o seu mapa",
         "map_more": "Como conduzir uma sessão de Mapa de Valor",
+        "demo_label": "Como preencher",
+        "demo_ui": {"step": "Passo {n} de {t}", "play": "Continuar", "pause_l": "Pausar", "restart": "Ver de novo", "prev": "Passo anterior", "next": "Próximo passo"},
+        "demo_hints": [
+            "Comece pelo topo. Escreva a mudança que vocês querem ver, do ponto de vista de quem usa. Não é o nome de uma feature.",
+            "Uma frase: quem tem o problema hoje, e qual é. Se houver dado, melhor.",
+            "Uma métrica só, com linha de base, meta e prazo. Se não houver acordo sobre ela, provavelmente são duas iniciativas.",
+            "Diga o que fica de fora. É o que impede a iniciativa de crescer sem ninguém perceber.",
+            "Agora as fatias. Cada uma deve conseguir mover a métrica sozinha. Comece pela que ensina mais rápido e escreva a aposta mais arriscada dela.",
+            "A próxima fatia pode ser uma aposta menor, com evidência parcial. Diga quantas pessoas pediram.",
+            "“Não validada” é uma resposta honesta. Mostra ao time onde está o risco antes de alguém construir.",
+            "Dê zoom só na fatia que vai ser construída agora. Os critérios ficam na Value Spec, e cada um diz o que o verifica.",
+            "Pronto. Cada fatia vira uma Value Spec. Depois de cada verificação de valor, atualize o status e a ordem das fatias.",
+        ],
+        "blank_hints_outcome": ["A mudança que vocês querem, não uma feature. Ex.: Clientes obtêm as próprias faturas", "Quem tem o problema hoje, e qual é", "Ex.: tickets de fatura ~120 → ≤ 40 / semana, 6 semanas após o lançamento", "O que esta iniciativa não vai fazer"],
+        "blank_hints_slice": ["VS-___ · o que esta fatia entrega", "Por que esta fatia, sozinha, move a métrica", "O que precisa ser verdade? Como checar barato?", "ideia · próxima · em construção · entregue · não entregue"],
+        "blank_ui": {"print": "Imprimir", "md": "Baixar Markdown", "clear": "Limpar", "clear2": "Clique de novo para limpar", "title_ph": "iniciativa", "md_title": "Mapa de Valor", "md_l1": "Nível 1 · Resultado", "md_l2": "Nível 2 · Fatias", "md_order": "Ordem", "file": "mapa-de-valor.md"},
         "blank_title": "Mapa de Valor (em branco)",
         "blank_slice": "Fatia",
         "blank_fields_outcome": ["Nome", "Problema e para quem", "Métrica: linha de base → meta, até quando", "Fora do escopo"],
-        "blank_fields_slice": ["VS-___  ·  Entrega", "Como move a métrica", "Aposta mais arriscada (valor ou técnica)", "Status"],
-        "blank_print": "Imprima esta página (paisagem). O nível 3 fica em cada Value Spec.",
+        "blank_fields_slice": ["Value Spec · Entrega", "Como move a métrica", "Aposta mais arriscada (valor ou técnica)", "Status"],
+        "blank_print": "Preencha aqui ou imprima em branco (paisagem). O rascunho fica salvo só neste navegador. O nível 3 fica em cada Value Spec.",
         "blank_back": "Voltar ao Value-First",
         "cta_h": "Experimente em um item nesta semana",
         "cta_steps": ["Escolha um item próximo com valor real e alguma incerteza.", "Escreva uma Value Spec em par. Uma página basta.", "Valide a premissa mais arriscada com o protótipo mais barato.", "Construa e verifique o valor na data combinada."],
@@ -297,11 +330,77 @@ ol.steps li{margin-bottom:8px}
 .verb{display:flex;align-items:center;justify-content:center;gap:8px;margin:10px 0;color:var(--vf-muted);font-size:var(--vf-text-sm);font-style:italic}
 .verb::before,.verb::after{content:"";height:1px;width:40px;background:var(--vf-border)}
 .zoom{border-top:1px dashed var(--vf-border);margin-top:16px;padding-top:4px}
+.guide{position:sticky;top:70px;z-index:2;background:var(--vf-primary);color:var(--vf-on-primary);border-radius:var(--vf-radius);padding:12px 16px;margin-bottom:var(--vf-space-4);box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.guide[hidden]{display:none}
+.gtop{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.glabel{font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;opacity:.9}
+.gbtn{display:flex;gap:6px}
+.gbtn button{font:inherit;font-size:var(--vf-text-sm);font-weight:600;color:inherit;background:transparent;border:1px solid currentColor;border-radius:999px;padding:3px 12px;cursor:pointer;min-width:36px}
+.gbtn button:hover{background:rgba(255,255,255,.15)}
+.ghint{margin:8px 0 0;max-width:none;font-size:var(--vf-text-base);line-height:1.45;min-height:2.9em}
+.map.js .fld{display:grid}
+.map.js .fld::after{content:attr(data-full);visibility:hidden;grid-area:1/1;white-space:pre-wrap}
+.map.js .fld>.t{grid-area:1/1}
+.map.js [data-s]:not(.fld){transition:opacity .35s,box-shadow .35s}
+.map.js .dim{opacity:.28}
+.map.js .box.cur{box-shadow:0 0 0 4px color-mix(in srgb,var(--vf-accent-mark) 55%,transparent)}
+.map.js .box.slice.on:not(.cur){box-shadow:none}
+.typing>.t::after{content:"";display:inline-block;width:2px;height:1em;margin-left:1px;vertical-align:-.12em;background:var(--vf-ink);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.map.js [data-s]{transition:none}.typing>.t::after{animation:none}}
 .mapfoot{display:grid;gap:var(--vf-space-8);grid-template-columns:1fr;margin-top:var(--vf-space-8)}
 @media (min-width:900px){.mapfoot{grid-template-columns:1fr 1fr}}
 .mapfoot ol{padding-left:1.3em;margin:0}.mapfoot li{margin-bottom:6px}
 footer{padding:var(--vf-space-8) 0;color:var(--vf-muted);font-size:var(--vf-text-sm)}
 footer p{max-width:none}
+"""
+
+
+DEMO_JS = r"""
+(function(){
+var root=document.querySelector('[data-demo]');if(!root)return;
+var cfg=JSON.parse(root.querySelector('script[type="application/json"]').textContent);
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var flds=[].slice.call(root.querySelectorAll('.fld'));
+flds.forEach(function(f){f.setAttribute('data-full',f.textContent);f.innerHTML='<span class="t"></span>';});
+var parts=[].slice.call(root.querySelectorAll('[data-s]:not(.fld)'));
+var guide=root.querySelector('.guide');guide.hidden=false;root.classList.add('js');
+var stepEl=guide.querySelector('.gstep'),hint=guide.querySelector('.ghint'),playB=guide.querySelector('.gplay');
+var N=cfg.hints.length,cur=1,playing=!reduce,timer=null,token=0;
+function txt(f,v){f.firstChild.textContent=v;}
+function setBtn(){playB.textContent=(cur===N&&!playing)?cfg.restart:(playing?cfg.pause_l:cfg.play);}
+function render(n,mode){
+  token++;var my=token;clearTimeout(timer);cur=n;
+  stepEl.textContent=cfg.step.replace('{n}',n).replace('{t}',N);hint.textContent=cfg.hints[n-1];
+  parts.forEach(function(p){var s=+p.getAttribute('data-s');p.classList.toggle('dim',s>n);p.classList.toggle('cur',s===n&&p.classList.contains('box'));});
+  var q=[];
+  flds.forEach(function(f){var s=+f.getAttribute('data-s');f.classList.remove('typing');
+    if(s<n||(s===n&&mode==='show'))txt(f,f.getAttribute('data-full'));
+    else{txt(f,'');if(s===n&&mode==='type')q.push(f);}});
+  setBtn();
+  if(mode!=='wait')typeAll(q,my);
+}
+function typeAll(q,my){
+  if(my!==token)return;
+  if(!q.length){if(playing&&cur<N)timer=setTimeout(function(){render(cur+1,'type');},1800);else if(cur===N){playing=false;setBtn();}return;}
+  var f=q[0],full=f.getAttribute('data-full'),i=0;f.classList.add('typing');
+  (function tick(){if(my!==token)return;i++;txt(f,full.slice(0,i));
+    if(i<full.length)timer=setTimeout(tick,22+Math.random()*45);
+    else timer=setTimeout(function(){f.classList.remove('typing');typeAll(q.slice(1),my);},300);})();
+}
+guide.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var act=b.getAttribute('data-a');
+  if(act==='play'){
+    if(cur===N&&!playing){playing=true;render(1,reduce?'show':'type');}
+    else if(playing){playing=false;render(cur,'show');}
+    else{playing=true;render(cur<N?cur+1:cur,reduce?'show':'type');}
+  }else if(act==='prev'){playing=false;render(Math.max(1,cur-1),'show');}
+  else if(act==='next'){playing=false;render(Math.min(N,cur+1),reduce?'show':'type');}
+  setBtn();});
+render(1,reduce?'show':'wait');
+if(reduce)return;
+var go=function(){render(1,'type');};
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){io.disconnect();go();}},{threshold:.35});io.observe(root);}else go();
+})();
 """
 
 
@@ -321,11 +420,13 @@ def page(t):
     o = t["map_outcome"]
     levels = "".join(f'<li><span class="num" aria-hidden="true">{n}</span><b>{escape(h)}</b><span>{escape(q)}</span></li>' for n, h, q in t["map_levels"])
     slices = "".join(
-        f'<div class="box slice{" on" if i == 0 else ""}"><span class="ty">2 · {vs}</span><b>{escape(n)}</b><p>{escape(bet)}</p><span class="st">{escape(st)}</span></div>'
+        f'<div class="box slice{" on" if i == 0 else ""}" data-s="{5 + i}"><span class="ty">2 · {vs}</span><b class="fld" data-s="{5 + i}">{escape(n)}</b><p class="fld" data-s="{5 + i}">{escape(bet)}</p><span class="st fld" data-s="{5 + i}">{escape(st)}</span></div>'
         for i, (vs, n, bet, st) in enumerate(t["map_slices"]))
     crit = "".join(
-        f'<div class="box sc"><span class="ty">3 · {sc}</span><b>{escape(s)}</b><small>{escape(t["map_verified"])}: {escape(v)}</small></div>'
-        for sc, s, v in t["map_criteria"])
+        f'<div class="box sc" data-s="8"><span class="ty">3 · {sc}</span><b class="fld" data-s="8">{escape(sx)}</b><small class="fld" data-s="8">{escape(t["map_verified"])}: {escape(v)}</small></div>'
+        for sc, sx, v in t["map_criteria"])
+    ui = t["demo_ui"]
+    demo_cfg = json.dumps({"hints": t["demo_hints"], **ui}, ensure_ascii=False).replace("</", "<\\/")
     rules = "".join(f"<li>{escape(r)}</li>" for r in t["map_rules"])
     url ="https://andrelaf.github.io/deliver-value-methodology/" + ("" if L == "en" else "pt/")
     return f"""<!doctype html>
@@ -408,12 +509,14 @@ def page(t):
 <h2 id="map-h">{escape(t['map_h'])}</h2>
 <p class="lead">{escape(t['map_lead'])}</p>
 <ol class="levels">{levels}</ol>
-<div class="map">
+<div class="map" data-demo>
+<script type="application/json">{demo_cfg}</script>
+<div class="guide" hidden><div class="gtop"><span class="glabel">{escape(t['demo_label'])} · <span class="gstep"></span></span><span class="gbtn"><button type="button" data-a="prev" aria-label="{a(ui['prev'])}">←</button><button type="button" data-a="play" class="gplay">{escape(ui['pause_l'])}</button><button type="button" data-a="next" aria-label="{a(ui['next'])}">→</button></span></div><p class="ghint" aria-live="polite"></p></div>
 <p class="ex">{escape(t['map_example'])}</p>
-<div class="lvl lvl-1"><div class="box out"><span class="ty">1 · {escape(o[0])}</span><b>{escape(o[1])}</b><p>{escape(o[2])}</p><p class="m">{escape(o[3])}</p><small>{escape(o[4])}</small></div></div>
-<p class="verb">↑ {escape(t['map_up'])}</p>
+<div class="lvl lvl-1"><div class="box out" data-s="1"><span class="ty">1 · {escape(o[0])}</span><b class="fld" data-s="1">{escape(o[1])}</b><p class="fld" data-s="2">{escape(o[2])}</p><p class="m fld" data-s="3">{escape(o[3])}</p><small class="fld" data-s="4">{escape(o[4])}</small></div></div>
+<p class="verb" data-s="5">↑ {escape(t['map_up'])}</p>
 <div class="lvl">{slices}</div>
-<div class="zoom"><p class="verb">↓ {escape(t['map_zoom'])}</p>
+<div class="zoom" data-s="8"><p class="verb">↓ {escape(t['map_zoom'])}</p>
 <div class="lvl">{crit}</div></div>
 </div>
 <div class="mapfoot"><div>
@@ -435,6 +538,7 @@ def page(t):
 <footer><div class="wrap">
 <p>{escape(t['footer'])} · <a href="{d}/sources.md">{escape(t['sources'])}</a> · <a href="{REPO}">GitHub</a></p>
 </div></footer>
+<script>{DEMO_JS}</script>
 </body>
 </html>
 """
@@ -443,33 +547,74 @@ def page(t):
 BLANK_CSS = """
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--vf-bg);color:var(--vf-ink);font-family:var(--vf-font-sans);font-size:14px;line-height:1.35}
-.sheet{max-width:1100px;margin:0 auto;padding:16px;display:flex;flex-direction:column;gap:10px;min-height:100vh}
-.head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
-h1{font-size:1.4rem;font-weight:600;margin:0}
-.head span{color:var(--vf-muted);font-size:12px}
+.sheet{max-width:1100px;margin:0 auto;padding:16px;display:flex;flex-direction:column;gap:10px}
+.head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+h1{font-size:1.4rem;font-weight:600;margin:0;display:flex;align-items:baseline;gap:6px;flex:1;min-width:260px}
+h1 input{flex:1;min-width:0;font:inherit;color:inherit;background:transparent;border:0;border-bottom:2px dashed var(--vf-border);padding:0 4px}
+.tools{display:flex;gap:8px;flex-wrap:wrap}
+button{font:inherit;font-size:13px;font-weight:600;border-radius:999px;padding:5px 14px;cursor:pointer;border:1.5px solid var(--vf-primary);background:transparent;color:var(--vf-primary)}
+button.primary{background:var(--vf-primary);color:var(--vf-on-primary)}
+.help{color:var(--vf-muted);font-size:12.5px;margin:0}
+.help a{color:var(--vf-primary)}
 .row{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
-.out{max-width:620px;width:100%;margin:0 auto}
-.box{border:2px solid var(--box,var(--vf-primary));border-radius:8px;padding:8px 10px;min-height:150px;display:flex;flex-direction:column}
-.box.big{--box:var(--vf-accent);min-height:30vh}
-.row .box{min-height:42vh}
+.out{max-width:760px;width:100%;margin:0 auto}
+.box{border:2px solid var(--box,var(--vf-primary));border-radius:8px;padding:8px 10px;display:flex;flex-direction:column;gap:6px;background:var(--vf-bg)}
+.box.big{--box:var(--vf-accent)}
+.box.big .fs{display:grid;gap:6px 14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
 .ty{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--box,var(--vf-primary))}
-.f{flex:1;border-bottom:1px dashed var(--vf-border);color:var(--vf-muted);font-size:11px;padding-top:2px}
-.f:last-child{border-bottom:0}
+label{display:flex;flex-direction:column;gap:2px;font-size:11.5px;font-weight:600;color:var(--vf-muted)}
+textarea{font:inherit;font-size:13.5px;font-weight:400;color:var(--vf-ink);background:var(--vf-surface);border:1px solid var(--vf-border);border-radius:6px;padding:6px 8px;resize:vertical;min-height:58px;overflow:hidden}
+textarea::placeholder{color:var(--vf-muted);opacity:.75}
+textarea:focus{outline:2px solid var(--vf-accent-mark);outline-offset:1px;background:var(--vf-bg)}
 .verb{text-align:center;color:var(--vf-muted);font-style:italic;font-size:12px;margin:0}
 .rules{color:var(--vf-muted);font-size:12px;margin:0}
-.rules a{color:var(--vf-primary)}
 @page{size:A4 landscape;margin:10mm}
-@media print{body{background:#fff;color:#000}.sheet{max-width:none;padding:0;min-height:0}.box.big{min-height:55mm}.row .box{min-height:85mm}.noprint{display:none}.box{break-inside:avoid}}
+@media print{body{background:#fff;color:#000}.sheet{max-width:none;padding:0}.noprint{display:none}.box{break-inside:avoid}textarea{background:#fff;border:0;border-bottom:1px dashed #bbb;border-radius:0;resize:none;min-height:42px}textarea::placeholder{color:transparent}h1 input{border-bottom:1px solid #999}}
+"""
+
+BLANK_JS = r"""
+(function(){
+var cfg=JSON.parse(document.getElementById('cfg').textContent),KEY='vf-map-'+cfg.lang;
+var els=[].slice.call(document.querySelectorAll('[data-k]'));
+function grow(el){if(el.tagName==='TEXTAREA'){el.style.height='auto';el.style.height=el.scrollHeight+2+'px';}}
+try{var saved=JSON.parse(localStorage.getItem(KEY)||'{}');els.forEach(function(el){if(saved[el.dataset.k])el.value=saved[el.dataset.k];});}catch(e){}
+function save(){var o={};els.forEach(function(el){if(el.value)o[el.dataset.k]=el.value;});try{localStorage.setItem(KEY,JSON.stringify(o));}catch(e){}}
+els.forEach(function(el){grow(el);el.addEventListener('input',function(){grow(el);save();});});
+var v=function(k){var el=document.querySelector('[data-k="'+k+'"]');return el?el.value.trim():'';};
+var cell=function(x){return x.replace(/\|/g,'\\|').replace(/\s*\n\s*/g,' ');};
+document.getElementById('print').onclick=function(){window.print();};
+document.getElementById('md').onclick=function(){
+  var L=[ '# '+cfg.md_title+': '+(v('title')||'<'+cfg.title_ph+'>'),'','## '+cfg.md_l1,''];
+  cfg.fo.forEach(function(f,i){L.push('- **'+f+':** '+cell(v('o'+i)));});
+  L.push('','## '+cfg.md_l2,'','| '+cfg.md_order+' | '+cfg.fs.join(' | ')+' |','|---|'+cfg.fs.map(function(){return '---';}).join('|')+'|');
+  for(var n=1;n<=4;n++){var r=cfg.fs.map(function(_,i){return cell(v('s'+n+'_'+i));});if(r.join(''))L.push('| '+n+' | '+r.join(' | ')+' |');}
+  var blob=new Blob([L.join('\n')+'\n'],{type:'text/markdown'}),a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);a.download=cfg.file;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(a.href);},1000);
+};
+var clr=document.getElementById('clear'),armed=false;
+clr.onclick=function(){if(!armed){armed=true;clr.textContent=cfg.clear2;setTimeout(function(){armed=false;clr.textContent=cfg.clear;},3000);return;}
+  els.forEach(function(el){el.value='';grow(el);});try{localStorage.removeItem(KEY);}catch(e){}armed=false;clr.textContent=cfg.clear;};
+document.querySelectorAll('.noprint').forEach(function(n){n.hidden=false;});
+})();
 """
 
 
 def blank(t):
-    L = "en" if t["lang"] == "en" else "pt"
     b = t["base"]
-    outcome = "".join(f'<div class="f">{escape(f)}</div>' for f in t["blank_fields_outcome"])
-    slice_fields = "".join(f'<div class="f">{escape(f)}</div>' for f in t["blank_fields_slice"])
-    slices = "".join(f'<div class="box"><span class="ty">2 · {escape(t["blank_slice"])} {i}</span>{slice_fields}</div>' for i in range(1, 5))
+    a = lambda x: escape(x, quote=True)
+    ui = t["blank_ui"]
+    fo, fs = t["blank_fields_outcome"], t["blank_fields_slice"]
+
+    def field(key, label, hint):
+        return f'<label>{escape(label)}<textarea data-k="{key}" rows="2" placeholder="{a(hint)}"></textarea></label>'
+
+    outcome = "".join(field(f"o{i}", l, h) for i, (l, h) in enumerate(zip(fo, t["blank_hints_outcome"])))
+    slices = "".join(
+        f'<div class="box"><span class="ty">2 · {escape(t["blank_slice"])} {n}</span>'
+        + "".join(field(f"s{n}_{i}", l, h) for i, (l, h) in enumerate(zip(fs, t["blank_hints_slice"])))
+        + "</div>" for n in range(1, 5))
     rules = " · ".join(escape(r) for r in t["map_rules"])
+    cfg = json.dumps({"lang": t["lang"], "fo": fo, "fs": fs, **ui}, ensure_ascii=False).replace("</", "<\\/")
     return f"""<!doctype html>
 <html lang="{t['lang']}">
 <head>
@@ -484,13 +629,16 @@ def blank(t):
 </head>
 <body>
 <main class="sheet">
-<div class="head"><h1>{escape(t['map_h'])}: ____________________</h1><span>Value-First Development · ____ / ____ / ______</span></div>
-<p class="rules noprint">{escape(t['blank_print'])} <a href="./">{escape(t['blank_back'])}</a></p>
-<div class="out"><div class="box big"><span class="ty">1 · {escape(t['map_levels'][0][1])}</span>{outcome}</div></div>
+<div class="head"><h1>{escape(t['map_h'])}: <input data-k="title" aria-label="{a(ui['title_ph'])}" placeholder="{a(ui['title_ph'])}"></h1>
+<div class="tools noprint" hidden><button type="button" class="primary" id="print">{escape(ui['print'])}</button><button type="button" id="md">{escape(ui['md'])}</button><button type="button" id="clear">{escape(ui['clear'])}</button></div></div>
+<p class="help noprint">{escape(t['blank_print'])} <a href="./#map">{escape(t['blank_back'])}</a></p>
+<div class="out"><div class="box big"><span class="ty">1 · {escape(t['map_levels'][0][1])}</span><div class="fs">{outcome}</div></div></div>
 <p class="verb">↑ {escape(t['map_up'])}</p>
 <div class="row">{slices}</div>
 <p class="rules">{rules} {escape(t['map_code'])}</p>
 </main>
+<script type="application/json" id="cfg">{cfg}</script>
+<script>{BLANK_JS}</script>
 </body>
 </html>
 """

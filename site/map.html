@@ -11,33 +11,66 @@
 <style>
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--vf-bg);color:var(--vf-ink);font-family:var(--vf-font-sans);font-size:14px;line-height:1.35}
-.sheet{max-width:1100px;margin:0 auto;padding:16px;display:flex;flex-direction:column;gap:10px;min-height:100vh}
-.head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
-h1{font-size:1.4rem;font-weight:600;margin:0}
-.head span{color:var(--vf-muted);font-size:12px}
+.sheet{max-width:1100px;margin:0 auto;padding:16px;display:flex;flex-direction:column;gap:10px}
+.head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+h1{font-size:1.4rem;font-weight:600;margin:0;display:flex;align-items:baseline;gap:6px;flex:1;min-width:260px}
+h1 input{flex:1;min-width:0;font:inherit;color:inherit;background:transparent;border:0;border-bottom:2px dashed var(--vf-border);padding:0 4px}
+.tools{display:flex;gap:8px;flex-wrap:wrap}
+button{font:inherit;font-size:13px;font-weight:600;border-radius:999px;padding:5px 14px;cursor:pointer;border:1.5px solid var(--vf-primary);background:transparent;color:var(--vf-primary)}
+button.primary{background:var(--vf-primary);color:var(--vf-on-primary)}
+.help{color:var(--vf-muted);font-size:12.5px;margin:0}
+.help a{color:var(--vf-primary)}
 .row{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
-.out{max-width:620px;width:100%;margin:0 auto}
-.box{border:2px solid var(--box,var(--vf-primary));border-radius:8px;padding:8px 10px;min-height:150px;display:flex;flex-direction:column}
-.box.big{--box:var(--vf-accent);min-height:30vh}
-.row .box{min-height:42vh}
+.out{max-width:760px;width:100%;margin:0 auto}
+.box{border:2px solid var(--box,var(--vf-primary));border-radius:8px;padding:8px 10px;display:flex;flex-direction:column;gap:6px;background:var(--vf-bg)}
+.box.big{--box:var(--vf-accent)}
+.box.big .fs{display:grid;gap:6px 14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
 .ty{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--box,var(--vf-primary))}
-.f{flex:1;border-bottom:1px dashed var(--vf-border);color:var(--vf-muted);font-size:11px;padding-top:2px}
-.f:last-child{border-bottom:0}
+label{display:flex;flex-direction:column;gap:2px;font-size:11.5px;font-weight:600;color:var(--vf-muted)}
+textarea{font:inherit;font-size:13.5px;font-weight:400;color:var(--vf-ink);background:var(--vf-surface);border:1px solid var(--vf-border);border-radius:6px;padding:6px 8px;resize:vertical;min-height:58px;overflow:hidden}
+textarea::placeholder{color:var(--vf-muted);opacity:.75}
+textarea:focus{outline:2px solid var(--vf-accent-mark);outline-offset:1px;background:var(--vf-bg)}
 .verb{text-align:center;color:var(--vf-muted);font-style:italic;font-size:12px;margin:0}
 .rules{color:var(--vf-muted);font-size:12px;margin:0}
-.rules a{color:var(--vf-primary)}
 @page{size:A4 landscape;margin:10mm}
-@media print{body{background:#fff;color:#000}.sheet{max-width:none;padding:0;min-height:0}.box.big{min-height:55mm}.row .box{min-height:85mm}.noprint{display:none}.box{break-inside:avoid}}
+@media print{body{background:#fff;color:#000}.sheet{max-width:none;padding:0}.noprint{display:none}.box{break-inside:avoid}textarea{background:#fff;border:0;border-bottom:1px dashed #bbb;border-radius:0;resize:none;min-height:42px}textarea::placeholder{color:transparent}h1 input{border-bottom:1px solid #999}}
 </style>
 </head>
 <body>
 <main class="sheet">
-<div class="head"><h1>Value Map: ____________________</h1><span>Value-First Development · ____ / ____ / ______</span></div>
-<p class="rules noprint">Print this page (landscape). Level 3 lives in each Value Spec. <a href="./">Back to Value-First</a></p>
-<div class="out"><div class="box big"><span class="ty">1 · Outcome</span><div class="f">Name</div><div class="f">Problem and for whom</div><div class="f">Metric: baseline → target, by when</div><div class="f">Out of scope</div></div></div>
+<div class="head"><h1>Value Map: <input data-k="title" aria-label="initiative" placeholder="initiative"></h1>
+<div class="tools noprint" hidden><button type="button" class="primary" id="print">Print</button><button type="button" id="md">Download Markdown</button><button type="button" id="clear">Clear</button></div></div>
+<p class="help noprint">Fill it in here or print it blank (landscape). Drafts are saved in this browser only. Level 3 lives in each Value Spec. <a href="./#map">Back to Value-First</a></p>
+<div class="out"><div class="box big"><span class="ty">1 · Outcome</span><div class="fs"><label>Name<textarea data-k="o0" rows="2" placeholder="The change you want, not a feature. E.g. Customers get their invoices on their own"></textarea></label><label>Problem and for whom<textarea data-k="o1" rows="2" placeholder="Who has the problem today, and what it is"></textarea></label><label>Metric: baseline → target, by when<textarea data-k="o2" rows="2" placeholder="E.g. invoice tickets ~120 → ≤ 40 / week, 6 weeks after launch"></textarea></label><label>Out of scope<textarea data-k="o3" rows="2" placeholder="What this initiative won&#x27;t do"></textarea></label></div></div></div>
 <p class="verb">↑ contribute to</p>
-<div class="row"><div class="box"><span class="ty">2 · Slice 1</span><div class="f">VS-___  ·  Delivers</div><div class="f">How it moves the metric</div><div class="f">Riskiest bet (value or tech)</div><div class="f">Status</div></div><div class="box"><span class="ty">2 · Slice 2</span><div class="f">VS-___  ·  Delivers</div><div class="f">How it moves the metric</div><div class="f">Riskiest bet (value or tech)</div><div class="f">Status</div></div><div class="box"><span class="ty">2 · Slice 3</span><div class="f">VS-___  ·  Delivers</div><div class="f">How it moves the metric</div><div class="f">Riskiest bet (value or tech)</div><div class="f">Status</div></div><div class="box"><span class="ty">2 · Slice 4</span><div class="f">VS-___  ·  Delivers</div><div class="f">How it moves the metric</div><div class="f">Riskiest bet (value or tech)</div><div class="f">Status</div></div></div>
+<div class="row"><div class="box"><span class="ty">2 · Slice 1</span><label>Value Spec · Delivers<textarea data-k="s1_0" rows="2" placeholder="VS-___ · what this slice delivers"></textarea></label><label>How it moves the metric<textarea data-k="s1_1" rows="2" placeholder="Why this slice, on its own, moves the metric"></textarea></label><label>Riskiest bet (value or tech)<textarea data-k="s1_2" rows="2" placeholder="What must be true? How do we check it cheaply?"></textarea></label><label>Status<textarea data-k="s1_3" rows="2" placeholder="idea · next · in build · delivered · not delivered"></textarea></label></div><div class="box"><span class="ty">2 · Slice 2</span><label>Value Spec · Delivers<textarea data-k="s2_0" rows="2" placeholder="VS-___ · what this slice delivers"></textarea></label><label>How it moves the metric<textarea data-k="s2_1" rows="2" placeholder="Why this slice, on its own, moves the metric"></textarea></label><label>Riskiest bet (value or tech)<textarea data-k="s2_2" rows="2" placeholder="What must be true? How do we check it cheaply?"></textarea></label><label>Status<textarea data-k="s2_3" rows="2" placeholder="idea · next · in build · delivered · not delivered"></textarea></label></div><div class="box"><span class="ty">2 · Slice 3</span><label>Value Spec · Delivers<textarea data-k="s3_0" rows="2" placeholder="VS-___ · what this slice delivers"></textarea></label><label>How it moves the metric<textarea data-k="s3_1" rows="2" placeholder="Why this slice, on its own, moves the metric"></textarea></label><label>Riskiest bet (value or tech)<textarea data-k="s3_2" rows="2" placeholder="What must be true? How do we check it cheaply?"></textarea></label><label>Status<textarea data-k="s3_3" rows="2" placeholder="idea · next · in build · delivered · not delivered"></textarea></label></div><div class="box"><span class="ty">2 · Slice 4</span><label>Value Spec · Delivers<textarea data-k="s4_0" rows="2" placeholder="VS-___ · what this slice delivers"></textarea></label><label>How it moves the metric<textarea data-k="s4_1" rows="2" placeholder="Why this slice, on its own, moves the metric"></textarea></label><label>Riskiest bet (value or tech)<textarea data-k="s4_2" rows="2" placeholder="What must be true? How do we check it cheaply?"></textarea></label><label>Status<textarea data-k="s4_3" rows="2" placeholder="idea · next · in build · delivered · not delivered"></textarea></label></div></div>
 <p class="rules">Every box has a type, a name and one sentence. · Every outcome and slice has a metric or a signal. · Every arrow has a verb. · One drawing per level. Zoom in only where you need to. Level 4, code, isn&#x27;t drawn: tests and PRs cite the SC IDs.</p>
 </main>
+<script type="application/json" id="cfg">{"lang": "en", "fo": ["Name", "Problem and for whom", "Metric: baseline → target, by when", "Out of scope"], "fs": ["Value Spec · Delivers", "How it moves the metric", "Riskiest bet (value or tech)", "Status"], "print": "Print", "md": "Download Markdown", "clear": "Clear", "clear2": "Click again to clear", "title_ph": "initiative", "md_title": "Value Map", "md_l1": "Level 1 · Outcome", "md_l2": "Level 2 · Slices", "md_order": "Order", "file": "value-map.md"}</script>
+<script>
+(function(){
+var cfg=JSON.parse(document.getElementById('cfg').textContent),KEY='vf-map-'+cfg.lang;
+var els=[].slice.call(document.querySelectorAll('[data-k]'));
+function grow(el){if(el.tagName==='TEXTAREA'){el.style.height='auto';el.style.height=el.scrollHeight+2+'px';}}
+try{var saved=JSON.parse(localStorage.getItem(KEY)||'{}');els.forEach(function(el){if(saved[el.dataset.k])el.value=saved[el.dataset.k];});}catch(e){}
+function save(){var o={};els.forEach(function(el){if(el.value)o[el.dataset.k]=el.value;});try{localStorage.setItem(KEY,JSON.stringify(o));}catch(e){}}
+els.forEach(function(el){grow(el);el.addEventListener('input',function(){grow(el);save();});});
+var v=function(k){var el=document.querySelector('[data-k="'+k+'"]');return el?el.value.trim():'';};
+var cell=function(x){return x.replace(/\|/g,'\\|').replace(/\s*\n\s*/g,' ');};
+document.getElementById('print').onclick=function(){window.print();};
+document.getElementById('md').onclick=function(){
+  var L=[ '# '+cfg.md_title+': '+(v('title')||'<'+cfg.title_ph+'>'),'','## '+cfg.md_l1,''];
+  cfg.fo.forEach(function(f,i){L.push('- **'+f+':** '+cell(v('o'+i)));});
+  L.push('','## '+cfg.md_l2,'','| '+cfg.md_order+' | '+cfg.fs.join(' | ')+' |','|---|'+cfg.fs.map(function(){return '---';}).join('|')+'|');
+  for(var n=1;n<=4;n++){var r=cfg.fs.map(function(_,i){return cell(v('s'+n+'_'+i));});if(r.join(''))L.push('| '+n+' | '+r.join(' | ')+' |');}
+  var blob=new Blob([L.join('\n')+'\n'],{type:'text/markdown'}),a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);a.download=cfg.file;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(a.href);},1000);
+};
+var clr=document.getElementById('clear'),armed=false;
+clr.onclick=function(){if(!armed){armed=true;clr.textContent=cfg.clear2;setTimeout(function(){armed=false;clr.textContent=cfg.clear;},3000);return;}
+  els.forEach(function(el){el.value='';grow(el);});try{localStorage.removeItem(KEY);}catch(e){}armed=false;clr.textContent=cfg.clear;};
+document.querySelectorAll('.noprint').forEach(function(n){n.hidden=false;});
+})();
+</script>
 </body>
 </html>
