@@ -49,7 +49,7 @@ Tipos de caixa:
   - **VS-016** Fatura mensal por e-mail. Aposta: receber é melhor que procurar (não validada). *Talvez.*
 - **Nível 3:** dar zoom na VS-014 abre [a Value Spec dela](../../templates/pt/value-spec-example.md), com os critérios SC-1 a SC-4.
 
-A página do site desenha este exemplo. Também há um [mapa em branco para imprimir](https://andrelaf.github.io/deliver-value-methodology/pt/map.html).
+A página do site desenha este exemplo. Também há um [mapa em branco para imprimir](https://andrelaf.github.io/value-first/pt/map.html).
 
 ## Como conduzir (cerca de 60 minutos)
 

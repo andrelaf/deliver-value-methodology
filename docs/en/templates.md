@@ -15,6 +15,6 @@ A common layout is a `specs/` folder at the repository root, one file per spec: 
 
 ## Using the Value Map
 
-See [Value Map](./value-map.md) for the three levels, the four rules and a 60-minute session. There's also a [blank map to print](https://andrelaf.github.io/deliver-value-methodology/map.html). The v1 canvas is in [docs/archive/v1](../archive/v1/en/canvas/value-technology-alignment-canvas.svg).
+See [Value Map](./value-map.md) for the three levels, the four rules and a 60-minute session. There's also a [blank map to print](https://andrelaf.github.io/value-first/map.html). The v1 canvas is in [docs/archive/v1](../archive/v1/en/canvas/value-technology-alignment-canvas.svg).
 
 The v1 templates (Value Matrix, Flexibility Contract) are now part of the Value Spec. The originals are in [docs/archive/v1](../archive/v1/en/templates.md).

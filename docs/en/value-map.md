@@ -49,7 +49,7 @@ Box types:
   - **VS-016** Monthly invoice by email. Bet: receiving beats searching (not validated). *Maybe.*
 - **Level 3:** zooming into VS-014 opens [its Value Spec](../../templates/en/value-spec-example.md), with criteria SC-1 to SC-4.
 
-The landing page draws this example. There's also a [blank map to print](https://andrelaf.github.io/deliver-value-methodology/map.html).
+The landing page draws this example. There's also a [blank map to print](https://andrelaf.github.io/value-first/map.html).
 
 ## Running it (about 60 minutes)
 
