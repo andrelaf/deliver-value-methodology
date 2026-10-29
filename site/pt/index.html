@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Value-First Development</title>
+<meta name="description" content="Torne explícito, compartilhado e mensurável o valor de cada trabalho antes de construí-lo, para que pessoas e agentes de código construam a coisa certa.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://andrelaf.github.io/deliver-value-methodology/pt/">
+<link rel="alternate" hreflang="en" href="https://andrelaf.github.io/deliver-value-methodology/">
+<link rel="alternate" hreflang="pt-BR" href="https://andrelaf.github.io/deliver-value-methodology/pt/">
+<meta property="og:title" content="Value-First Development">
+<meta property="og:description" content="Torne explícito, compartilhado e mensurável o valor de cada trabalho antes de construí-lo, para que pessoas e agentes de código construam a coisa certa.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://andrelaf.github.io/deliver-value-methodology/pt/">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/tokens.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--vf-bg);color:var(--vf-ink);font-family:var(--vf-font-sans);font-size:var(--vf-text-base);line-height:var(--vf-leading-body)}
+a{color:var(--vf-primary)}a:hover{color:var(--vf-primary-strong)}
+:focus-visible{outline:3px solid var(--vf-accent-mark);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--vf-primary);color:var(--vf-on-primary);padding:8px 12px;border-radius:var(--vf-radius);z-index:10}
+.skip:focus{left:16px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header.top{border-bottom:1px solid var(--vf-border);background:var(--vf-bg);position:sticky;top:0;z-index:5}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px}
+.brand img{display:block;height:34px;width:auto}
+.brand .dark{display:none}
+@media (prefers-color-scheme:dark){.brand .light{display:none}.brand .dark{display:block}}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0}
+nav a{color:var(--vf-muted);text-decoration:none;font-size:var(--vf-text-sm);font-weight:500}
+nav a:hover{color:var(--vf-ink)}
+.lang{font-size:var(--vf-text-sm);font-weight:600;text-decoration:none;border:1px solid var(--vf-border);padding:4px 10px;border-radius:999px;white-space:nowrap}
+@media (max-width:820px){nav{display:none}}
+section{padding:var(--vf-space-16) 0;border-bottom:1px solid var(--vf-border)}
+section:nth-of-type(even){background:var(--vf-surface)}
+h1,h2,h3{line-height:var(--vf-leading-tight);font-weight:600;margin:0 0 var(--vf-space-4)}
+h1{font-size:clamp(1.9rem,4.5vw,var(--vf-text-3xl));letter-spacing:-.01em;max-width:22ch}
+h2{font-size:clamp(1.5rem,3vw,var(--vf-text-xl))}
+h3{font-size:var(--vf-text-md)}
+p{margin:0 0 var(--vf-space-4);max-width:var(--vf-measure)}
+.lead{font-size:var(--vf-text-md);color:var(--vf-muted)}
+.hero{padding:var(--vf-space-16) 0 var(--vf-space-12)}
+.tag{color:var(--vf-accent);font-weight:600;letter-spacing:.02em;margin-bottom:var(--vf-space-4)}
+.thesis{font-size:clamp(1.1rem,2.2vw,var(--vf-text-md));max-width:60ch}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin:var(--vf-space-8) 0 var(--vf-space-4)}
+.btn{display:inline-block;padding:12px 20px;border-radius:var(--vf-radius);font-weight:600;text-decoration:none;border:2px solid var(--vf-primary)}
+.btn.primary{background:var(--vf-primary);color:var(--vf-on-primary)}
+.btn.primary:hover{background:var(--vf-primary-strong);border-color:var(--vf-primary-strong);color:var(--vf-on-primary)}
+.btn.ghost{color:var(--vf-primary)}
+.note{color:var(--vf-muted);font-size:var(--vf-text-sm)}
+figure{margin:var(--vf-space-8) 0 0}
+figure img{display:block;width:100%;height:auto;border-radius:var(--vf-radius-lg)}
+.grid{display:grid;gap:var(--vf-space-6);grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));margin-top:var(--vf-space-8)}
+.card{background:var(--vf-bg);border:1px solid var(--vf-border);border-radius:var(--vf-radius-lg);padding:var(--vf-space-6)}
+section:nth-of-type(odd) .card{background:var(--vf-surface)}
+.card p{margin:0;color:var(--vf-muted)}
+.num{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--vf-primary);color:var(--vf-on-primary);font-weight:600;font-size:var(--vf-text-sm);margin-bottom:var(--vf-space-3)}
+.two{display:grid;gap:var(--vf-space-8);grid-template-columns:1fr}
+@media (min-width:900px){.two{grid-template-columns:1fr 1fr;align-items:center}}
+.callout{border-left:4px solid var(--vf-accent-mark);background:var(--vf-bg);padding:var(--vf-space-4) var(--vf-space-6);border-radius:0 var(--vf-radius) var(--vf-radius) 0;margin-top:var(--vf-space-8);max-width:none}
+.more{font-weight:600;display:inline-block;margin-top:var(--vf-space-6)}
+ul.checks{list-style:none;padding:0;margin:var(--vf-space-6) 0 0;display:grid;gap:12px;max-width:var(--vf-measure)}
+ul.checks li{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start}
+ul.checks li::before{content:"";width:22px;height:22px;margin-top:2px;border-radius:6px;background:var(--vf-primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+ol.steps{padding-left:1.4em;max-width:var(--vf-measure)}
+ol.steps li{margin-bottom:8px}
+.canvas img{background:#fff;border:1px solid var(--vf-border)}
+footer{padding:var(--vf-space-8) 0;color:var(--vf-muted);font-size:var(--vf-text-sm)}
+footer p{max-width:none}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<header class="top"><div class="wrap">
+<a class="brand" href="#top" aria-label="Value-First Development"><img class="light" src="../assets/logo-horizontal.svg" alt="" width="200" height="34"><img class="dark" src="../assets/logo-horizontal-dark.svg" alt="" width="200" height="34"></a>
+<nav aria-label="Seções"><ul><li><a href="#problem">Problema</a></li><li><a href="#idea">A ideia</a></li><li><a href="#principles">Princípios</a></li><li><a href="#ai">Specs e IA</a></li><li><a href="#check">Checklist</a></li></ul></nav>
+<a class="lang" href="../" hreflang="en" lang="en">English</a>
+</div></header>
+<main id="main">
+<section class="hero" id="top"><div class="wrap">
+<p class="tag">Do ritual ao valor, da spec ao software.</p>
+<h1>Value-First Development</h1>
+<p class="thesis">O Value-First Development torna explícito, compartilhado e mensurável o valor de cada trabalho antes que alguém o construa, para que pessoas e agentes de código construam a coisa certa, e não só construam rápido.</p>
+<div class="ctas"><a class="btn primary" href="https://github.com/andrelaf/deliver-value-methodology/blob/main/templates/pt/value-spec.md">Pegar o template de Value Spec</a><a class="btn ghost" href="https://github.com/andrelaf/deliver-value-methodology/blob/main/README.pt-BR.md">Ler a documentação no GitHub</a></div>
+<p class="note">Uma camada leve sobre Scrum, Kanban ou o seu próprio processo. Código aberto, MIT.</p>
+</div></section>
+
+<section id="problem" aria-labelledby="problem-h"><div class="wrap">
+<h2 id="problem-h">O abismo entre a spec e o desenvolvimento</h2>
+<p>Cada forma de trabalhar que usamos hoje respondeu a um problema real. Escrever antes nos deu clareza, o Agile nos deu ciclos curtos de feedback e o Scrum, uma cadência estável. O Value-First mantém tudo isso.</p><p>Em muitos times, porém, as cerimônias continuam e o propósito se perde. As histórias descrevem <em>o quê</em>, raramente o <em>porquê</em>, e quase nunca as restrições ou como o sucesso será medido.</p><p>Alguém preenche esse abismo, e geralmente é o Tech Lead: traduzindo, completando e decidindo, quase sempre sem que ninguém veja. Funciona, mas o trabalho fica invisível, depende de uma pessoa e acontece tarde.</p>
+<figure><img src="../assets/gap-pt.svg" alt="O abismo: a história diz só o que construir, mas construir exige também o porquê, o valor e a métrica, restrições, casos de borda e o que é fixo ou flexível." width="940" height="500" loading="lazy"></figure>
+</div></section>
+
+<section id="idea" aria-labelledby="idea-h"><div class="wrap">
+<div class="two"><div>
+<h2 id="idea-h">A ideia</h2>
+<p class="lead">Um documento curto e vivo por item de valor, escrito por Produto e Tech Lead juntos.</p>
+</div>
+<figure style="margin:0"><img src="../assets/cycle-pt.svg" alt="O ciclo do Value-First: Especificar, Validar, Construir, Verificar valor, em torno de uma Value Spec viva." width="760" height="580" loading="lazy"></figure></div>
+<div class="grid"><div class="card"><h3>Value Spec</h3><p>Uma página: problema, valor esperado, critérios de sucesso mensuráveis, restrições, o que é fixo e o que é flexível. Versionada junto com o código e legível por pessoas e agentes.</p></div><div class="card"><h3>Par de Valor</h3><p>Produto responde pelo problema e pelo valor. O Tech Lead responde pela viabilidade e por tornar a spec construível. O trabalho de tradução ganha nome e parceiro.</p></div><div class="card"><h3>O ciclo</h3><p>Especificar, validar, construir, verificar o valor e voltar à spec. Roda dentro da cadência que você já tem.</p></div></div>
+</div></section>
+
+<section id="principles" aria-labelledby="principles-h"><div class="wrap">
+<h2 id="principles-h">Seis princípios</h2>
+<div class="grid"><div class="card"><span class="num" aria-hidden="true">1</span><h3>O valor fica explícito antes do trabalho</h3><p>Problema, valor e como saberemos, ditos desde o início. Prazo e escopo servem ao valor.</p></div><div class="card"><span class="num" aria-hidden="true">2</span><h3>A spec é um contrato de valor, e ela vive</h3><p>Curta, versionada com o código, alterada com motivo. Para agentes, é insumo executável.</p></div><div class="card"><span class="num" aria-hidden="true">3</span><h3>Validar antes de construir</h3><p>Reduzir a maior incerteza pelo meio mais barato. Protótipos são evidência, não entrega.</p></div><div class="card"><span class="num" aria-hidden="true">4</span><h3>Produto e Tecnologia especificam juntos</h3><p>Dois donos por spec. O trabalho de tradução do Tech Lead fica explícito e compartilhado.</p></div><div class="card"><span class="num" aria-hidden="true">5</span><h3>Mudar o plano é informação, não falha</h3><p>Fixo e flexível são combinados no início. Mudanças entram na spec, à vista de todos.</p></div><div class="card"><span class="num" aria-hidden="true">6</span><h3>Pessoas respondem pelo resultado; a IA acelera</h3><p>Decisões, revisão, segurança e dívida técnica continuam com pessoas. Mede-se resultado, não volume.</p></div></div>
+<a class="more" href="https://github.com/andrelaf/deliver-value-methodology/blob/main/docs/pt/principles.md">Ler os princípios →</a>
+</div></section>
+
+<section id="ai" aria-labelledby="ai-h"><div class="wrap">
+<h2 id="ai-h">Specs na era da IA</h2>
+<p class="lead">Agentes de código leem specs e agem a partir delas. Isso transforma o abismo de incômodo em gargalo.</p>
+<figure><img src="../assets/before-after-pt.svg" alt="Antes e agora. Antes: o Tech Lead preenche informalmente o abismo entre a história e os desenvolvedores. Agora: o Par de Valor escreve uma Value Spec, valida com um protótipo, e ela vira insumo executável para ferramentas e agentes, com uma verificação de valor que atualiza a spec." width="1200" height="860" loading="lazy"></figure>
+<div class="grid"><div class="card"><h3>A spec virou insumo executável</h3><p>Uma pessoa interpreta uma história vaga. Um agente a executa e supõe o resto. Os modelos são “excepcionais em completar padrões, mas não em ler mentes” (<a href="https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/">GitHub, 2025</a>).</p></div><div class="card"><h3>A IA amplifica o sistema em que entra</h3><p>A pesquisa DORA de 2025 descreve a IA como amplificador e conclui que, sem foco no usuário, adotá-la pode prejudicar o desempenho do time (<a href="https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report">DORA 2025</a>).</p></div><div class="card"><h3>O Tech Lead como engenheiro de especificação</h3><p>O trabalho de tradução passa a ser central. O Value-First o divide com Produto em vez de deixá-lo com uma pessoa só.</p></div><div class="card"><h3>Uma camada acima das ferramentas</h3><p>Spec Kit, Kiro e AGENTS.md cuidam do caminho da spec ao código. O Value-First decide o que vale construir e como saberemos que funcionou.</p></div></div>
+<figure><img src="../assets/comparison-pt.svg" alt="O Value-First fica acima de como o time trabalha (Scrum, Kanban, Shape Up) e de como a spec vira código (Spec Kit, Kiro, agentes)." width="940" height="520" loading="lazy"></figure>
+<p class="callout"><strong>Limites, sem rodeios.</strong> Ganho de produtividade não é garantido, código gerado por IA precisa de revisão humana, e specs pesadas feitas antes de tudo podem trazer o waterfall de volta. O Value-First responde com specs pequenas, focadas em valor e vivas.</p>
+<a class="more" href="https://github.com/andrelaf/deliver-value-methodology/blob/main/docs/pt/ai-and-specs.md">Ler o argumento completo e as fontes →</a>
+</div></section>
+
+<section id="check" aria-labelledby="check-h"><div class="wrap">
+<h2 id="check-h">Você é Value-First se…</h2>
+<p class="lead">Sinais que dá para ver no trabalho, não declarações de intenção.</p>
+<ul class="checks"><li>Todo item em andamento tem uma Value Spec com pelo menos um critério de sucesso mensurável.</li><li>Toda spec tem dois donos nomeados: Produto e Tech Lead.</li><li>As specs ficam no repositório, e as instruções dos seus agentes apontam para elas.</li><li>Itens arriscados ganham um protótipo ou spike antes do compromisso.</li><li>Mudanças de escopo e de prazo aparecem como mudanças na spec, com motivo.</li><li>Vocês verificam o valor depois da entrega e sabem dizer o que não funcionou.</li><li>Pessoas revisam todo código gerado por IA, e a estabilidade é acompanhada junto com a velocidade.</li></ul>
+<a class="more" href="https://github.com/andrelaf/deliver-value-methodology/blob/main/docs/pt/adoption.md">Checklist e modelo de maturidade →</a>
+</div></section>
+
+<section id="canvas" aria-labelledby="canvas-h"><div class="wrap">
+<div class="two"><div>
+<h2 id="canvas-h">Canvas de Alinhamento Valor-Tecnologia</h2>
+<p>Para iniciativas maiores: um workshop opcional, em uma página, que coloca as visões de negócio e de tecnologia lado a lado antes de escrever as Value Specs.</p>
+<a class="more" href="https://github.com/andrelaf/deliver-value-methodology/blob/main/docs/pt/canvas/value-technology-alignment-canvas.svg">Baixar o canvas (SVG) →</a>
+</div>
+<figure class="canvas" style="margin:0"><img src="../assets/canvas-pt.png" alt="O Canvas de Alinhamento Valor-Tecnologia, uma grade de uma página com blocos de negócio e de tecnologia." loading="lazy"></figure></div>
+</div></section>
+
+<section id="start" aria-labelledby="start-h"><div class="wrap">
+<h2 id="start-h">Experimente em um item nesta semana</h2>
+<ol class="steps"><li>Escolha um item próximo com valor real e alguma incerteza.</li><li>Escreva uma Value Spec em par. Uma página basta.</li><li>Valide a premissa mais arriscada com o protótipo mais barato.</li><li>Construa e verifique o valor na data combinada.</li></ol>
+<div class="ctas"><a class="btn primary" href="https://github.com/andrelaf/deliver-value-methodology/blob/main/templates/pt/value-spec.md">Pegar o template de Value Spec</a><a class="btn ghost" href="https://github.com/andrelaf/deliver-value-methodology/blob/main/CONTRIBUTING.md">Conte o que aconteceu, critique ou contribua</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">
+<p>Value-First Development, antes Deliver-Value Framework. Criado por André Lara Amorim. Licença MIT. · <a href="https://github.com/andrelaf/deliver-value-methodology/blob/main/docs/pt/sources.md">Fontes</a> · <a href="https://github.com/andrelaf/deliver-value-methodology">GitHub</a></p>
+</div></footer>
+</body>
+</html>

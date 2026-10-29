@@ -1,0 +1,108 @@
+/*
+ * Value-First Development: design tokens
+ * Light is the default. Dark applies via prefers-color-scheme unless the page
+ * forces a theme with [data-theme="light"] or [data-theme="dark"] on <html>.
+ * Contrast ratios (WCAG 2.x) are documented in BRAND.md.
+ */
+
+:root {
+  /* Neutrals */
+  --vf-bg:              #FFFFFF;
+  --vf-surface:         #F5F6F3; /* paper */
+  --vf-ink:             #16212B; /* body text, 16.3:1 on bg */
+  --vf-muted:           #4F5D6A; /* secondary text, 6.8:1 */
+  --vf-border:          #D5DAD9; /* decorative lines only */
+
+  /* Brand */
+  --vf-primary:         #0B6E63; /* deep teal, 6.1:1 */
+  --vf-primary-strong:  #08564D; /* hover / emphasis, 8.6:1 */
+  --vf-on-primary:      #FFFFFF; /* text on primary fills, 6.1:1 */
+  --vf-accent:          #A15708; /* amber for text and links-in-accent, 5.4:1 */
+  --vf-accent-mark:     #C97A16; /* amber for graphics only (>=3:1), not body text */
+  --vf-accent-soft:     #F5C26B; /* the "value dot" on primary fills */
+
+  /* Semantic */
+  --vf-success:         #1D7A46;
+  --vf-warning:         #8F5B00;
+  --vf-danger:          #B42318;
+  --vf-info:            #2F5F98;
+
+  /* Diagrams */
+  --vf-diagram-stroke:      var(--vf-ink);
+  --vf-diagram-connector:   var(--vf-muted);
+  --vf-diagram-fill:        var(--vf-bg);
+  --vf-diagram-highlight:   var(--vf-primary);
+  --vf-diagram-stroke-w:    2px;
+  --vf-diagram-radius:      8px;
+
+  /* Typography */
+  --vf-font-sans: "IBM Plex Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --vf-font-mono: "IBM Plex Mono", "Cascadia Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  /* Type scale: 1.25 (major third), base 16px */
+  --vf-text-xs:   0.8rem;    /* 12.8px  captions, diagram notes */
+  --vf-text-sm:   0.875rem;  /* 14px    diagram labels, meta */
+  --vf-text-base: 1rem;      /* 16px    body */
+  --vf-text-md:   1.25rem;   /* 20px    lead paragraph, h4 */
+  --vf-text-lg:   1.563rem;  /* 25px    h3 */
+  --vf-text-xl:   1.953rem;  /* 31px    h2 */
+  --vf-text-2xl:  2.441rem;  /* 39px    h1 */
+  --vf-text-3xl:  3.052rem;  /* 49px    display */
+
+  --vf-leading-tight: 1.2;
+  --vf-leading-body:  1.6;
+  --vf-weight-regular: 400;
+  --vf-weight-medium:  500;
+  --vf-weight-semibold: 600;
+  --vf-measure: 68ch;
+
+  /* Spacing (4px grid) and shape */
+  --vf-space-1: 4px;  --vf-space-2: 8px;  --vf-space-3: 12px; --vf-space-4: 16px;
+  --vf-space-6: 24px; --vf-space-8: 32px; --vf-space-12: 48px; --vf-space-16: 64px;
+  --vf-radius-sm: 4px;
+  --vf-radius:    8px;
+  --vf-radius-lg: 14px;
+
+  color-scheme: light;
+}
+
+/* Dark tokens: shared by the media query and the explicit attribute. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --vf-bg:             #0E151B;
+    --vf-surface:        #16212B;
+    --vf-ink:            #E7ECEE;
+    --vf-muted:          #A3B0BA;
+    --vf-border:         #2C3A45;
+    --vf-primary:        #4CC2B0;
+    --vf-primary-strong: #7DD8CA;
+    --vf-on-primary:     #0E151B;
+    --vf-accent:         #F0AC4C;
+    --vf-accent-mark:    #F0AC4C;
+    --vf-accent-soft:    #F5C26B;
+    --vf-success:        #5CCB8D;
+    --vf-warning:        #EBC05A;
+    --vf-danger:         #F4847A;
+    --vf-info:           #86B2E8;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --vf-bg:             #0E151B;
+  --vf-surface:        #16212B;
+  --vf-ink:            #E7ECEE;
+  --vf-muted:          #A3B0BA;
+  --vf-border:         #2C3A45;
+  --vf-primary:        #4CC2B0;
+  --vf-primary-strong: #7DD8CA;
+  --vf-on-primary:     #0E151B;
+  --vf-accent:         #F0AC4C;
+  --vf-accent-mark:    #F0AC4C;
+  --vf-accent-soft:    #F5C26B;
+  --vf-success:        #5CCB8D;
+  --vf-warning:        #EBC05A;
+  --vf-danger:         #F4847A;
+  --vf-info:           #86B2E8;
+  color-scheme: dark;
+}

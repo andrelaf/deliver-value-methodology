@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 620" width="940" height="620" role="img" aria-labelledby="title desc">
+<title id="title">Papéis no Value-First</title>
+<desc id="desc">O Par de Valor, Produto e Tech Lead, é dono da Value Spec. Produto responde por problema, valor e métricas. O Tech Lead responde por viabilidade, restrições, critérios testáveis e contexto dos agentes. O time questiona a spec, constrói e revisa todo código gerado por IA. Agentes de código leem a spec, perguntam em vez de supor e citam os IDs dos critérios. Stakeholders validam protótipos e sabem o que é fixo.</desc>
+<style>
+text{font-family:'IBM Plex Sans','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif}
+.bg{fill:#FFFFFF}.panel{fill:#F5F6F3}.node{fill:#FFFFFF;stroke:#16212B;stroke-width:2}
+.node-soft{fill:#FFFFFF;stroke:#D5DAD9;stroke-width:1.5}.pri{fill:#0B6E63}.acc-node{fill:#FFFFFF;stroke:#C97A16;stroke-width:2}
+.t-ink{fill:#16212B}.t-muted{fill:#4F5D6A}.t-on{fill:#FFFFFF}.t-pri{fill:#0B6E63}.t-acc{fill:#A15708}.dot{fill:#F5C26B}
+.l-conn{stroke:#4F5D6A;stroke-width:2;fill:none}.l-pri{stroke:#0B6E63;stroke-width:2.5;fill:none}
+.l-acc{stroke:#C97A16;stroke-width:2;fill:none}.dash{stroke-dasharray:6 5}
+.m-conn{fill:#4F5D6A}.m-pri{fill:#0B6E63}.m-acc{fill:#C97A16}.hatch{stroke:#C97A16;stroke-width:1.5;opacity:.55}
+.gap-edge{fill:none;stroke:#C97A16;stroke-width:1.5;stroke-dasharray:4 4}
+@media (prefers-color-scheme: dark){
+.bg{fill:#0E151B}.panel{fill:#16212B}.node{fill:#0E151B;stroke:#E7ECEE}.node-soft{fill:#0E151B;stroke:#2C3A45}
+.pri{fill:#4CC2B0}.acc-node{fill:#0E151B;stroke:#F0AC4C}.t-ink{fill:#E7ECEE}.t-muted{fill:#A3B0BA}.t-on{fill:#0E151B}
+.t-pri{fill:#4CC2B0}.t-acc{fill:#F0AC4C}.l-conn{stroke:#A3B0BA}.l-pri{stroke:#4CC2B0}.l-acc{stroke:#F0AC4C}
+.m-conn{fill:#A3B0BA}.m-pri{fill:#4CC2B0}.m-acc{fill:#F0AC4C}.hatch{stroke:#F0AC4C}.gap-edge{stroke:#F0AC4C}}
+</style>
+<defs>
+<marker id="a-conn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="m-conn"/></marker>
+<marker id="a-pri" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="m-pri"/></marker>
+<marker id="a-acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="m-acc"/></marker>
+<pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" class="hatch"/></pattern>
+</defs>
+<rect width="940" height="620" rx="14" class="bg"/>
+<text x="470" y="46" class="t-pri" font-size="18" text-anchor="middle" font-weight="600"><tspan x="470" dy="0">Par de Valor</tspan></text>
+<path d="M170 120 V70 H770 V120" class="l-pri"/>
+<circle cx="470" cy="70" r="6" class="dot"/>
+<rect x="40" y="120" width="260" height="140" rx="10" class="node"/>
+<text x="170.0" y="150" class="t-ink" font-size="16" text-anchor="middle" font-weight="600"><tspan x="170.0" dy="0">Produto</tspan></text>
+<text x="170.0" y="178" class="t-muted" font-size="13" text-anchor="middle" font-weight="400"><tspan x="170.0" dy="0">Problema e para quem</tspan><tspan x="170.0" dy="22">Valor esperado e métrica</tspan><tspan x="170.0" dy="22">Conduz a verificação</tspan></text>
+<rect x="640" y="120" width="260" height="140" rx="10" class="node"/>
+<text x="770.0" y="150" class="t-ink" font-size="16" text-anchor="middle" font-weight="600"><tspan x="770.0" dy="0">Tech Lead</tspan></text>
+<text x="770.0" y="178" class="t-muted" font-size="13" text-anchor="middle" font-weight="400"><tspan x="770.0" dy="0">Viabilidade e restrições</tspan><tspan x="770.0" dy="22">Critérios testáveis</tspan><tspan x="770.0" dy="22">Contexto dos agentes</tspan></text>
+<rect x="370" y="140" width="200" height="100" rx="10" class="pri"/>
+<circle cx="388" cy="158" r="5" class="dot"/>
+<text x="470" y="186" class="t-on" font-size="18" text-anchor="middle" font-weight="600"><tspan x="470" dy="0">Value Spec</tspan></text>
+<text x="470" y="210" class="t-on" font-size="13" text-anchor="middle" font-weight="400"><tspan x="470" dy="0">dois donos nomeados</tspan></text>
+<path d="M300 190 H364" class="l-pri" marker-end="url(#a-pri)"/>
+<path d="M640 190 H576" class="l-pri" marker-end="url(#a-pri)"/>
+<rect x="40" y="400" width="260" height="140" rx="10" class="node-soft"/>
+<text x="170.0" y="430" class="t-ink" font-size="16" text-anchor="middle" font-weight="600"><tspan x="170.0" dy="0">Time</tspan></text>
+<text x="170.0" y="458" class="t-muted" font-size="13" text-anchor="middle" font-weight="400"><tspan x="170.0" dy="0">Questiona a spec</tspan><tspan x="170.0" dy="22">Constrói</tspan><tspan x="170.0" dy="22">Revisa todo código de IA</tspan></text>
+<rect x="340" y="400" width="260" height="140" rx="10" class="node-soft"/>
+<text x="470.0" y="430" class="t-ink" font-size="16" text-anchor="middle" font-weight="600"><tspan x="470.0" dy="0">Agentes de código</tspan></text>
+<text x="470.0" y="458" class="t-muted" font-size="13" text-anchor="middle" font-weight="400"><tspan x="470.0" dy="0">Leem a spec</tspan><tspan x="470.0" dy="22">Perguntam, não supõem</tspan><tspan x="470.0" dy="22">Citam os IDs (SC)</tspan></text>
+<rect x="640" y="400" width="260" height="140" rx="10" class="node-soft"/>
+<text x="770.0" y="430" class="t-ink" font-size="16" text-anchor="middle" font-weight="600"><tspan x="770.0" dy="0">Stakeholders</tspan></text>
+<text x="770.0" y="458" class="t-muted" font-size="13" text-anchor="middle" font-weight="400"><tspan x="770.0" dy="0">Validam protótipos</tspan><tspan x="770.0" dy="22">Sabem o que é fixo</tspan><tspan x="770.0" dy="22">e o que é flexível</tspan></text>
+<path d="M430 240 Q300 320 170 394" class="l-conn" marker-end="url(#a-conn)"/>
+<path d="M470 240 V394" class="l-conn" marker-end="url(#a-conn)"/>
+<path d="M510 240 Q640 320 770 394" class="l-conn" marker-end="url(#a-conn)"/>
+</svg>
