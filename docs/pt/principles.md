@@ -1,218 +1,43 @@
+# Princípios
 
-# Princípios e Estrutura do (DV)
+Seis princípios definem o Value-First. Se um time abre mão de um deles, está fazendo outra coisa. Isso pode estar tudo bem, mas não é Value-First.
 
-## 🌟 Princípios-Chave
+## 1. O valor fica explícito antes de o trabalho começar
 
-O Deliver-Value Framework (DV) se baseia em cinco princípios fundamentais:
+Todo trabalho relevante começa dizendo qual problema resolve, para quem, que valor deve gerar e como vamos saber. Prazos e escopo continuam importando. Eles servem ao valor, e não o contrário.
 
-### 1. Valor sobre Prazo
+*Baseado em:* o primeiro princípio ágil, "entrega antecipada e contínua de software de valor" ([agilemanifesto.org](https://agilemanifesto.org/principles.html)), e o trabalho de produto orientado a resultados ([Cagan](https://www.svpg.com/product-vs-feature-teams/); Seiden, *Outcomes Over Output*, 2019).
 
-O foco principal deve estar no valor entregue ao cliente, não apenas no cumprimento de datas. Isso implica em:
+## 2. A spec é um contrato de valor, e ela é viva
 
-- Priorização constante baseada no impacto para o negócio
-- Disposição para repensar escopo quando necessário
-- Clareza sobre o que constitui "valor" para stakeholders específicos
+Uma spec não é um documento que você entrega e esquece. É um acordo curto sobre problema, valor, critérios de sucesso e restrições. É versionada com o código e muda quando o código ou o feedback nos ensinam algo. Com agentes de código, ela também é entrada executável: o que não está escrito, o agente adivinha.
 
-> "É melhor entregar 80% do valor com alta qualidade do que 100% comprometendo a experiência do usuário ou a manutenibilidade do sistema."
+*Baseado em:* os "documentos vivos" de Specification by Example ([Adzic, 2011](https://gojko.net/books/specification-by-example/)); o desenvolvimento "spec-anchored" ([Böckeler, 2025](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html)).
 
-### 2. Tradução Eficiente
+## 3. Valide antes de construir
 
-A comunicação entre negócio e tecnologia requer tradução intencional e estruturada:
+Antes de se comprometer, reduza a maior incerteza da forma mais barata: uma conversa, um spike técnico ou um protótipo. Um protótipo pode ser gerado com IA e é descartável por padrão. O que ele ensina vai para a spec.
 
-- Criação de vocabulário compartilhado entre as áreas
-- Documentação dos porquês, não apenas dos quês
-- Simplificação de conceitos complexos em ambas direções
+*Baseado em:* o shaping do Shape Up ([Singer, 2019](https://basecamp.com/shapeup)); o teste de premissas da descoberta contínua ([Torres](https://www.producttalk.org/2021/08/product-discovery/)).
 
-> "A tradução não é apenas explicar termos técnicos para o negócio, mas também transformar necessidades de negócio em parâmetros técnicos mensuráveis."
+## 4. Produto e Tecnologia especificam juntos
 
-### 3. Avaliação Técnica Preliminar
+A spec tem dois donos. Produto é dono do problema e do valor. O Tech Lead é dono da viabilidade, das restrições e de tornar a spec construível, por pessoas e por agentes. O trabalho de tradução que o Tech Lead já faz ganha um nome e um parceiro.
 
-Antes de compromissos definitivos, uma avaliação técnica honesta deve ocorrer:
+*Baseado em:* o princípio ágil "pessoas de negócio e desenvolvedores devem trabalhar juntos diariamente" ([agilemanifesto.org](https://agilemanifesto.org/principles.html)); o trio de produto da descoberta contínua.
 
-- Investigação de limitações e dependências
-- Análise de viabilidade das soluções propostas
-- Identificação de riscos técnicos antecipadamente
+## 5. Um plano que muda é informação, não fracasso
 
-> "Um dia investido em avaliação técnica pode economizar semanas de retrabalho."
+O que é fixo e o que é flexível é combinado no início. Quando a realidade muda, a mudança vai para a spec, com o seu motivo, e todos conseguem ver. Sem contratos, sem comitês: um registro curto e visível.
 
-### 4. Renegociação Formal
+*Baseado em:* "responder a mudanças mais que seguir um plano" ([Manifesto Ágil](https://agilemanifesto.org/)); apetite e escopo variável no Shape Up.
 
-Quando surgem novos desafios, um processo estruturado de renegociação deve existir:
+## 6. Pessoas são donas do resultado; a IA acelera
 
-- Canais claros para escalar impedimentos
-- Mecanismos para ajustar expectativas
-- Cultura de transparência sobre dificuldades
+Agentes ajudam a especificar, prototipar e construir. Decisões, revisão de código, segurança e dívida técnica continuam sendo responsabilidades humanas. Medimos resultados (outcomes), não a quantidade de código ou de tickets.
 
-> "A renegociação não é falha, mas reconhecimento de novas realidades descobertas."
-
-### 5. Transparência Contínua
-
-Manter comunicação clara em todos os níveis do projeto:
-
-- Visibilidade do progresso real vs. planejado
-- Compartilhamento proativo de impedimentos
-- Honestidade sobre capacidades e limitações
-
-> "A transparência constrói confiança, mesmo quando as notícias não são as esperadas."
-
-## 🏗️ Estrutura do Framework
-
-O (DV) se estrutura em três pilares fundamentais:
-
-### 1. Pessoas e Papéis
-
-#### Analista de Valor
-
-O Analista de Valor é o tradutor central entre negócio e tecnologia:
-
-- Compreende profundamente o negócio e suas necessidades
-- Traduz requisitos de negócio em conceitos técnicos
-- Facilita a comunicação entre Especialista de Negócio/Produto e Especialista Técnico
-- Mapeia e quantifica o valor gerado pelas funcionalidades
-
-#### Especialista Técnico
-
-O Especialista Técnico (que pode ser um Team Leader, Tech Lead ou outro profissional com função similar) é o guardião da viabilidade e qualidade técnica:
-
-- Avalia viabilidade técnica das propostas
-- Identifica riscos e limitações técnicas antecipadamente
-- Orienta decisões arquiteturais e de implementação
-- Garante que requisitos não-funcionais sejam considerados
-- Faz a ponte entre o time técnico e as áreas de produto/negócio
-
-#### Especialista de Negócio/Produto
-
-O Especialista de Negócio/Produto representa o cliente e define prioridades:
-
-- Define o que gera mais valor para o cliente
-- Prioriza backlog com base no valor e viabilidade técnica
-- Negocia ajustes quando necessário
-- Mantém a visão do produto alinhada com os objetivos de negócio
-- Traduz necessidades do negócio em requisitos de produto
-
-#### Time de Desenvolvimento
-
-A equipe que implementa as soluções:
-
-- Implementa soluções técnicas
-- Propõe alternativas quando há limitações
-- Mantém qualidade técnica e entrega incremental
-- Fornece feedback sobre complexidade e viabilidade
-
-### 2. Processos
-
-#### Fase de Discovery
-
-Antes do início formal do projeto:
-
-- **Discovery de Negócio**: Compreensão profunda do problema a ser resolvido
-- **Discovery Técnico**: Avaliação de viabilidade e arquitetura inicial
-- **Alinhamento de Expectativas**: Estabelecimento de parâmetros realistas
-
-#### Fase de Planejamento
-
-Definição colaborativa de escopo e abordagem:
-
-- **Workshop de Valor**: Identificação do valor central a ser entregue
-- **Mapeamento Técnico**: Avaliação detalhada de complexidade
-- **Estabelecimento de Parâmetros**: Definição de prazo, escopo e recursos
-
-#### Fase de Execução
-
-Implementação com ciclos de feedback:
-
-- **Ciclos Iterativos**: Desenvolvimento em sprints ou fluxo contínuo
-- **Checkpoints de Valor**: Verificação periódica do valor gerado
-- **Reavaliação Técnica**: Ajustes baseados em novos aprendizados
-
-#### Fase de Entrega e Aprendizado
-
-Conclusão e reflexão:
-
-- **Validação de Valor**: Confirmação do valor entregue
-- **Retrospectiva Técnica**: Lições aprendidas e melhorias
-- **Documentação de Aprendizados**: Registro para futuros projetos
-
-### 3. Artefatos
-
-#### Matriz de Valor
-
-Documento que relaciona funcionalidades com o valor para o negócio:
-
-- Lista priorizada de funcionalidades
-- Valor quantificado para cada item
-- Dependências e pré-requisitos
-- Critérios de aceitação focados em valor
-
-#### Mapa de Complexidade Técnica
-
-Avaliação das complexidades e riscos técnicos:
-
-- Pontos de atenção técnica
-- Estimativas de esforço
-- Dependências técnicas
-- Requisitos não-funcionais
-
-#### Contrato de Flexibilidade
-
-Acordo formal que estabelece:
-
-- Parâmetros fixos vs. flexíveis
-- Pontos de verificação e reavaliação
-- Processo para ajustes de escopo ou prazo
-- Responsabilidades de cada parte
-
-#### Dashboard de Valor vs. Progresso
-
-Visualização do andamento do projeto:
-
-- Valor planejado vs. entregue
-- Progresso técnico
-- Impedimentos ativos
-- Previsibilidade atualizada
-
-## 📊 Métricas e Indicadores
-
-O (DV) utiliza métricas equilibradas para avaliar o sucesso:
-
-### Métricas de Valor
-
-- **Índice de Realização de Valor**: Quanto do valor planejado foi efetivamente entregue
-- **Tempo até o Primeiro Valor**: Quão rápido o cliente percebe os primeiros benefícios
-- **Satisfação do Cliente**: Avaliação direta da satisfação com as entregas
-
-### Métricas de Qualidade Técnica
-
-- **Dívida Técnica Gerada**: Quanto de simplificação técnica foi necessária
-- **Manutenibilidade**: Facilidade para evoluir o sistema
-- **Incidentes em Produção**: Estabilidade das entregas
-
-### Métricas de Processo
-
-- **Previsibilidade**: Acurácia das estimativas
-- **Frequência de Renegociação**: Quantas vezes foi necessário ajustar expectativas
-- **Eficiência de Tradução**: Quão bem o negócio e a tecnologia se entenderam
-
-## 🔄 Adaptabilidade do Framework
-
-O (DV) não é um conjunto rígido de regras, mas um framework adaptável:
-
-- Pode ser aplicado em diferentes contextos (produtos, projetos, manutenção)
-- Compatível com metodologias ágeis existentes (Scrum, Kanban, etc.)
-- Escalável para diferentes tamanhos de organizações
-- Personalizável conforme a maturidade da equipe
-
-Incentivamos que cada organização adapte o (DV) à sua realidade, mantendo fidelidade aos princípios fundamentais, mas flexibilizando processos e artefatos conforme necessário.
-
-## 🎯 Casos de Uso Ideais
-
-O (DV) é especialmente valioso nos seguintes contextos:
-
-- Organizações com áreas separadas de Produto e Engenharia
-- Projetos com alto grau de incerteza técnica
-- Ambientes onde prazos são importantes, mas qualidade é essencial
-- Situações onde houve histórico de frustração entre negócio e tecnologia
+*Baseado em:* a constatação do DORA de que a IA amplifica o sistema em que é inserida, e de que a estabilidade precisa de atenção à medida que a vazão cresce ([DORA 2024](https://cloud.google.com/blog/products/devops-sre/announcing-the-2024-dora-report), [DORA 2025](https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report)).
 
 ---
 
-Este documento de princípios serve como guia fundamental para a implementação do (DV). Os detalhes práticos de implementação, exemplos e templates estão disponíveis na pasta `/docs` do repositório.
+**Da v1.** Estes seis substituem os cinco princípios da v1. "Valor sobre Prazo" virou o #1, "Tradução Eficiente" virou o #2 e "Avaliação Técnica Preliminar" virou o #3. "Renegociação Formal" e "Transparência Contínua" se fundiram no #5. O #4 substitui o papel de "Analista de Valor" da v1 por uma dupla (veja [papéis](./roles-and-artifacts.md)). O #6 é novo. O texto da v1 está em [docs/archive/v1](../archive/v1/pt/principles.md).

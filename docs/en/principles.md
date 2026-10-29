@@ -1,225 +1,43 @@
-    # Principles and Structure of the Deliver-Value Framework (DV)
+# Principles
 
-    ## 📑 Documentation Navigation
+Six principles define Value-First. If a team drops one, it's doing something else. That can be fine, but it isn't Value-First.
 
-    - [🏠 Home](/README.md)
-    - [🌟 Principles](/docs/en/principles.md)
-    - [🛠 Practices](/docs/en/practices.md)
-    - [📋 Templates](/docs/en/templates.md)
-    - [🤝 Contribution Guide](/CONTRIBUTING.md)
+## 1. Value is explicit before the work starts
 
-    ## 🌟 Key Principles
+Every relevant piece of work starts by saying which problem it solves, for whom, what value it should create and how we'll know. Deadlines and scope still matter. They serve the value, not the other way around.
 
-    The Deliver-Value Framework (DV) is based on five fundamental principles:
+*Builds on:* the first Agile principle, "early and continuous delivery of valuable software" ([agilemanifesto.org](https://agilemanifesto.org/principles.html)), and outcome-focused product work ([Cagan](https://www.svpg.com/product-vs-feature-teams/); Seiden, *Outcomes Over Output*, 2019).
 
-    ### 1. Value Over Deadlines
+## 2. The spec is a value contract, and it lives
 
-    The main focus should be on the value delivered to the customer, not just meeting deadlines. This implies:
+A spec isn't a document you hand off and forget. It's a short agreement on problem, value, success criteria and constraints. It's versioned with the code and changes when the code or feedback teaches us something. With coding agents, it's also executable input: what isn't written, the agent guesses.
 
-    - Constant prioritization based on business impact
-    - Willingness to reconsider scope when necessary
-    - Clarity about what constitutes "value" for specific stakeholders
+*Builds on:* Specification by Example's "living documents" ([Adzic, 2011](https://gojko.net/books/specification-by-example/)); "spec-anchored" development ([Böckeler, 2025](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html)).
 
-    > "It's better to deliver 80% of the value with high quality than 100% while compromising user experience or system maintainability."
+## 3. Validate before you build
 
-    ### 2. Efficient Translation
+Before committing, reduce the biggest uncertainty in the cheapest way: a conversation, a technical spike or a prototype. A prototype can be generated with AI and is disposable by default. What it teaches goes into the spec.
 
-    Communication between business and technology requires intentional and structured translation:
+*Builds on:* shaping in Shape Up ([Singer, 2019](https://basecamp.com/shapeup)); assumption testing in continuous discovery ([Torres](https://www.producttalk.org/2021/08/product-discovery/)).
 
-    - Creation of shared vocabulary between areas
-    - Documentation of the whys, not just the whats
-    - Simplification of complex concepts in both directions
+## 4. Product and Tech specify together
 
-    > "Translation is not just explaining technical terms to the business, but also transforming business needs into measurable technical parameters."
+The spec has two owners. Product owns the problem and the value. The Tech Lead owns feasibility, constraints and making the spec buildable, by people and by agents. The translation work the Tech Lead already does gets a name and a partner.
 
-    ### 3. Preliminary Technical Assessment
+*Builds on:* the Agile principle "business people and developers must work together daily" ([agilemanifesto.org](https://agilemanifesto.org/principles.html)); the product trio in continuous discovery.
 
-    Before making definitive commitments, an honest technical assessment must occur:
+## 5. A changed plan is information, not failure
 
-    - Investigation of limitations and dependencies
-    - Analysis of the feasibility of proposed solutions
-    - Early identification of technical risks
+What's fixed and what's flexible is agreed at the start. When reality changes, the change goes into the spec, with its reason, and everyone can see it. No contracts, no committees: a short, visible record.
 
-    > "One day invested in technical assessment can save weeks of rework."
+*Builds on:* "responding to change over following a plan" ([Agile Manifesto](https://agilemanifesto.org/)); appetite and variable scope in Shape Up.
 
-    ### 4. Formal Renegotiation
+## 6. People own the outcome; AI speeds it up
 
-    When new challenges arise, a structured renegotiation process should exist:
+Agents help to specify, prototype and build. Decisions, code review, security and technical debt remain human responsibilities. We measure outcomes, not the amount of code or tickets.
 
-    - Clear channels for escalating impediments
-    - Mechanisms to adjust expectations
-    - Culture of transparency about difficulties
+*Builds on:* DORA's finding that AI amplifies the system it lands in, and that stability needs attention as throughput grows ([DORA 2024](https://cloud.google.com/blog/products/devops-sre/announcing-the-2024-dora-report), [DORA 2025](https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report)).
 
-    > "Renegotiation is not failure, but recognition of newly discovered realities."
+---
 
-    ### 5. Continuous Transparency
-
-    Maintain clear communication at all levels of the project:
-
-    - Visibility of actual progress vs. planned
-    - Proactive sharing of impediments
-    - Honesty about capabilities and limitations
-
-    > "Transparency builds trust, even when the news is not what was expected."
-
-    ## 🏗️ Framework Structure
-
-    The DV is structured on three fundamental pillars:
-
-    ### 1. People and Roles
-
-    #### Value Analyst
-
-    The Value Analyst is the central translator between business and technology:
-
-    - Deeply understands the business and its needs
-    - Translates business requirements into technical concepts
-    - Facilitates communication between Business/Product Specialist and Technical Specialist
-    - Maps and quantifies the value generated by features
-
-    #### Technical Specialist
-
-    The Technical Specialist (who may be a Team Leader, Tech Lead, or other professional with a similar function) is the guardian of technical feasibility and quality:
-
-    - Evaluates technical feasibility of proposals
-    - Identifies technical risks and limitations early
-    - Guides architectural and implementation decisions
-    - Ensures non-functional requirements are considered
-    - Bridges the gap between the technical team and product/business areas
-
-    #### Business/Product Specialist
-
-    The Business/Product Specialist represents the customer and defines priorities:
-
-    - Defines what generates the most value for the customer
-    - Prioritizes backlog based on value and technical feasibility
-    - Negotiates adjustments when necessary
-    - Keeps the product vision aligned with business objectives
-    - Translates business needs into product requirements
-
-    #### Development Team
-
-    The team that implements the solutions:
-
-    - Implements technical solutions
-    - Proposes alternatives when there are limitations
-    - Maintains technical quality and incremental delivery
-    - Provides feedback on complexity and feasibility
-
-    ### 2. Processes
-
-    #### Discovery Phase
-
-    Before the formal start of the project:
-
-    - **Business Discovery**: Deep understanding of the problem to be solved
-    - **Technical Discovery**: Assessment of feasibility and initial architecture
-    - **Expectation Alignment**: Establishment of realistic parameters
-
-    #### Planning Phase
-
-    Collaborative definition of scope and approach:
-
-    - **Value Workshop**: Identification of the core value to be delivered
-    - **Technical Mapping**: Detailed assessment of complexity
-    - **Parameter Establishment**: Definition of timeline, scope, and resources
-
-    #### Execution Phase
-
-    Implementation with feedback cycles:
-
-    - **Iterative Cycles**: Development in sprints or continuous flow
-    - **Value Checkpoints**: Periodic verification of generated value
-    - **Technical Reassessment**: Adjustments based on new learnings
-
-    #### Delivery and Learning Phase
-
-    Conclusion and reflection:
-
-    - **Value Validation**: Confirmation of delivered value
-    - **Technical Retrospective**: Lessons learned and improvements
-    - **Documentation of Learnings**: Records for future projects
-
-    ### 3. Artifacts
-
-    #### Value Matrix
-
-    Document that relates features to business value:
-
-    - Prioritized list of features
-    - Quantified value for each item
-    - Dependencies and prerequisites
-    - Acceptance criteria focused on value
-
-    #### Technical Complexity Map
-
-    Assessment of technical complexities and risks:
-
-    - Points of technical attention
-    - Effort estimates
-    - Technical dependencies
-    - Non-functional requirements
-
-    #### Flexibility Contract
-
-    Formal agreement that establishes:
-
-    - Fixed vs. flexible parameters
-    - Checkpoints and reassessment points
-    - Process for adjustments to scope or timeline
-    - Responsibilities of each party
-
-    #### Value vs. Progress Dashboard
-
-    Visualization of project progress:
-
-    - Planned vs. delivered value
-    - Technical progress
-    - Active impediments
-    - Updated predictability
-
-    ## 📊 Metrics and Indicators
-
-    The DV uses balanced metrics to evaluate success:
-
-    ### Value Metrics
-
-    - **Value Realization Index**: How much of the planned value was effectively delivered
-    - **Time to First Value**: How quickly the customer perceives the first benefits
-    - **Customer Satisfaction**: Direct assessment of satisfaction with deliveries
-
-    ### Technical Quality Metrics
-
-    - **Technical Debt Generated**: How much technical simplification was necessary
-    - **Maintainability**: Ease of evolving the system
-    - **Production Incidents**: Stability of deliveries
-
-    ### Process Metrics
-
-    - **Predictability**: Accuracy of estimates
-    - **Renegotiation Frequency**: How many times it was necessary to adjust expectations
-    - **Translation Efficiency**: How well business and technology understood each other
-
-    ## 🔄 Framework Adaptability
-
-    The DV is not a rigid set of rules, but an adaptable framework:
-
-    - Can be applied in different contexts (products, projects, maintenance)
-    - Compatible with existing agile methodologies (Scrum, Kanban, etc.)
-    - Scalable for different sizes of organizations
-    - Customizable according to team maturity
-
-    We encourage each organization to adapt the DV to its reality, maintaining fidelity to the fundamental principles, but making processes and artifacts flexible as needed.
-
-    ## 🎯 Ideal Use Cases
-
-    The DV is especially valuable in the following contexts:
-
-    - Organizations with separate Product and Engineering areas
-    - Projects with a high degree of technical uncertainty
-    - Environments where deadlines are important, but quality is essential
-    - Situations where there has been a history of frustration between business and technology
-
-    ---
-
-    This principles document serves as a fundamental guide for implementing the DV. Practical implementation details, examples, and templates are available in the `/docs` folder of the repository.
+**From v1.** These six replace the five v1 principles. "Value over deadlines" became #1, "Efficient translation" became #2 and "Preliminary technical assessment" became #3. "Formal renegotiation" and "Continuous transparency" merged into #5. #4 replaces the v1 "Value Analyst" role with a pair (see [roles](./roles-and-artifacts.md)). #6 is new. The v1 text is in [docs/archive/v1](../archive/v1/en/principles.md).
