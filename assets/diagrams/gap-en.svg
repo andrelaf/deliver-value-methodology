@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 500" width="940" height="500" role="img" aria-labelledby="title desc">
+<title id="title">The gap between spec and development</title>
+<desc id="desc">A typical story states only what to build. Building also needs the why, the expected value and metric, constraints, edge cases and non-goals, and what is fixed or flexible. Before, the Tech Lead filled that gap with conversation. With agents, the agent guesses. Value-First closes the gap upstream, in the Value Spec.</desc>
+<style>
+text{font-family:'IBM Plex Sans','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif}
+.bg{fill:#FFFFFF}.panel{fill:#F5F6F3}.node{fill:#FFFFFF;stroke:#16212B;stroke-width:2}
+.node-soft{fill:#FFFFFF;stroke:#D5DAD9;stroke-width:1.5}.pri{fill:#0B6E63}.acc-node{fill:#FFFFFF;stroke:#C97A16;stroke-width:2}
+.t-ink{fill:#16212B}.t-muted{fill:#4F5D6A}.t-on{fill:#FFFFFF}.t-pri{fill:#0B6E63}.t-acc{fill:#A15708}.dot{fill:#F5C26B}
+.l-conn{stroke:#4F5D6A;stroke-width:2;fill:none}.l-pri{stroke:#0B6E63;stroke-width:2.5;fill:none}
+.l-acc{stroke:#C97A16;stroke-width:2;fill:none}.dash{stroke-dasharray:6 5}
+.m-conn{fill:#4F5D6A}.m-pri{fill:#0B6E63}.m-acc{fill:#C97A16}.hatch{stroke:#C97A16;stroke-width:1.5;opacity:.55}
+.gap-edge{fill:none;stroke:#C97A16;stroke-width:1.5;stroke-dasharray:4 4}
+@media (prefers-color-scheme: dark){
+.bg{fill:#0E151B}.panel{fill:#16212B}.node{fill:#0E151B;stroke:#E7ECEE}.node-soft{fill:#0E151B;stroke:#2C3A45}
+.pri{fill:#4CC2B0}.acc-node{fill:#0E151B;stroke:#F0AC4C}.t-ink{fill:#E7ECEE}.t-muted{fill:#A3B0BA}.t-on{fill:#0E151B}
+.t-pri{fill:#4CC2B0}.t-acc{fill:#F0AC4C}.l-conn{stroke:#A3B0BA}.l-pri{stroke:#4CC2B0}.l-acc{stroke:#F0AC4C}
+.m-conn{fill:#A3B0BA}.m-pri{fill:#4CC2B0}.m-acc{fill:#F0AC4C}.hatch{stroke:#F0AC4C}.gap-edge{stroke:#F0AC4C}}
+</style>
+<defs>
+<marker id="a-conn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="m-conn"/></marker>
+<marker id="a-pri" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="m-pri"/></marker>
+<marker id="a-acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="m-acc"/></marker>
+<pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" class="hatch"/></pattern>
+</defs>
+<rect width="940" height="500" rx="14" class="bg"/>
+<rect x="30" y="30" width="270" height="360" rx="12" class="panel"/>
+<rect x="640" y="30" width="270" height="360" rx="12" class="panel"/>
+<text x="165" y="62" class="t-ink" font-size="15" text-anchor="middle" font-weight="600"><tspan x="165" dy="0">What the story usually says</tspan></text>
+<text x="775" y="62" class="t-ink" font-size="15" text-anchor="middle" font-weight="600"><tspan x="775" dy="0">What building needs</tspan></text>
+<rect x="655" y="92" width="240" height="36" rx="6" class="node-soft"/>
+<text x="775" y="115" class="t-ink" font-size="13" text-anchor="middle" font-weight="400"><tspan x="775" dy="0">What to build</tspan></text>
+<rect x="45" y="92" width="240" height="36" rx="6" class="node-soft"/>
+<text x="165" y="115" class="t-ink" font-size="13" text-anchor="middle" font-weight="400"><tspan x="165" dy="0">What to build</tspan></text>
+<path d="M290 110 H650" class="l-conn" marker-end="url(#a-conn)"/>
+<rect x="655" y="140" width="240" height="36" rx="6" class="node-soft"/>
+<text x="775" y="163" class="t-ink" font-size="13" text-anchor="middle" font-weight="400"><tspan x="775" dy="0">Why: problem, and for whom</tspan></text>
+<rect x="45" y="140" width="240" height="36" rx="6" class="gap-edge"/>
+<text x="165" y="163" class="t-acc" font-size="15" text-anchor="middle" font-weight="600"><tspan x="165" dy="0">?</tspan></text>
+<rect x="655" y="188" width="240" height="36" rx="6" class="node-soft"/>
+<text x="775" y="211" class="t-ink" font-size="13" text-anchor="middle" font-weight="400"><tspan x="775" dy="0">Expected value and metric</tspan></text>
+<rect x="45" y="188" width="240" height="36" rx="6" class="gap-edge"/>
+<text x="165" y="211" class="t-acc" font-size="15" text-anchor="middle" font-weight="600"><tspan x="165" dy="0">?</tspan></text>
+<rect x="655" y="236" width="240" height="36" rx="6" class="node-soft"/>
+<text x="775" y="259" class="t-ink" font-size="13" text-anchor="middle" font-weight="400"><tspan x="775" dy="0">Constraints, non-functional reqs</tspan></text>
+<rect x="45" y="236" width="240" height="36" rx="6" class="gap-edge"/>
+<text x="165" y="259" class="t-acc" font-size="15" text-anchor="middle" font-weight="600"><tspan x="165" dy="0">?</tspan></text>
+<rect x="655" y="284" width="240" height="36" rx="6" class="node-soft"/>
+<text x="775" y="307" class="t-ink" font-size="13" text-anchor="middle" font-weight="400"><tspan x="775" dy="0">Edge cases and non-goals</tspan></text>
+<rect x="45" y="284" width="240" height="36" rx="6" class="gap-edge"/>
+<text x="165" y="307" class="t-acc" font-size="15" text-anchor="middle" font-weight="600"><tspan x="165" dy="0">?</tspan></text>
+<rect x="655" y="332" width="240" height="36" rx="6" class="node-soft"/>
+<text x="775" y="355" class="t-ink" font-size="13" text-anchor="middle" font-weight="400"><tspan x="775" dy="0">What's fixed vs. flexible</tspan></text>
+<rect x="45" y="332" width="240" height="36" rx="6" class="gap-edge"/>
+<text x="165" y="355" class="t-acc" font-size="15" text-anchor="middle" font-weight="600"><tspan x="165" dy="0">?</tspan></text>
+<rect x="320" y="140" width="300" height="230" rx="10" fill="url(#hatch)"/>
+<rect x="320" y="140" width="300" height="230" rx="10" class="gap-edge"/>
+<rect x="340" y="158" width="260" height="194" rx="8" class="bg"/>
+<text x="470" y="186" class="t-acc" font-size="17" text-anchor="middle" font-weight="600"><tspan x="470" dy="0">The gap</tspan></text>
+<text x="470" y="222" class="t-ink" font-size="13" text-anchor="middle" font-weight="400"><tspan x="470" dy="0">Before: the Tech Lead fills it,</tspan><tspan x="470" dy="18">with conversation and intuition</tspan></text>
+<text x="470" y="290" class="t-acc" font-size="13" text-anchor="middle" font-weight="600"><tspan x="470" dy="0">With agents: the agent guesses.</tspan><tspan x="470" dy="18">Wrong code, faster.</tspan></text>
+<rect x="30" y="420" width="880" height="52" rx="10" class="pri"/>
+<circle cx="58" cy="446" r="6" class="dot"/>
+<text x="480" y="451" class="t-on" font-size="15" text-anchor="middle" font-weight="600"><tspan x="480" dy="0">Value-First: the Value Pair closes the gap upstream, in the Value Spec</tspan></text>
+</svg>

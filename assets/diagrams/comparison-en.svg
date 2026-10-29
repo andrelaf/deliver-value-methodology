@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 520" width="940" height="520" role="img" aria-labelledby="title desc">
+<title id="title">Where Value-First sits</title>
+<desc id="desc">Value-First is a value and alignment layer above two kinds of tools: how the team works (Scrum, Kanban, Shape Up, SAFe) and how a spec becomes code (Spec Kit, Kiro, coding agents), which draws on agent context files (AGENTS.md, CLAUDE.md, rules, steering).</desc>
+<style>
+text{font-family:'IBM Plex Sans','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif}
+.bg{fill:#FFFFFF}.panel{fill:#F5F6F3}.node{fill:#FFFFFF;stroke:#16212B;stroke-width:2}
+.node-soft{fill:#FFFFFF;stroke:#D5DAD9;stroke-width:1.5}.pri{fill:#0B6E63}.acc-node{fill:#FFFFFF;stroke:#C97A16;stroke-width:2}
+.t-ink{fill:#16212B}.t-muted{fill:#4F5D6A}.t-on{fill:#FFFFFF}.t-pri{fill:#0B6E63}.t-acc{fill:#A15708}.dot{fill:#F5C26B}
+.l-conn{stroke:#4F5D6A;stroke-width:2;fill:none}.l-pri{stroke:#0B6E63;stroke-width:2.5;fill:none}
+.l-acc{stroke:#C97A16;stroke-width:2;fill:none}.dash{stroke-dasharray:6 5}
+.m-conn{fill:#4F5D6A}.m-pri{fill:#0B6E63}.m-acc{fill:#C97A16}.hatch{stroke:#C97A16;stroke-width:1.5;opacity:.55}
+.gap-edge{fill:none;stroke:#C97A16;stroke-width:1.5;stroke-dasharray:4 4}
+@media (prefers-color-scheme: dark){
+.bg{fill:#0E151B}.panel{fill:#16212B}.node{fill:#0E151B;stroke:#E7ECEE}.node-soft{fill:#0E151B;stroke:#2C3A45}
+.pri{fill:#4CC2B0}.acc-node{fill:#0E151B;stroke:#F0AC4C}.t-ink{fill:#E7ECEE}.t-muted{fill:#A3B0BA}.t-on{fill:#0E151B}
+.t-pri{fill:#4CC2B0}.t-acc{fill:#F0AC4C}.l-conn{stroke:#A3B0BA}.l-pri{stroke:#4CC2B0}.l-acc{stroke:#F0AC4C}
+.m-conn{fill:#A3B0BA}.m-pri{fill:#4CC2B0}.m-acc{fill:#F0AC4C}.hatch{stroke:#F0AC4C}.gap-edge{stroke:#F0AC4C}}
+</style>
+<defs>
+<marker id="a-conn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="m-conn"/></marker>
+<marker id="a-pri" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="m-pri"/></marker>
+<marker id="a-acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="m-acc"/></marker>
+<pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" class="hatch"/></pattern>
+</defs>
+<rect width="940" height="520" rx="14" class="bg"/>
+<rect x="40" y="30" width="860" height="96" rx="12" class="pri"/>
+<circle cx="70" cy="58" r="6" class="dot"/>
+<text x="470" y="70" class="t-on" font-size="19" text-anchor="middle" font-weight="600"><tspan x="470" dy="0">Value and alignment: Value-First</tspan></text>
+<text x="470" y="98" class="t-on" font-size="14" text-anchor="middle" font-weight="400"><tspan x="470" dy="0">Is this worth building? How will we know it worked?</tspan></text>
+<rect x="50.0" y="200.0" width="400" height="100" rx="8" class="node"/>
+<text x="250" y="231.1" class="t-ink" font-size="16" text-anchor="middle" font-weight="600"><tspan x="250" dy="0">How the team works</tspan></text>
+<text x="250" y="251.1" class="t-muted" font-size="13" text-anchor="middle" font-weight="400"><tspan x="250" dy="0">Scrum · Kanban · Shape Up · SAFe</tspan><tspan x="250" dy="18">cadence, flow, bets</tspan></text>
+<rect x="490.0" y="200.0" width="400" height="100" rx="8" class="node"/>
+<text x="690" y="231.1" class="t-ink" font-size="16" text-anchor="middle" font-weight="600"><tspan x="690" dy="0">How the spec becomes code</tspan></text>
+<text x="690" y="251.1" class="t-muted" font-size="13" text-anchor="middle" font-weight="400"><tspan x="690" dy="0">Spec Kit · Kiro · coding agents</tspan><tspan x="690" dy="18">plan, tasks, code</tspan></text>
+<path d="M250 128 V194" class="l-pri" marker-end="url(#a-pri)"/>
+<path d="M690 128 V194" class="l-pri" marker-end="url(#a-pri)"/>
+<text x="262" y="165" class="t-pri" font-size="12" text-anchor="start" font-weight="400"><tspan x="262" dy="0">Value Specs feed the backlog</tspan></text>
+<text x="702" y="165" class="t-pri" font-size="12" text-anchor="start" font-weight="400"><tspan x="702" dy="0">Value Specs feed the workflow</tspan></text>
+<rect x="490.0" y="358.0" width="400" height="52" rx="8" class="node-soft"/>
+<text x="690" y="388.3333333333333" class="t-ink" font-size="13" text-anchor="middle" font-weight="600"><tspan x="690" dy="0">Agent context: AGENTS.md · CLAUDE.md · rules · steering</tspan></text>
+<path d="M690 356 V306" class="l-conn" marker-end="url(#a-conn)"/>
+<text x="470" y="470" class="t-muted" font-size="14" text-anchor="middle" font-weight="400"><tspan x="470" dy="0">Value-First doesn't replace these layers. It decides what goes into them and checks what comes out.</tspan></text>
+</svg>

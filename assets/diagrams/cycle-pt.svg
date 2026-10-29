@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 580" width="760" height="580" role="img" aria-labelledby="title desc">
+<title id="title">O ciclo do Value-First</title>
+<desc id="desc">Quatro passos em ciclo em torno de uma Value Spec viva: Especificar, Validar, Construir, Verificar valor e voltar à spec. Roda dentro da cadência que o time já usa.</desc>
+<style>
+text{font-family:'IBM Plex Sans','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif}
+.bg{fill:#FFFFFF}.panel{fill:#F5F6F3}.node{fill:#FFFFFF;stroke:#16212B;stroke-width:2}
+.node-soft{fill:#FFFFFF;stroke:#D5DAD9;stroke-width:1.5}.pri{fill:#0B6E63}.acc-node{fill:#FFFFFF;stroke:#C97A16;stroke-width:2}
+.t-ink{fill:#16212B}.t-muted{fill:#4F5D6A}.t-on{fill:#FFFFFF}.t-pri{fill:#0B6E63}.t-acc{fill:#A15708}.dot{fill:#F5C26B}
+.l-conn{stroke:#4F5D6A;stroke-width:2;fill:none}.l-pri{stroke:#0B6E63;stroke-width:2.5;fill:none}
+.l-acc{stroke:#C97A16;stroke-width:2;fill:none}.dash{stroke-dasharray:6 5}
+.m-conn{fill:#4F5D6A}.m-pri{fill:#0B6E63}.m-acc{fill:#C97A16}.hatch{stroke:#C97A16;stroke-width:1.5;opacity:.55}
+.gap-edge{fill:none;stroke:#C97A16;stroke-width:1.5;stroke-dasharray:4 4}
+@media (prefers-color-scheme: dark){
+.bg{fill:#0E151B}.panel{fill:#16212B}.node{fill:#0E151B;stroke:#E7ECEE}.node-soft{fill:#0E151B;stroke:#2C3A45}
+.pri{fill:#4CC2B0}.acc-node{fill:#0E151B;stroke:#F0AC4C}.t-ink{fill:#E7ECEE}.t-muted{fill:#A3B0BA}.t-on{fill:#0E151B}
+.t-pri{fill:#4CC2B0}.t-acc{fill:#F0AC4C}.l-conn{stroke:#A3B0BA}.l-pri{stroke:#4CC2B0}.l-acc{stroke:#F0AC4C}
+.m-conn{fill:#A3B0BA}.m-pri{fill:#4CC2B0}.m-acc{fill:#F0AC4C}.hatch{stroke:#F0AC4C}.gap-edge{stroke:#F0AC4C}}
+</style>
+<defs>
+<marker id="a-conn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="m-conn"/></marker>
+<marker id="a-pri" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="m-pri"/></marker>
+<marker id="a-acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="m-acc"/></marker>
+<pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" class="hatch"/></pattern>
+</defs>
+<rect width="760" height="580" rx="14" class="bg"/>
+<path d="M500.1 126.3 A195 195 0 0 1 560.8 207.0" class="l-pri" marker-end="url(#a-pri)"/>
+<path d="M560.8 353.0 A195 195 0 0 1 500.1 433.7" class="l-pri" marker-end="url(#a-pri)"/>
+<path d="M259.9 433.7 A195 195 0 0 1 199.2 353.0" class="l-pri" marker-end="url(#a-pri)"/>
+<path d="M199.2 207.0 A195 195 0 0 1 259.9 126.3" class="l-pri" marker-end="url(#a-pri)"/>
+<rect x="270.0" y="46.0" width="220" height="78" rx="8" class="node"/>
+<text x="380" y="66.1" class="t-ink" font-size="16" text-anchor="middle" font-weight="600"><tspan x="380" dy="0">1 · Especificar</tspan></text>
+<text x="380" y="86.1" class="t-muted" font-size="13" text-anchor="middle" font-weight="400"><tspan x="380" dy="0">O Par de Valor</tspan><tspan x="380" dy="18">escreve a Value Spec</tspan></text>
+<rect x="465.0" y="241.0" width="220" height="78" rx="8" class="node"/>
+<text x="575" y="261.1" class="t-ink" font-size="16" text-anchor="middle" font-weight="600"><tspan x="575" dy="0">2 · Validar</tspan></text>
+<text x="575" y="281.1" class="t-muted" font-size="13" text-anchor="middle" font-weight="400"><tspan x="575" dy="0">Teste mais barato da</tspan><tspan x="575" dy="18">premissa mais arriscada</tspan></text>
+<rect x="270.0" y="436.0" width="220" height="78" rx="8" class="node"/>
+<text x="380" y="456.1" class="t-ink" font-size="16" text-anchor="middle" font-weight="600"><tspan x="380" dy="0">3 · Construir</tspan></text>
+<text x="380" y="476.1" class="t-muted" font-size="13" text-anchor="middle" font-weight="400"><tspan x="380" dy="0">Pessoas e agentes,</tspan><tspan x="380" dy="18">ligados aos critérios</tspan></text>
+<rect x="75.0" y="241.0" width="220" height="78" rx="8" class="node"/>
+<text x="185" y="261.1" class="t-ink" font-size="16" text-anchor="middle" font-weight="600"><tspan x="185" dy="0">4 · Verificar valor</tspan></text>
+<text x="185" y="281.1" class="t-muted" font-size="13" text-anchor="middle" font-weight="400"><tspan x="185" dy="0">Resultado vs. meta,</tspan><tspan x="185" dy="18">na data combinada</tspan></text>
+<circle cx="380" cy="280" r="78" class="pri"/>
+<circle cx="380" cy="236" r="6" class="dot"/>
+<text x="380" y="272" class="t-on" font-size="18" text-anchor="middle" font-weight="600"><tspan x="380" dy="0">Value Spec</tspan></text>
+<text x="380" y="296" class="t-on" font-size="13" text-anchor="middle" font-weight="400"><tspan x="380" dy="0">viva,</tspan><tspan x="380" dy="18">no repositório</tspan></text>
+<text x="380" y="562" class="t-muted" font-size="14" text-anchor="middle" font-weight="400"><tspan x="380" dy="0">Roda dentro da cadência que você já usa: Scrum, Kanban ou a sua própria.</tspan></text>
+</svg>
