@@ -37,6 +37,7 @@ Clientes B2B não conseguem obter faturas antigas pelo portal. Eles abrem ticket
 - **SC-2** (EARS): Quando o usuário selecionar *Baixar* em uma fatura, o portal deve entregar o PDF armazenado sem alterações.
 - **SC-3** (EARS): Se um usuário sem `billing_admin` solicitar a URL de uma fatura, então o portal deve retornar 403 e registrar a tentativa.
 - **SC-4** (limite): A lista de faturas carrega em menos de 1 s no p95 para contas com até 500 faturas.
+- **SC-5** (instrumentação): Quando um download terminar, o portal deve registrar um evento `invoice_downloaded` com o ID da conta, exibido no dashboard de suporte ao lado da contagem de tickets.
 
 ## 5. Escopo, fora do escopo e flexibilidade
 - **No escopo:** listagem + download dos PDFs existentes.
@@ -52,6 +53,7 @@ Clientes B2B não conseguem obter faturas antigas pelo portal. Eles abrem ticket
 - **Técnicas:** ler os PDFs pela API do serviço de faturamento. Nenhum acesso direto ao bucket a partir do portal.
 - **Segurança e privacidade:** as URLs assinadas de download expiram em 5 min. As faturas são filtradas por ID da conta no servidor.
 - **Compliance:** os eventos de download são retidos conforme a política de auditoria (veja AGENTS.md › Audit).
+- **Lançamento e reversão:** atrás de uma feature flag por conta. 10% das contas na semana 1, depois todas. Desligar a flag volta ao fluxo atual (pedir ao suporte).
 
 ## 7. Premissas e riscos
 | ID | Premissa ou risco | Impacto se estiver errado | Como validamos | Status |

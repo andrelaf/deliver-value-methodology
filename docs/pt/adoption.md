@@ -39,6 +39,7 @@ Três níveis. Situem-se em cada linha separadamente: a maioria dos times está 
 | **Mudança** | As mudanças aparecem como atrasos. | As mudanças são discutidas, mas não registradas. | As mudanças vão para a spec com um motivo e ficam visíveis para os stakeholders. |
 | **Fechar o ciclo** | Ninguém olha para trás depois do lançamento. | Revisões ocasionais dos resultados. | As verificações de valor são agendadas e registradas, e alimentam o backlog. |
 | **IA** | Uso pontual. Sem contexto compartilhado. | Existe um arquivo de contexto para agentes. A revisão de código cobre o que a IA produz. | Os agentes leem a Value Spec, perguntam sobre as questões em aberto e rastreiam o trabalho até os IDs dos critérios. A estabilidade é acompanhada. |
+| **Base de engenharia** | Poucos testes automatizados, deploy manual. É difícil verificar o que o agente produz. | O CI roda testes em todo PR. Mudanças arriscadas saem atrás de feature flag. | Testes rápidos e confiáveis e o CI são a rede de segurança do trabalho dos agentes. Dá para desligar mudanças rapidamente, e a métrica de valor é instrumentada como parte de cada entrega. |
 
 ### Maturidade da spec em detalhe
 

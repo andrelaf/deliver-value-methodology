@@ -23,6 +23,8 @@ The framework is repositioned and renamed. The v1 text is preserved verbatim in 
 - Brand identity: logo variants, palette and tokens ([assets/brand](assets/brand/BRAND.md)).
 - Diagrams in SVG, EN/PT, light/dark ([assets/diagrams](assets/diagrams/)): cycle, the gap, before × now, roles, where Value-First sits.
 - Landing page in `site/` (EN/PT, responsive, light/dark), with a manual GitHub Pages workflow.
+- [Value Map](docs/en/value-map.md) (C4-inspired, with a guided demo and a fillable map on the site).
+- Technical additions to the Value Spec: instrumentation criterion, release & rollback, hard-to-reverse decisions, operations, cost, AI inside the feature, and agent rules for dependencies and untrusted content.
 - [DECISIONS.md](DECISIONS.md), the [diagnosis](docs/diagnostico.md) and the [annotated research](docs/research/sources.md).
 
 ### Removed

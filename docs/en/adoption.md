@@ -39,6 +39,7 @@ Three levels. Find yourself on each line separately: most teams are at different
 | **Change** | Changes show up as delays. | Changes are discussed but not recorded. | Changes go into the spec with a reason and are visible to stakeholders. |
 | **Closing the loop** | No look back after release. | Occasional reviews of results. | Value checks are scheduled and recorded, and they feed the backlog. |
 | **AI** | Ad hoc use. No shared context. | Agent context file exists. Code review covers AI output. | Agents read the Value Spec, ask about open questions, and trace work to criterion IDs. Stability is tracked. |
+| **Engineering base** | Few automated tests, manual deploys. Agent output is hard to verify. | CI runs tests on every PR. Risky changes ship behind a feature flag. | Fast, reliable tests and CI are the safety net for agent work. Changes can be turned off quickly, and the value metric is instrumented as part of each delivery. |
 
 ### Spec maturity in detail
 

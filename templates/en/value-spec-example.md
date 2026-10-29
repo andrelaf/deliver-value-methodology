@@ -37,6 +37,7 @@ B2B customers can't get past invoices from the portal. They open support tickets
 - **SC-2** (EARS): When the user selects *Download* on an invoice, the portal shall deliver the stored PDF unchanged.
 - **SC-3** (EARS): If a user without `billing_admin` requests an invoice URL, then the portal shall return 403 and log the attempt.
 - **SC-4** (threshold): The invoice list loads in under 1 s at p95 for accounts with up to 500 invoices.
+- **SC-5** (instrumentation): When a download completes, the portal shall record an `invoice_downloaded` event with the account ID, shown on the support dashboard next to the ticket count.
 
 ## 5. Scope, non-goals and flexibility
 - **In scope:** list + download of existing PDFs.
@@ -52,6 +53,7 @@ B2B customers can't get past invoices from the portal. They open support tickets
 - **Technical:** read PDFs through the billing service API. No direct bucket access from the portal.
 - **Security & privacy:** signed download URLs expire in 5 min. Invoices are scoped by account ID server-side.
 - **Compliance:** download events are retained per the audit policy (see AGENTS.md › Audit).
+- **Release & rollback:** behind a per-account feature flag. 10% of accounts in week 1, then all. Turning the flag off returns to today's flow (ask support).
 
 ## 7. Assumptions & risks
 | ID | Assumption or risk | Impact if wrong | How we validate | Status |
