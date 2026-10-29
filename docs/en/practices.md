@@ -42,7 +42,7 @@ In Scrum, the value check complements the Sprint Review. It often happens weeks 
 
 ## 5. Value Map session *(optional, for larger initiatives)*
 
-Before breaking a large initiative into Value Specs, draw a [Value Map](./value-map.md) together. Like the C4 model does for architecture, it uses three levels of zoom (outcome, slices, criteria) and four simple rules, so it fits on a whiteboard. The output is an ordered set of candidate Value Specs, each with its riskiest bet, not a plan.
+Before breaking a large initiative into Value Specs, draw a [Value Map](./value-map.md) together. Like the C4 model does for architecture, it uses levels of zoom (outcome, then slices, then each slice's Value Spec) and four simple rules, so it fits on a whiteboard. The output is an ordered set of candidate Value Specs, each with its riskiest bet, not a plan.
 
 ---
 

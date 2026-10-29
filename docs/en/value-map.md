@@ -4,15 +4,27 @@ The Value Map is how Value-First draws an initiative on one page. It borrows the
 
 Use it when an initiative is too big for a single Value Spec. For a single item, go straight to the [Value Spec](../../templates/en/value-spec.md).
 
-## Three levels of zoom
+**The map is not a PRD.** It holds no requirements. Three layers, three artifacts:
+
+| Layer | Question | Artifact |
+|---|---|---|
+| Bets | What outcome do we want, and what are we betting on to get there? | **Value Map** |
+| Agreement | What do we build in this slice, and how will we know it worked? | **Value Spec** |
+| Execution | How does the intent become code, step by step, with agents? | Spec Kit, Kiro, BMAD Method and similar ([comparison](./comparison.md)) |
+
+The map says what we bet on. The spec says what we agree to build. The tools say how to build it.
+
+**Credit.** The map is a close relative of [Impact Mapping](https://www.impactmapping.org/) (Gojko Adzic, 2012), which links a goal to the deliverables that should move it, and of the [Opportunity Solution Tree](https://www.producttalk.org/opportunity-solution-tree/) (Teresa Torres), which links an outcome to opportunities, solutions and assumption tests. If your team already uses one of them, keep it: the Value Map is a simpler version whose slices are Value Specs.
+
+## Levels of zoom
 
 | Level | Shows | Answers | Main readers |
 |---|---|---|---|
 | **1. Outcome** | The initiative: problem, for whom, one metric, what's out | Why are we doing this, and how will we know? | Everyone, including leadership |
 | **2. Slices** | The Value Specs that move the outcome, in order | What do we deliver first, and what are we betting on? | Value Pair, team, stakeholders |
-| **3. Criteria** | The success criteria (SC-n) of one slice and what verifies each one | How do we know this slice works? | Team and coding agents |
+| **3. Value Spec** | One slice in detail: success criteria, constraints, decisions | What do we agree to build, and how will we know it worked? | Team and coding agents |
 
-There's a fourth level, **code**, that you don't draw. Tests and pull requests cite the SC IDs, and tools and agents produce it. Like the code level in C4, it's optional on paper.
+**The map draws only levels 1 and 2.** Zooming into a slice means opening its Value Spec, a different artifact. There's a fourth level, **code**, that you don't draw either. Tests and pull requests cite the SC IDs, and tools and agents produce it. Like the code level in C4, it's optional on paper.
 
 ## Notation: four rules
 
@@ -25,7 +37,6 @@ Box types:
 
 - **Outcome:** problem · for whom · metric (baseline → target, by when) · out of scope.
 - **Slice (VS-xxx):** what it delivers · how it moves the metric · riskiest bet, of value or technical · status.
-- **Criterion (SC-n):** the statement in EARS or Given/When/Then · what verifies it (test, dashboard, review).
 
 ## Example
 
@@ -36,7 +47,7 @@ Box types:
   - **VS-014** Download invoices in the portal. Bet: customers would use the portal instead of emailing support (validated, 5 of 6). *In build.*
   - **VS-015** Filter invoices by date. Bet: audits need date ranges (2 of 6 asked). *Next.*
   - **VS-016** Monthly invoice by email. Bet: receiving beats searching (not validated). *Maybe.*
-- **Level 3, Criteria of VS-014:** SC-1 list 24 months → end-to-end test · SC-2 unchanged PDF → integration test · SC-3 403 without `billing_admin` → security test · SC-4 p95 < 1 s → load test.
+- **Level 3:** zooming into VS-014 opens [its Value Spec](../../templates/en/value-spec-example.md), with criteria SC-1 to SC-4.
 
 The landing page draws this example. There's also a [blank map to print](https://andrelaf.github.io/deliver-value-methodology/map.html).
 

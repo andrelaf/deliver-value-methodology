@@ -17,7 +17,7 @@ An honest comparison. Every approach below solves real problems well. Value-Firs
 | **AI agents** | The spec is written to be read by agents | Not covered (tool-agnostic) | Not covered (tool-agnostic) | Not covered | Core purpose |
 | **Relationship** | — | **Complementary**: improves sprint input and adds a later value check | **Complementary**: the readiness check becomes a column policy | **Closest relative**: overlaps on shaping, complementary on the rest | **Complementary**: Value-First sits above it |
 
-Sources: [Scrum Guide 2020](https://scrumguides.org/scrum-guide.html) · [Kanban Guide](https://kanbanguides.org/english/) and Anderson, *Kanban* (2010) · [Shape Up](https://basecamp.com/shapeup) · [GitHub Spec Kit](https://github.com/github/spec-kit), [Kiro](https://kiro.dev/docs/specs/), [Böckeler 2025](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html).
+Sources: [Scrum Guide 2020](https://scrumguides.org/scrum-guide.html) · [Kanban Guide](https://kanbanguides.org/english/) and Anderson, *Kanban* (2010) · [Shape Up](https://basecamp.com/shapeup) · [GitHub Spec Kit](https://github.com/github/spec-kit), [Kiro](https://kiro.dev/docs/specs/), [BMAD Method](https://docs.bmad-method.org/), [Böckeler 2025](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html).
 
 ## In more detail
 
@@ -34,9 +34,9 @@ Sources: [Scrum Guide 2020](https://scrumguides.org/scrum-guide.html) · [Kanban
 **What it does well:** shaping work before betting on it, appetite instead of estimates, fixed time and variable scope.
 **How Value-First fits:** Shape Up is the closest relative and deserves credit. A pitch and a Value Spec both state the problem and set boundaries. Value-First adds measurable success criteria, a spec written for agents, a living spec in the repo and a value check after delivery. It doesn't prescribe six-week cycles. A team using Shape Up can write the pitch as a Value Spec.
 
-### Spec-driven development (Spec Kit, Kiro and others)
-**What it does well:** turning a spec into a plan, tasks and code with agents, and standardizing agent context.
-**How Value-First fits:** above it. Value-First decides *what is worth building and how we'll know*. SDD tools handle *spec → code*. A Value Spec can feed Spec Kit's `specify` step or Kiro's requirements phase. See [Specs in the AI era](./ai-and-specs.md).
+### Spec-driven development (Spec Kit, Kiro, BMAD Method and others)
+**What it does well:** turning a spec into a plan, tasks and code with agents, and standardizing agent context. The [BMAD Method](https://docs.bmad-method.org/) ("Breakthrough Method for Agile AI-Driven Development", [GitHub](https://github.com/bmad-code-org/BMAD-METHOD)) goes further on the planning side: it guides requirements and specification, UX and architecture, and breaking work into stories, with specialized agent perspectives.
+**How Value-First fits:** above it. Value-First decides *what is worth building and how we'll know*. SDD tools and methods handle *spec → code*. A Value Spec can feed Spec Kit's `specify` step, Kiro's requirements phase or BMAD's requirements and specification work. What Value-First adds on top is the value contract: a metric with baseline and target, two named owners, and a value check on a date, which then updates the spec and the [Value Map](./value-map.md).
 
 ### SAFe
 **What it does well:** coordination at scale, portfolio and strategic alignment ([framework.scaledagile.com](https://framework.scaledagile.com/)).

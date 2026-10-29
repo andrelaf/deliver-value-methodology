@@ -89,27 +89,22 @@ T = {
         ],
         "check_more": "Checklist and maturity model",
         "map_h": "Value Map",
-        "map_lead": "For initiatives bigger than one spec. Like C4 does for architecture: three levels of zoom, four rules, and you can draw it on a whiteboard.",
-        "map_levels": [("1", "Outcome", "Why, and how will we know?"), ("2", "Slices", "What first, and what are we betting on?"), ("3", "Criteria", "How do we know this slice works?")],
+        "map_lead": "For initiatives bigger than one spec. Like C4 does for architecture: levels of zoom, four rules, and you can draw it on a whiteboard.",
+        "map_layers": "The map says what we bet on. The spec says what we agree to build. The tools say how to build it.",
+        "map_levels": [("1", "Outcome", "Why, and how will we know?"), ("2", "Slices", "What first, and what are we betting on?"), ("3", "Value Spec", "What do we agree to build in this slice?")],
         "map_example": "Fictional example, based on the VS-014 template example.",
         "map_up": "contribute to",
-        "map_zoom": "zoom into VS-014",
+        "map_zoom": "zoom into VS-014 = open its Value Spec",
+        "map_spec": ("VS-014 · Download invoices in the portal", "Problem, success criteria SC-1 to SC-4, constraints, decisions and agent instructions. It lives in the repository, not on the map.", "See the example spec"),
         "map_outcome": ("Outcome", "Customers get their invoices on their own", "Billing contacts ask support for invoices.", "Invoice tickets: ~120 → ≤ 40 / week, 6 weeks after launch", "Out: payments, invoice editing"),
         "map_slices": [
             ("VS-014", "Download invoices in the portal", "Bet: customers use the portal instead of emailing support (validated 5/6)", "In build"),
             ("VS-015", "Filter invoices by date", "Bet: audits need date ranges (2 of 6 asked)", "Next"),
             ("VS-016", "Monthly invoice by email", "Bet: receiving beats searching (not validated)", "Maybe"),
         ],
-        "map_criteria": [
-            ("SC-1", "Lists the account's last 24 months", "end-to-end test"),
-            ("SC-2", "Delivers the stored PDF unchanged", "integration test"),
-            ("SC-3", "403 without billing_admin, attempt logged", "security test"),
-            ("SC-4", "p95 < 1 s up to 500 invoices", "load test"),
-        ],
-        "map_verified": "verified by",
         "map_rules_h": "Four rules",
         "map_rules": ["Every box has a type, a name and one sentence.", "Every outcome and slice has a metric or a signal.", "Every arrow has a verb.", "One drawing per level. Zoom in only where you need to."],
-        "map_code": "Level 4, code, isn't drawn: tests and PRs cite the SC IDs.",
+        "map_code": "The map draws levels 1 and 2. Level 3 is the Value Spec, and level 4, code, isn't drawn: tests and PRs cite the spec's SC IDs.",
         "map_blank": "Fill in your own map",
         "map_more": "How to run a Value Map session",
         "demo_label": "How to fill it in",
@@ -122,7 +117,7 @@ T = {
             "Now the slices. Each one should move the metric on its own. Start with the one that teaches you fastest, and write its riskiest bet.",
             "The next slice can be a smaller bet with partial evidence. Say how many people asked for it.",
             "“Not validated” is an honest answer. It shows the team where the risk is before anyone builds.",
-            "Zoom in only on the slice you're building now. The criteria live in the Value Spec, and each one says what verifies it.",
+            "To zoom into a slice, open its Value Spec. Criteria, constraints and decisions live there, not on the map. That keeps the map a list of bets, not a requirements document.",
             "Done. Each slice becomes a Value Spec. After each value check, update the status and the order of the slices.",
         ],
         "blank_hints_outcome": ["The change you want, not a feature. E.g. Customers get their invoices on their own", "Who has the problem today, and what it is", "E.g. invoice tickets ~120 → ≤ 40 / week, 6 weeks after launch", "What this initiative won't do"],
@@ -202,27 +197,22 @@ T = {
         ],
         "check_more": "Checklist e modelo de maturidade",
         "map_h": "Mapa de Valor",
-        "map_lead": "Para iniciativas maiores que uma spec. Como o C4 faz com a arquitetura: três níveis de zoom, quatro regras, e dá para desenhar no quadro branco.",
-        "map_levels": [("1", "Resultado", "Por quê, e como saberemos?"), ("2", "Fatias", "O que primeiro, e em que apostamos?"), ("3", "Critérios", "Como sabemos que esta fatia funciona?")],
+        "map_lead": "Para iniciativas maiores que uma spec. Como o C4 faz com a arquitetura: níveis de zoom, quatro regras, e dá para desenhar no quadro branco.",
+        "map_layers": "O mapa diz em que apostamos. A spec diz o que combinamos construir. As ferramentas dizem como construir.",
+        "map_levels": [("1", "Resultado", "Por quê, e como saberemos?"), ("2", "Fatias", "O que primeiro, e em que apostamos?"), ("3", "Value Spec", "O que combinamos construir nesta fatia?")],
         "map_example": "Exemplo fictício, baseado no exemplo de template da VS-014.",
         "map_up": "contribuem para",
-        "map_zoom": "zoom na VS-014",
+        "map_zoom": "zoom na VS-014 = abrir a Value Spec dela",
+        "map_spec": ("VS-014 · Baixar faturas no portal", "Problema, critérios de sucesso SC-1 a SC-4, restrições, decisões e instruções para agentes. Fica no repositório, não no mapa.", "Ver a spec de exemplo"),
         "map_outcome": ("Resultado", "Clientes obtêm as próprias faturas", "Contatos financeiros pedem faturas ao suporte.", "Tickets de fatura: ~120 → ≤ 40 / semana, 6 semanas após o lançamento", "Fora: pagamento, edição de faturas"),
         "map_slices": [
             ("VS-014", "Baixar faturas no portal", "Aposta: clientes usam o portal em vez de mandar e-mail ao suporte (validada 5/6)", "Em construção"),
             ("VS-015", "Filtrar faturas por data", "Aposta: auditorias precisam de intervalos de datas (2 de 6 pediram)", "Próxima"),
             ("VS-016", "Fatura mensal por e-mail", "Aposta: receber é melhor que procurar (não validada)", "Talvez"),
         ],
-        "map_criteria": [
-            ("SC-1", "Lista os últimos 24 meses da conta", "teste ponta a ponta"),
-            ("SC-2", "Entrega o PDF armazenado sem alterações", "teste de integração"),
-            ("SC-3", "403 sem billing_admin, tentativa registrada", "teste de segurança"),
-            ("SC-4", "p95 < 1 s com até 500 faturas", "teste de carga"),
-        ],
-        "map_verified": "verificado por",
         "map_rules_h": "Quatro regras",
         "map_rules": ["Toda caixa tem tipo, nome e uma frase.", "Todo resultado e toda fatia têm uma métrica ou um sinal.", "Toda seta tem um verbo.", "Um desenho por nível. Aproxime só onde precisar."],
-        "map_code": "O nível 4, código, não se desenha: testes e PRs citam os IDs dos SC.",
+        "map_code": "O mapa desenha os níveis 1 e 2. O nível 3 é a Value Spec, e o nível 4, código, não se desenha: testes e PRs citam os IDs dos SC da spec.",
         "map_blank": "Preencher o seu mapa",
         "map_more": "Como conduzir uma sessão de Mapa de Valor",
         "demo_label": "Como preencher",
@@ -235,7 +225,7 @@ T = {
             "Agora as fatias. Cada uma deve conseguir mover a métrica sozinha. Comece pela que ensina mais rápido e escreva a aposta mais arriscada dela.",
             "A próxima fatia pode ser uma aposta menor, com evidência parcial. Diga quantas pessoas pediram.",
             "“Não validada” é uma resposta honesta. Mostra ao time onde está o risco antes de alguém construir.",
-            "Dê zoom só na fatia que vai ser construída agora. Os critérios ficam na Value Spec, e cada um diz o que o verifica.",
+            "Para dar zoom numa fatia, abra a Value Spec dela. Critérios, restrições e decisões ficam lá, não no mapa. Assim o mapa continua sendo uma lista de apostas, não um documento de requisitos.",
             "Pronto. Cada fatia vira uma Value Spec. Depois de cada verificação de valor, atualize o status e a ordem das fatias.",
         ],
         "blank_hints_outcome": ["A mudança que vocês querem, não uma feature. Ex.: Clientes obtêm as próprias faturas", "Quem tem o problema hoje, e qual é", "Ex.: tickets de fatura ~120 → ≤ 40 / semana, 6 semanas após o lançamento", "O que esta iniciativa não vai fazer"],
@@ -326,7 +316,8 @@ ol.steps li{margin-bottom:8px}
 .box .st{align-self:flex-start;margin-top:4px;font-size:.75rem;font-weight:600;border:1px solid var(--vf-border);border-radius:999px;padding:1px 8px;color:var(--vf-muted)}
 .box.out{--box:var(--vf-accent)}
 .box.slice.on{box-shadow:0 0 0 4px color-mix(in srgb,var(--vf-primary) 18%,transparent)}
-.box.sc{--box:var(--vf-muted);border-width:1px}
+.box.spec{--box:var(--vf-muted);border-style:dashed;max-width:560px;margin:0 auto;width:100%}
+.box.spec a{font-size:var(--vf-text-sm);font-weight:600}
 .verb{display:flex;align-items:center;justify-content:center;gap:8px;margin:10px 0;color:var(--vf-muted);font-size:var(--vf-text-sm);font-style:italic}
 .verb::before,.verb::after{content:"";height:1px;width:40px;background:var(--vf-border)}
 .zoom{border-top:1px dashed var(--vf-border);margin-top:16px;padding-top:4px}
@@ -422,9 +413,9 @@ def page(t):
     slices = "".join(
         f'<div class="box slice{" on" if i == 0 else ""}" data-s="{5 + i}"><span class="ty">2 · {vs}</span><b class="fld" data-s="{5 + i}">{escape(n)}</b><p class="fld" data-s="{5 + i}">{escape(bet)}</p><span class="st fld" data-s="{5 + i}">{escape(st)}</span></div>'
         for i, (vs, n, bet, st) in enumerate(t["map_slices"]))
-    crit = "".join(
-        f'<div class="box sc" data-s="8"><span class="ty">3 · {sc}</span><b class="fld" data-s="8">{escape(sx)}</b><small class="fld" data-s="8">{escape(t["map_verified"])}: {escape(v)}</small></div>'
-        for sc, sx, v in t["map_criteria"])
+    ms = t["map_spec"]
+    crit = (f'<div class="box spec" data-s="8"><span class="ty">3 · Value Spec</span><b class="fld" data-s="8">{escape(ms[0])}</b>'
+            f'<p class="fld" data-s="8">{escape(ms[1])}</p><a href="{BLOB}/templates/{L}/value-spec-example.md">{escape(ms[2])} →</a></div>')
     ui = t["demo_ui"]
     demo_cfg = json.dumps({"hints": t["demo_hints"], **ui}, ensure_ascii=False).replace("</", "<\\/")
     rules = "".join(f"<li>{escape(r)}</li>" for r in t["map_rules"])
@@ -508,6 +499,7 @@ def page(t):
 <section id="map" aria-labelledby="map-h"><div class="wrap">
 <h2 id="map-h">{escape(t['map_h'])}</h2>
 <p class="lead">{escape(t['map_lead'])}</p>
+<p class="callout" style="margin-top:0">{escape(t['map_layers'])}</p>
 <ol class="levels">{levels}</ol>
 <div class="map" data-demo>
 <script type="application/json">{demo_cfg}</script>

@@ -4,15 +4,27 @@ O Mapa de Valor é a forma do Value-First desenhar uma iniciativa em uma página
 
 Use quando uma iniciativa for grande demais para uma única Value Spec. Para um item só, vá direto à [Value Spec](../../templates/pt/value-spec.md).
 
-## Três níveis de zoom
+**O mapa não é um PRD.** Ele não tem requisitos. São três camadas e três artefatos:
+
+| Camada | Pergunta | Artefato |
+|---|---|---|
+| Apostas | Que resultado queremos, e em que apostamos para chegar lá? | **Mapa de Valor** |
+| Acordo | O que construímos nesta fatia, e como saberemos que funcionou? | **Value Spec** |
+| Execução | Como a intenção vira código, passo a passo, com agentes? | Spec Kit, Kiro, BMAD Method e similares ([comparação](./comparison.md)) |
+
+O mapa diz em que apostamos. A spec diz o que combinamos construir. As ferramentas dizem como construir.
+
+**Crédito.** O mapa é parente próximo do [Impact Mapping](https://www.impactmapping.org/) (Gojko Adzic, 2012), que liga um objetivo às entregas que devem movê-lo, e da [Opportunity Solution Tree](https://www.producttalk.org/opportunity-solution-tree/) (Teresa Torres), que liga um resultado a oportunidades, soluções e testes de premissas. Se o seu time já usa um deles, continue usando: o Mapa de Valor é uma versão mais simples, em que as fatias são Value Specs.
+
+## Níveis de zoom
 
 | Nível | Mostra | Responde | Quem mais lê |
 |---|---|---|---|
 | **1. Resultado** | A iniciativa: problema, para quem, uma métrica, o que fica de fora | Por que estamos fazendo isso, e como saberemos? | Todos, inclusive a liderança |
 | **2. Fatias** | As Value Specs que movem o resultado, em ordem | O que entregamos primeiro, e em que estamos apostando? | Par de Valor, time, stakeholders |
-| **3. Critérios** | Os critérios de sucesso (SC-n) de uma fatia e o que verifica cada um | Como sabemos que esta fatia funciona? | Time e agentes de código |
+| **3. Value Spec** | Uma fatia em detalhe: critérios de sucesso, restrições, decisões | O que combinamos construir, e como saberemos que funcionou? | Time e agentes de código |
 
-Existe um quarto nível, o **código**, que não se desenha. Testes e pull requests citam os IDs dos SC, e ferramentas e agentes o produzem. Como o nível de código no C4, ele é opcional no papel.
+**O mapa desenha só os níveis 1 e 2.** Dar zoom numa fatia é abrir a Value Spec dela, outro artefato. Existe um quarto nível, o **código**, que também não se desenha. Testes e pull requests citam os IDs dos SC, e ferramentas e agentes o produzem. Como o nível de código no C4, ele é opcional no papel.
 
 ## Notação: quatro regras
 
@@ -25,7 +37,6 @@ Tipos de caixa:
 
 - **Resultado:** problema · para quem · métrica (linha de base → meta, até quando) · fora do escopo.
 - **Fatia (VS-xxx):** o que entrega · como move a métrica · aposta mais arriscada, de valor ou técnica · status.
-- **Critério (SC-n):** o enunciado em EARS ou Dado/Quando/Então · o que o verifica (teste, dashboard, revisão).
 
 ## Exemplo
 
@@ -36,7 +47,7 @@ Tipos de caixa:
   - **VS-014** Baixar faturas no portal. Aposta: clientes usariam o portal em vez de mandar e-mail ao suporte (validada, 5 de 6). *Em construção.*
   - **VS-015** Filtrar faturas por data. Aposta: auditorias precisam de intervalos de datas (2 de 6 pediram). *Próxima.*
   - **VS-016** Fatura mensal por e-mail. Aposta: receber é melhor que procurar (não validada). *Talvez.*
-- **Nível 3, Critérios da VS-014:** SC-1 listar 24 meses → teste ponta a ponta · SC-2 PDF sem alterações → teste de integração · SC-3 403 sem `billing_admin` → teste de segurança · SC-4 p95 < 1 s → teste de carga.
+- **Nível 3:** dar zoom na VS-014 abre [a Value Spec dela](../../templates/pt/value-spec-example.md), com os critérios SC-1 a SC-4.
 
 A página do site desenha este exemplo. Também há um [mapa em branco para imprimir](https://andrelaf.github.io/deliver-value-methodology/pt/map.html).
 

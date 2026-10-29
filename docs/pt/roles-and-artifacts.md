@@ -51,7 +51,7 @@ Um bloco curto para o seu `AGENTS.md`, `CLAUDE.md` ou arquivo de rules. Ele orie
 
 ### 3. Mapa de Valor (opcional)
 
-Um desenho de uma página para iniciativas maiores, inspirado no modelo C4: o resultado no topo, as Value Specs que o movem e, com zoom, os critérios de uma spec. Substitui o Canvas de Alinhamento Valor-Tecnologia da v1.
+Um desenho de uma página para iniciativas maiores, inspirado no modelo C4: o resultado no topo, e as Value Specs que o movem, como uma lista de apostas. Dar zoom numa fatia abre a Value Spec dela. Substitui o Canvas de Alinhamento Valor-Tecnologia da v1.
 
 → [Mapa de Valor](./value-map.md) · [Template](../../templates/pt/value-map.md)
 

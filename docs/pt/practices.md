@@ -42,7 +42,7 @@ No Scrum, a verificação de valor complementa a Sprint Review. Ela costuma acon
 
 ## 5. Sessão de Mapa de Valor *(opcional, para iniciativas maiores)*
 
-Antes de quebrar uma iniciativa grande em Value Specs, desenhem juntos um [Mapa de Valor](./value-map.md). Como o modelo C4 faz com a arquitetura, ele usa três níveis de zoom (resultado, fatias, critérios) e quatro regras simples, então cabe num quadro branco. O resultado é um conjunto ordenado de Value Specs candidatas, cada uma com a sua aposta mais arriscada, não um plano.
+Antes de quebrar uma iniciativa grande em Value Specs, desenhem juntos um [Mapa de Valor](./value-map.md). Como o modelo C4 faz com a arquitetura, ele usa níveis de zoom (resultado, depois fatias, depois a Value Spec de cada fatia) e quatro regras simples, então cabe num quadro branco. O resultado é um conjunto ordenado de Value Specs candidatas, cada uma com a sua aposta mais arriscada, não um plano.
 
 ---
 
