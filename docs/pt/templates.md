@@ -15,6 +15,6 @@ Um formato comum é uma pasta `specs/` na raiz do repositório, com um arquivo p
 
 ## Usando o Mapa de Valor
 
-Veja [Mapa de Valor](./value-map.md) para os três níveis, as quatro regras e uma sessão de 60 minutos. Também há um [mapa em branco para imprimir](https://andrelaf.github.io/deliver-value-methodology/pt/map.html). O canvas da v1 está em [docs/archive/v1](../archive/v1/pt/canvas/value-technology-alignment-canvas.svg).
+Veja [Mapa de Valor](./value-map.md) para os três níveis, as quatro regras e uma sessão de 60 minutos. Também há um [mapa em branco para imprimir](https://andrelaf.github.io/value-first/pt/map.html). O canvas da v1 está em [docs/archive/v1](../archive/v1/pt/canvas/value-technology-alignment-canvas.svg).
 
 Os templates da v1 (Matriz de Valor, Contrato de Flexibilidade) agora fazem parte da Value Spec. Os originais estão em [docs/archive/v1](../archive/v1/pt/templates.md).

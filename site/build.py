@@ -13,7 +13,7 @@ from pathlib import Path
 
 SITE = Path(__file__).parent
 ROOT = SITE.parent
-REPO = "https://github.com/andrelaf/deliver-value-methodology"
+REPO = "https://github.com/andrelaf/value-first"
 BLOB = f"{REPO}/blob/main"
 
 
@@ -419,7 +419,7 @@ def page(t):
     ui = t["demo_ui"]
     demo_cfg = json.dumps({"hints": t["demo_hints"], **ui}, ensure_ascii=False).replace("</", "<\\/")
     rules = "".join(f"<li>{escape(r)}</li>" for r in t["map_rules"])
-    url ="https://andrelaf.github.io/deliver-value-methodology/" + ("" if L == "en" else "pt/")
+    url ="https://andrelaf.github.io/value-first/" + ("" if L == "en" else "pt/")
     return f"""<!doctype html>
 <html lang="{t['lang']}">
 <head>
@@ -429,8 +429,8 @@ def page(t):
 <meta name="description" content="{a(t['meta'])}">
 <meta name="color-scheme" content="light dark">
 <link rel="canonical" href="{url}">
-<link rel="alternate" hreflang="en" href="https://andrelaf.github.io/deliver-value-methodology/">
-<link rel="alternate" hreflang="pt-BR" href="https://andrelaf.github.io/deliver-value-methodology/pt/">
+<link rel="alternate" hreflang="en" href="https://andrelaf.github.io/value-first/">
+<link rel="alternate" hreflang="pt-BR" href="https://andrelaf.github.io/value-first/pt/">
 <meta property="og:title" content="{a(t['title'])}">
 <meta property="og:description" content="{a(t['meta'])}">
 <meta property="og:type" content="website">
