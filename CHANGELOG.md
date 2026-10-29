@@ -9,7 +9,7 @@ The framework is repositioned and renamed. The v1 text is preserved verbatim in 
 - **Thesis:** one sentence, with spec quality in the AI era at the center of the argument (not an appendix). See [Why Value-First](docs/en/why.md) and [Specs in the AI era](docs/en/ai-and-specs.md).
 - **Principles:** five v1 principles plus the Value Analyst role → six principles ([principles](docs/en/principles.md)).
 - **Roles:** the Value Analyst is no longer a job title. A **Value Pair** (Product + Tech Lead) co-owns the spec.
-- **Artifacts:** the **Value Spec** is the central artifact and absorbs the Flexibility Contract and the Technical Complexity Map. The Alignment Canvas remains as an optional tool.
+- **Artifacts:** the **Value Spec** is the central artifact and absorbs the Flexibility Contract and the Technical Complexity Map. The Alignment Canvas is replaced by the C4-inspired **Value Map** ([value map](docs/en/value-map.md)); the original is archived.
 - **Practices:** 22 v1 practices → 4 signature practices + 1 optional. Well-known techniques are credited as "compatible techniques".
 - **Case studies:** v1 "real" cases had unsourced figures that differed between PT and EN. They're replaced by clearly labeled illustrative scenarios.
 - **README:** English is primary ([README.md](README.md)), with a full Portuguese mirror ([README.pt-BR.md](README.pt-BR.md)). It reads in about three minutes.

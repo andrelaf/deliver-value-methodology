@@ -49,11 +49,11 @@ A short block for your `AGENTS.md`, `CLAUDE.md` or rules file. It tells coding a
 
 → [Snippet](../../templates/en/agents-snippet.md)
 
-### 3. Value-Technology Alignment Canvas (optional)
+### 3. Value Map (optional)
 
-A one-page workshop tool for larger initiatives, used before writing Value Specs.
+A one-page drawing for larger initiatives, inspired by the C4 model: the outcome at the top, the Value Specs that move it, and the criteria of one spec when you zoom in. It replaces the v1 Value-Technology Alignment Canvas.
 
-→ [Canvas (SVG)](./canvas/value-technology-alignment-canvas.svg) · [Filled example (PNG)](./canvas/value-technology-alignment-canvas-example.png)
+→ [Value Map](./value-map.md) · [Template](../../templates/en/value-map.md)
 
 ### What happened to the other v1 artifacts
 

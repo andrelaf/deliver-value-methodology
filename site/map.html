@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Value Map (blank)</title>
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/tokens.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--vf-bg);color:var(--vf-ink);font-family:var(--vf-font-sans);font-size:14px;line-height:1.35}
+.sheet{max-width:1100px;margin:0 auto;padding:16px;display:flex;flex-direction:column;gap:10px;min-height:100vh}
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+h1{font-size:1.4rem;font-weight:600;margin:0}
+.head span{color:var(--vf-muted);font-size:12px}
+.row{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.out{max-width:620px;width:100%;margin:0 auto}
+.box{border:2px solid var(--box,var(--vf-primary));border-radius:8px;padding:8px 10px;min-height:150px;display:flex;flex-direction:column}
+.box.big{--box:var(--vf-accent);min-height:30vh}
+.row .box{min-height:42vh}
+.ty{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--box,var(--vf-primary))}
+.f{flex:1;border-bottom:1px dashed var(--vf-border);color:var(--vf-muted);font-size:11px;padding-top:2px}
+.f:last-child{border-bottom:0}
+.verb{text-align:center;color:var(--vf-muted);font-style:italic;font-size:12px;margin:0}
+.rules{color:var(--vf-muted);font-size:12px;margin:0}
+.rules a{color:var(--vf-primary)}
+@page{size:A4 landscape;margin:10mm}
+@media print{body{background:#fff;color:#000}.sheet{max-width:none;padding:0;min-height:0}.box.big{min-height:55mm}.row .box{min-height:85mm}.noprint{display:none}.box{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main class="sheet">
+<div class="head"><h1>Value Map: ____________________</h1><span>Value-First Development · ____ / ____ / ______</span></div>
+<p class="rules noprint">Print this page (landscape). Level 3 lives in each Value Spec. <a href="./">Back to Value-First</a></p>
+<div class="out"><div class="box big"><span class="ty">1 · Outcome</span><div class="f">Name</div><div class="f">Problem and for whom</div><div class="f">Metric: baseline → target, by when</div><div class="f">Out of scope</div></div></div>
+<p class="verb">↑ contribute to</p>
+<div class="row"><div class="box"><span class="ty">2 · Slice 1</span><div class="f">VS-___  ·  Delivers</div><div class="f">How it moves the metric</div><div class="f">Riskiest bet (value or tech)</div><div class="f">Status</div></div><div class="box"><span class="ty">2 · Slice 2</span><div class="f">VS-___  ·  Delivers</div><div class="f">How it moves the metric</div><div class="f">Riskiest bet (value or tech)</div><div class="f">Status</div></div><div class="box"><span class="ty">2 · Slice 3</span><div class="f">VS-___  ·  Delivers</div><div class="f">How it moves the metric</div><div class="f">Riskiest bet (value or tech)</div><div class="f">Status</div></div><div class="box"><span class="ty">2 · Slice 4</span><div class="f">VS-___  ·  Delivers</div><div class="f">How it moves the metric</div><div class="f">Riskiest bet (value or tech)</div><div class="f">Status</div></div></div>
+<p class="rules">Every box has a type, a name and one sentence. · Every outcome and slice has a metric or a signal. · Every arrow has a verb. · One drawing per level. Zoom in only where you need to. Level 4, code, isn&#x27;t drawn: tests and PRs cite the SC IDs.</p>
+</main>
+</body>
+</html>

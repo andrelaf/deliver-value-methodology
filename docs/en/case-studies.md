@@ -32,7 +32,7 @@
 **Situation.** Three departments want different things from an internal approvals tool. Each one sees its own request as the priority.
 
 **With Value-First.**
-- An optional Alignment Canvas session puts business goals and technical limits on one page and produces four candidate Value Specs.
+- An optional Value Map session puts one shared outcome at the top and produces four candidate Value Specs, each with its riskiest bet.
 - Each spec states its expected value with a metric that the department itself provides, such as approval lead time or rework requests.
 - A simple table ranks the four by expected value and effort. Two get built first.
 - Value checks after release show that one delivery didn't change its metric. The team retires the follow-up spec instead of extending it.

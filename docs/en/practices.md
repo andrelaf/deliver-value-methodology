@@ -40,9 +40,9 @@ After delivery, on the date the spec named, compare the result with the success 
 
 In Scrum, the value check complements the Sprint Review. It often happens weeks later, when the metric has had time to move.
 
-## 5. Alignment Canvas session *(optional, for larger initiatives)*
+## 5. Value Map session *(optional, for larger initiatives)*
 
-Before breaking a large initiative into Value Specs, run a kickoff with the [Value-Technology Alignment Canvas](./canvas/value-technology-alignment-canvas.svg). It puts business and technical perspectives on one page. The output is a set of candidate Value Specs, not a plan.
+Before breaking a large initiative into Value Specs, draw a [Value Map](./value-map.md) together. Like the C4 model does for architecture, it uses three levels of zoom (outcome, slices, criteria) and four simple rules, so it fits on a whiteboard. The output is an ordered set of candidate Value Specs, each with its riskiest bet, not a plan.
 
 ---
 
@@ -63,4 +63,4 @@ Value-First doesn't reinvent these. They're good ways to fill in a Value Spec:
 
 ---
 
-**From v1.** v1 listed 22 practices. Most were well-known techniques (above) or ceremonies that added overhead. Flexibility Contracts and the Technical Complexity Map are now sections of the Value Spec. Value Checkpoints became the value check. The full v1 list is in [docs/archive/v1](../archive/v1/en/practices.md).
+**From v1.** v1 listed 22 practices. Most were well-known techniques (above) or ceremonies that added overhead. Flexibility Contracts and the Technical Complexity Map are now sections of the Value Spec. The Alignment Canvas became the Value Map. Value Checkpoints became the value check. The full v1 list is in [docs/archive/v1](../archive/v1/en/practices.md).

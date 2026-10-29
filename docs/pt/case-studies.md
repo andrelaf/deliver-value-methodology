@@ -32,7 +32,7 @@
 **Situação.** Três departamentos querem coisas diferentes de uma ferramenta interna de aprovações. Cada um vê o próprio pedido como prioridade.
 
 **Com Value-First.**
-- Uma sessão opcional com o Canvas de Alinhamento Valor-Tecnologia coloca objetivos de negócio e limites técnicos em uma única página e gera quatro Value Specs candidatas.
+- Uma sessão opcional de Mapa de Valor coloca um resultado compartilhado no topo e gera quatro Value Specs candidatas, cada uma com a sua aposta mais arriscada.
 - Cada spec declara o valor esperado com uma métrica fornecida pelo próprio departamento, como o tempo de aprovação ou os pedidos de retrabalho.
 - Uma tabela simples ordena as quatro por valor esperado e esforço. Duas são construídas primeiro.
 - As verificações de valor após o lançamento mostram que uma das entregas não mexeu na sua métrica. O time aposenta a spec de continuação em vez de estendê-la.

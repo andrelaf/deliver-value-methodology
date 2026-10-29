@@ -24,8 +24,6 @@ def copy_assets():
     shutil.copy(ROOT / "assets/brand/social-card.svg", out / "social-card.svg")
     for f in (ROOT / "assets/diagrams").glob("*.svg"):
         shutil.copy(f, out / f.name)
-    for lang in ("en", "pt"):
-        shutil.copy(ROOT / f"docs/{lang}/canvas/value-technology-alignment-canvas.png", out / f"canvas-{lang}.png")
 
 
 T = {
@@ -34,7 +32,7 @@ T = {
         "title": "Value-First Development",
         "meta": "Make the value of each piece of work explicit, shared and measurable before anyone builds it, so people and coding agents build the right thing.",
         "skip": "Skip to content",
-        "nav": [("#problem", "Problem"), ("#idea", "The idea"), ("#principles", "Principles"), ("#ai", "Specs and AI"), ("#check", "Checklist")],
+        "nav": [("#problem", "Problem"), ("#idea", "The idea"), ("#principles", "Principles"), ("#ai", "Specs and AI"), ("#check", "Checklist"), ("#map", "Value Map")],
         "tagline": "From ritual to value, from spec to software.",
         "thesis": "Value-First Development makes the value of each piece of work explicit, shared and measurable before anyone builds it, so that people and coding agents build the right thing, not only build it fast.",
         "cta1": "Get the Value Spec template", "cta1_href": f"{BLOB}/templates/en/value-spec.md",
@@ -89,10 +87,36 @@ T = {
             "People review all AI-generated code, and stability is tracked alongside speed.",
         ],
         "check_more": "Checklist and maturity model",
-        "canvas_h": "Value-Technology Alignment Canvas",
-        "canvas_p": "For larger initiatives: an optional one-page workshop that puts business and technical perspectives side by side before you write Value Specs.",
-        "canvas_alt": "The Value-Technology Alignment Canvas, a one-page grid with business and technical blocks.",
-        "canvas_link": "Download the canvas (SVG)",
+        "map_h": "Value Map",
+        "map_lead": "For initiatives bigger than one spec. Like C4 does for architecture: three levels of zoom, four rules, and you can draw it on a whiteboard.",
+        "map_levels": [("1", "Outcome", "Why, and how will we know?"), ("2", "Slices", "What first, and what are we betting on?"), ("3", "Criteria", "How do we know this slice works?")],
+        "map_example": "Fictional example, based on the VS-014 template example.",
+        "map_up": "contribute to",
+        "map_zoom": "zoom into VS-014",
+        "map_outcome": ("Outcome", "Customers get their invoices on their own", "Billing contacts ask support for invoices.", "Invoice tickets: ~120 → ≤ 40 / week, 6 weeks after launch", "Out: payments, invoice editing"),
+        "map_slices": [
+            ("VS-014", "Download invoices in the portal", "Bet: customers use the portal instead of emailing support (validated 5/6)", "In build"),
+            ("VS-015", "Filter invoices by date", "Bet: audits need date ranges (2 of 6 asked)", "Next"),
+            ("VS-016", "Monthly invoice by email", "Bet: receiving beats searching (not validated)", "Maybe"),
+        ],
+        "map_criteria": [
+            ("SC-1", "Lists the account's last 24 months", "end-to-end test"),
+            ("SC-2", "Delivers the stored PDF unchanged", "integration test"),
+            ("SC-3", "403 without billing_admin, attempt logged", "security test"),
+            ("SC-4", "p95 < 1 s up to 500 invoices", "load test"),
+        ],
+        "map_verified": "verified by",
+        "map_rules_h": "Four rules",
+        "map_rules": ["Every box has a type, a name and one sentence.", "Every outcome and slice has a metric or a signal.", "Every arrow has a verb.", "One drawing per level. Zoom in only where you need to."],
+        "map_code": "Level 4, code, isn't drawn: tests and PRs cite the SC IDs.",
+        "map_blank": "Blank map to print",
+        "map_more": "How to run a Value Map session",
+        "blank_title": "Value Map (blank)",
+        "blank_slice": "Slice",
+        "blank_fields_outcome": ["Name", "Problem and for whom", "Metric: baseline → target, by when", "Out of scope"],
+        "blank_fields_slice": ["VS-___  ·  Delivers", "How it moves the metric", "Riskiest bet (value or tech)", "Status"],
+        "blank_print": "Print this page (landscape). Level 3 lives in each Value Spec.",
+        "blank_back": "Back to Value-First",
         "cta_h": "Try it on one item this week",
         "cta_steps": ["Pick one upcoming item with real value and some uncertainty.", "Write a Value Spec as a pair. Keep it to a page.", "Validate the riskiest assumption with the cheapest prototype.", "Build, then check the value on the date you set."],
         "cta_contrib": "Share what happened, critique it or contribute",
@@ -105,7 +129,7 @@ T = {
         "title": "Value-First Development",
         "meta": "Torne explícito, compartilhado e mensurável o valor de cada trabalho antes de construí-lo, para que pessoas e agentes de código construam a coisa certa.",
         "skip": "Pular para o conteúdo",
-        "nav": [("#problem", "Problema"), ("#idea", "A ideia"), ("#principles", "Princípios"), ("#ai", "Specs e IA"), ("#check", "Checklist")],
+        "nav": [("#problem", "Problema"), ("#idea", "A ideia"), ("#principles", "Princípios"), ("#ai", "Specs e IA"), ("#check", "Checklist"), ("#map", "Mapa de Valor")],
         "tagline": "Do ritual ao valor, da spec ao software.",
         "thesis": "O Value-First Development torna explícito, compartilhado e mensurável o valor de cada trabalho antes que alguém o construa, para que pessoas e agentes de código construam a coisa certa, e não só construam rápido.",
         "cta1": "Pegar o template de Value Spec", "cta1_href": f"{BLOB}/templates/pt/value-spec.md",
@@ -160,10 +184,36 @@ T = {
             "Pessoas revisam todo código gerado por IA, e a estabilidade é acompanhada junto com a velocidade.",
         ],
         "check_more": "Checklist e modelo de maturidade",
-        "canvas_h": "Canvas de Alinhamento Valor-Tecnologia",
-        "canvas_p": "Para iniciativas maiores: um workshop opcional, em uma página, que coloca as visões de negócio e de tecnologia lado a lado antes de escrever as Value Specs.",
-        "canvas_alt": "O Canvas de Alinhamento Valor-Tecnologia, uma grade de uma página com blocos de negócio e de tecnologia.",
-        "canvas_link": "Baixar o canvas (SVG)",
+        "map_h": "Mapa de Valor",
+        "map_lead": "Para iniciativas maiores que uma spec. Como o C4 faz com a arquitetura: três níveis de zoom, quatro regras, e dá para desenhar no quadro branco.",
+        "map_levels": [("1", "Resultado", "Por quê, e como saberemos?"), ("2", "Fatias", "O que primeiro, e em que apostamos?"), ("3", "Critérios", "Como sabemos que esta fatia funciona?")],
+        "map_example": "Exemplo fictício, baseado no exemplo de template da VS-014.",
+        "map_up": "contribuem para",
+        "map_zoom": "zoom na VS-014",
+        "map_outcome": ("Resultado", "Clientes obtêm as próprias faturas", "Contatos financeiros pedem faturas ao suporte.", "Tickets de fatura: ~120 → ≤ 40 / semana, 6 semanas após o lançamento", "Fora: pagamento, edição de faturas"),
+        "map_slices": [
+            ("VS-014", "Baixar faturas no portal", "Aposta: clientes usam o portal em vez de mandar e-mail ao suporte (validada 5/6)", "Em construção"),
+            ("VS-015", "Filtrar faturas por data", "Aposta: auditorias precisam de intervalos de datas (2 de 6 pediram)", "Próxima"),
+            ("VS-016", "Fatura mensal por e-mail", "Aposta: receber é melhor que procurar (não validada)", "Talvez"),
+        ],
+        "map_criteria": [
+            ("SC-1", "Lista os últimos 24 meses da conta", "teste ponta a ponta"),
+            ("SC-2", "Entrega o PDF armazenado sem alterações", "teste de integração"),
+            ("SC-3", "403 sem billing_admin, tentativa registrada", "teste de segurança"),
+            ("SC-4", "p95 < 1 s com até 500 faturas", "teste de carga"),
+        ],
+        "map_verified": "verificado por",
+        "map_rules_h": "Quatro regras",
+        "map_rules": ["Toda caixa tem tipo, nome e uma frase.", "Todo resultado e toda fatia têm uma métrica ou um sinal.", "Toda seta tem um verbo.", "Um desenho por nível. Aproxime só onde precisar."],
+        "map_code": "O nível 4, código, não se desenha: testes e PRs citam os IDs dos SC.",
+        "map_blank": "Mapa em branco para imprimir",
+        "map_more": "Como conduzir uma sessão de Mapa de Valor",
+        "blank_title": "Mapa de Valor (em branco)",
+        "blank_slice": "Fatia",
+        "blank_fields_outcome": ["Nome", "Problema e para quem", "Métrica: linha de base → meta, até quando", "Fora do escopo"],
+        "blank_fields_slice": ["VS-___  ·  Entrega", "Como move a métrica", "Aposta mais arriscada (valor ou técnica)", "Status"],
+        "blank_print": "Imprima esta página (paisagem). O nível 3 fica em cada Value Spec.",
+        "blank_back": "Voltar ao Value-First",
         "cta_h": "Experimente em um item nesta semana",
         "cta_steps": ["Escolha um item próximo com valor real e alguma incerteza.", "Escreva uma Value Spec em par. Uma página basta.", "Valide a premissa mais arriscada com o protótipo mais barato.", "Construa e verifique o valor na data combinada."],
         "cta_contrib": "Conte o que aconteceu, critique ou contribua",
@@ -226,7 +276,30 @@ ul.checks li{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:st
 ul.checks li::before{content:"";width:22px;height:22px;margin-top:2px;border-radius:6px;background:var(--vf-primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
 ol.steps{padding-left:1.4em;max-width:var(--vf-measure)}
 ol.steps li{margin-bottom:8px}
-.canvas img{background:#fff;border:1px solid var(--vf-border)}
+.levels{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));margin:var(--vf-space-6) 0 0;padding:0;list-style:none}
+.levels li{display:grid;grid-template-columns:30px 1fr;gap:4px 12px}
+.levels .num{grid-row:span 2;margin:0}
+.levels span:not(.num){color:var(--vf-muted);font-size:var(--vf-text-sm)}
+.map{margin-top:var(--vf-space-8);border:1px solid var(--vf-border);border-radius:var(--vf-radius-lg);padding:var(--vf-space-6);background:var(--vf-bg)}
+.map .ex{color:var(--vf-muted);font-size:var(--vf-text-sm);font-style:italic;margin-bottom:var(--vf-space-4)}
+.lvl{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))}
+.lvl-1{max-width:560px;margin:0 auto}
+.lvl-1 .box{grid-column:1/-1}
+.box{border:2px solid var(--box,var(--vf-primary));border-radius:var(--vf-radius);padding:12px 14px;background:var(--vf-bg);display:flex;flex-direction:column;gap:4px}
+.box .ty{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--box,var(--vf-primary))}
+.box b{font-weight:600;line-height:1.3}
+.box p,.box small{margin:0;color:var(--vf-muted);font-size:var(--vf-text-sm);line-height:1.4}
+.box .m{color:var(--vf-ink);font-weight:500}
+.box .st{align-self:flex-start;margin-top:4px;font-size:.75rem;font-weight:600;border:1px solid var(--vf-border);border-radius:999px;padding:1px 8px;color:var(--vf-muted)}
+.box.out{--box:var(--vf-accent)}
+.box.slice.on{box-shadow:0 0 0 4px color-mix(in srgb,var(--vf-primary) 18%,transparent)}
+.box.sc{--box:var(--vf-muted);border-width:1px}
+.verb{display:flex;align-items:center;justify-content:center;gap:8px;margin:10px 0;color:var(--vf-muted);font-size:var(--vf-text-sm);font-style:italic}
+.verb::before,.verb::after{content:"";height:1px;width:40px;background:var(--vf-border)}
+.zoom{border-top:1px dashed var(--vf-border);margin-top:16px;padding-top:4px}
+.mapfoot{display:grid;gap:var(--vf-space-8);grid-template-columns:1fr;margin-top:var(--vf-space-8)}
+@media (min-width:900px){.mapfoot{grid-template-columns:1fr 1fr}}
+.mapfoot ol{padding-left:1.3em;margin:0}.mapfoot li{margin-bottom:6px}
 footer{padding:var(--vf-space-8) 0;color:var(--vf-muted);font-size:var(--vf-text-sm)}
 footer p{max-width:none}
 """
@@ -245,8 +318,16 @@ def page(t):
     steps = "".join(f"<li>{escape(s)}</li>" for s in t["cta_steps"])
     L = "en" if t["lang"] == "en" else "pt"
     d = t["docs_base"]
-    canvas_svg = f"{BLOB}/docs/{L}/canvas/value-technology-alignment-canvas.svg"
-    url = "https://andrelaf.github.io/deliver-value-methodology/" + ("" if L == "en" else "pt/")
+    o = t["map_outcome"]
+    levels = "".join(f'<li><span class="num" aria-hidden="true">{n}</span><b>{escape(h)}</b><span>{escape(q)}</span></li>' for n, h, q in t["map_levels"])
+    slices = "".join(
+        f'<div class="box slice{" on" if i == 0 else ""}"><span class="ty">2 · {vs}</span><b>{escape(n)}</b><p>{escape(bet)}</p><span class="st">{escape(st)}</span></div>'
+        for i, (vs, n, bet, st) in enumerate(t["map_slices"]))
+    crit = "".join(
+        f'<div class="box sc"><span class="ty">3 · {sc}</span><b>{escape(s)}</b><small>{escape(t["map_verified"])}: {escape(v)}</small></div>'
+        for sc, s, v in t["map_criteria"])
+    rules = "".join(f"<li>{escape(r)}</li>" for r in t["map_rules"])
+    url ="https://andrelaf.github.io/deliver-value-methodology/" + ("" if L == "en" else "pt/")
     return f"""<!doctype html>
 <html lang="{t['lang']}">
 <head>
@@ -323,13 +404,26 @@ def page(t):
 <a class="more" href="{d}/adoption.md">{escape(t['check_more'])} →</a>
 </div></section>
 
-<section id="canvas" aria-labelledby="canvas-h"><div class="wrap">
-<div class="two"><div>
-<h2 id="canvas-h">{escape(t['canvas_h'])}</h2>
-<p>{escape(t['canvas_p'])}</p>
-<a class="more" href="{canvas_svg}">{escape(t['canvas_link'])} →</a>
+<section id="map" aria-labelledby="map-h"><div class="wrap">
+<h2 id="map-h">{escape(t['map_h'])}</h2>
+<p class="lead">{escape(t['map_lead'])}</p>
+<ol class="levels">{levels}</ol>
+<div class="map">
+<p class="ex">{escape(t['map_example'])}</p>
+<div class="lvl lvl-1"><div class="box out"><span class="ty">1 · {escape(o[0])}</span><b>{escape(o[1])}</b><p>{escape(o[2])}</p><p class="m">{escape(o[3])}</p><small>{escape(o[4])}</small></div></div>
+<p class="verb">↑ {escape(t['map_up'])}</p>
+<div class="lvl">{slices}</div>
+<div class="zoom"><p class="verb">↓ {escape(t['map_zoom'])}</p>
+<div class="lvl">{crit}</div></div>
 </div>
-<figure class="canvas" style="margin:0"><img src="{b}assets/canvas-{L}.png" alt="{a(t['canvas_alt'])}" loading="lazy"></figure></div>
+<div class="mapfoot"><div>
+<h3>{escape(t['map_rules_h'])}</h3>
+<ol>{rules}</ol>
+<p class="note" style="margin-top:12px">{escape(t['map_code'])}</p>
+</div><div>
+<div class="ctas" style="margin-top:0"><a class="btn primary" href="map.html">{escape(t['map_blank'])}</a></div>
+<a class="more" style="margin-top:0" href="{d}/value-map.md">{escape(t['map_more'])} →</a>
+</div></div>
 </div></section>
 
 <section id="start" aria-labelledby="start-h"><div class="wrap">
@@ -346,9 +440,67 @@ def page(t):
 """
 
 
+BLANK_CSS = """
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--vf-bg);color:var(--vf-ink);font-family:var(--vf-font-sans);font-size:14px;line-height:1.35}
+.sheet{max-width:1100px;margin:0 auto;padding:16px;display:flex;flex-direction:column;gap:10px;min-height:100vh}
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+h1{font-size:1.4rem;font-weight:600;margin:0}
+.head span{color:var(--vf-muted);font-size:12px}
+.row{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.out{max-width:620px;width:100%;margin:0 auto}
+.box{border:2px solid var(--box,var(--vf-primary));border-radius:8px;padding:8px 10px;min-height:150px;display:flex;flex-direction:column}
+.box.big{--box:var(--vf-accent);min-height:30vh}
+.row .box{min-height:42vh}
+.ty{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--box,var(--vf-primary))}
+.f{flex:1;border-bottom:1px dashed var(--vf-border);color:var(--vf-muted);font-size:11px;padding-top:2px}
+.f:last-child{border-bottom:0}
+.verb{text-align:center;color:var(--vf-muted);font-style:italic;font-size:12px;margin:0}
+.rules{color:var(--vf-muted);font-size:12px;margin:0}
+.rules a{color:var(--vf-primary)}
+@page{size:A4 landscape;margin:10mm}
+@media print{body{background:#fff;color:#000}.sheet{max-width:none;padding:0;min-height:0}.box.big{min-height:55mm}.row .box{min-height:85mm}.noprint{display:none}.box{break-inside:avoid}}
+"""
+
+
+def blank(t):
+    L = "en" if t["lang"] == "en" else "pt"
+    b = t["base"]
+    outcome = "".join(f'<div class="f">{escape(f)}</div>' for f in t["blank_fields_outcome"])
+    slice_fields = "".join(f'<div class="f">{escape(f)}</div>' for f in t["blank_fields_slice"])
+    slices = "".join(f'<div class="box"><span class="ty">2 · {escape(t["blank_slice"])} {i}</span>{slice_fields}</div>' for i in range(1, 5))
+    rules = " · ".join(escape(r) for r in t["map_rules"])
+    return f"""<!doctype html>
+<html lang="{t['lang']}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{escape(t['blank_title'])}</title>
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="{b}assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="{b}assets/tokens.css">
+<style>{BLANK_CSS}</style>
+</head>
+<body>
+<main class="sheet">
+<div class="head"><h1>{escape(t['map_h'])}: ____________________</h1><span>Value-First Development · ____ / ____ / ______</span></div>
+<p class="rules noprint">{escape(t['blank_print'])} <a href="./">{escape(t['blank_back'])}</a></p>
+<div class="out"><div class="box big"><span class="ty">1 · {escape(t['map_levels'][0][1])}</span>{outcome}</div></div>
+<p class="verb">↑ {escape(t['map_up'])}</p>
+<div class="row">{slices}</div>
+<p class="rules">{rules} {escape(t['map_code'])}</p>
+</main>
+</body>
+</html>
+"""
+
+
 if __name__ == "__main__":
     copy_assets()
     (SITE / "index.html").write_text(page(T["en"]), encoding="utf-8")
+    (SITE / "map.html").write_text(blank(T["en"]), encoding="utf-8")
     (SITE / "pt").mkdir(exist_ok=True)
     (SITE / "pt/index.html").write_text(page(T["pt"]), encoding="utf-8")
+    (SITE / "pt/map.html").write_text(blank(T["pt"]), encoding="utf-8")
     print("ok")

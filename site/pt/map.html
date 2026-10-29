@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa de Valor (em branco)</title>
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/tokens.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--vf-bg);color:var(--vf-ink);font-family:var(--vf-font-sans);font-size:14px;line-height:1.35}
+.sheet{max-width:1100px;margin:0 auto;padding:16px;display:flex;flex-direction:column;gap:10px;min-height:100vh}
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+h1{font-size:1.4rem;font-weight:600;margin:0}
+.head span{color:var(--vf-muted);font-size:12px}
+.row{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.out{max-width:620px;width:100%;margin:0 auto}
+.box{border:2px solid var(--box,var(--vf-primary));border-radius:8px;padding:8px 10px;min-height:150px;display:flex;flex-direction:column}
+.box.big{--box:var(--vf-accent);min-height:30vh}
+.row .box{min-height:42vh}
+.ty{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--box,var(--vf-primary))}
+.f{flex:1;border-bottom:1px dashed var(--vf-border);color:var(--vf-muted);font-size:11px;padding-top:2px}
+.f:last-child{border-bottom:0}
+.verb{text-align:center;color:var(--vf-muted);font-style:italic;font-size:12px;margin:0}
+.rules{color:var(--vf-muted);font-size:12px;margin:0}
+.rules a{color:var(--vf-primary)}
+@page{size:A4 landscape;margin:10mm}
+@media print{body{background:#fff;color:#000}.sheet{max-width:none;padding:0;min-height:0}.box.big{min-height:55mm}.row .box{min-height:85mm}.noprint{display:none}.box{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main class="sheet">
+<div class="head"><h1>Mapa de Valor: ____________________</h1><span>Value-First Development · ____ / ____ / ______</span></div>
+<p class="rules noprint">Imprima esta página (paisagem). O nível 3 fica em cada Value Spec. <a href="./">Voltar ao Value-First</a></p>
+<div class="out"><div class="box big"><span class="ty">1 · Resultado</span><div class="f">Nome</div><div class="f">Problema e para quem</div><div class="f">Métrica: linha de base → meta, até quando</div><div class="f">Fora do escopo</div></div></div>
+<p class="verb">↑ contribuem para</p>
+<div class="row"><div class="box"><span class="ty">2 · Fatia 1</span><div class="f">VS-___  ·  Entrega</div><div class="f">Como move a métrica</div><div class="f">Aposta mais arriscada (valor ou técnica)</div><div class="f">Status</div></div><div class="box"><span class="ty">2 · Fatia 2</span><div class="f">VS-___  ·  Entrega</div><div class="f">Como move a métrica</div><div class="f">Aposta mais arriscada (valor ou técnica)</div><div class="f">Status</div></div><div class="box"><span class="ty">2 · Fatia 3</span><div class="f">VS-___  ·  Entrega</div><div class="f">Como move a métrica</div><div class="f">Aposta mais arriscada (valor ou técnica)</div><div class="f">Status</div></div><div class="box"><span class="ty">2 · Fatia 4</span><div class="f">VS-___  ·  Entrega</div><div class="f">Como move a métrica</div><div class="f">Aposta mais arriscada (valor ou técnica)</div><div class="f">Status</div></div></div>
+<p class="rules">Toda caixa tem tipo, nome e uma frase. · Todo resultado e toda fatia têm uma métrica ou um sinal. · Toda seta tem um verbo. · Um desenho por nível. Aproxime só onde precisar. O nível 4, código, não se desenha: testes e PRs citam os IDs dos SC.</p>
+</main>
+</body>
+</html>

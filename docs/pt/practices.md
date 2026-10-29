@@ -40,9 +40,9 @@ Depois da entrega, na data que a spec definiu, compare o resultado com os crité
 
 No Scrum, a verificação de valor complementa a Sprint Review. Ela costuma acontecer semanas depois, quando a métrica já teve tempo de se mexer.
 
-## 5. Sessão do Canvas de Alinhamento *(opcional, para iniciativas maiores)*
+## 5. Sessão de Mapa de Valor *(opcional, para iniciativas maiores)*
 
-Antes de quebrar uma iniciativa grande em Value Specs, faça um kickoff com o [Canvas de Alinhamento Valor-Tecnologia](./canvas/value-technology-alignment-canvas.svg). Ele coloca as perspectivas de negócio e técnica em uma única página. O resultado é um conjunto de Value Specs candidatas, não um plano.
+Antes de quebrar uma iniciativa grande em Value Specs, desenhem juntos um [Mapa de Valor](./value-map.md). Como o modelo C4 faz com a arquitetura, ele usa três níveis de zoom (resultado, fatias, critérios) e quatro regras simples, então cabe num quadro branco. O resultado é um conjunto ordenado de Value Specs candidatas, cada uma com a sua aposta mais arriscada, não um plano.
 
 ---
 
@@ -63,4 +63,4 @@ O Value-First não reinventa estas técnicas. Elas são boas formas de preencher
 
 ---
 
-**Da v1.** A v1 listava 22 práticas. A maioria eram técnicas conhecidas (acima) ou cerimônias que adicionavam sobrecarga. Os Contratos de Flexibilidade e o Mapa de Complexidade Técnica agora são seções da Value Spec. Os Checkpoints de Valor viraram a verificação de valor. A lista completa da v1 está em [docs/archive/v1](../archive/v1/pt/practices.md).
+**Da v1.** A v1 listava 22 práticas. A maioria eram técnicas conhecidas (acima) ou cerimônias que adicionavam sobrecarga. Os Contratos de Flexibilidade e o Mapa de Complexidade Técnica agora são seções da Value Spec. O Canvas de Alinhamento virou o Mapa de Valor. Os Checkpoints de Valor viraram a verificação de valor. A lista completa da v1 está em [docs/archive/v1](../archive/v1/pt/practices.md).

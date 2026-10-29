@@ -82,7 +82,7 @@ Value-First doesn't compete with Scrum, Kanban, Shape Up or spec-driven tools li
 | [Why Value-First](docs/en/why.md) | The thesis and the Tech Lead's role |
 | [Specs in the AI era](docs/en/ai-and-specs.md) | Spec-driven development, agents, limits and risks |
 | [Principles](docs/en/principles.md) · [Practices](docs/en/practices.md) | The core |
-| [Roles and artifacts](docs/en/roles-and-artifacts.md) | Value Pair, Value Spec, agent snippet, Canvas |
+| [Roles and artifacts](docs/en/roles-and-artifacts.md) | Value Pair, Value Spec, agent snippet, Value Map |
 | [Adoption](docs/en/adoption.md) | Checklist, maturity model, first week, when not to use it |
 | [Comparison](docs/en/comparison.md) · [FAQ](docs/en/faq.md) | Scrum, Kanban, Shape Up, spec-driven development |
 | [Scenarios](docs/en/case-studies.md) · [Templates](docs/en/templates.md) · [Sources](docs/en/sources.md) | Examples and references |

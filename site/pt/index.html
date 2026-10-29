@@ -71,7 +71,30 @@ ul.checks li{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:st
 ul.checks li::before{content:"";width:22px;height:22px;margin-top:2px;border-radius:6px;background:var(--vf-primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
 ol.steps{padding-left:1.4em;max-width:var(--vf-measure)}
 ol.steps li{margin-bottom:8px}
-.canvas img{background:#fff;border:1px solid var(--vf-border)}
+.levels{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));margin:var(--vf-space-6) 0 0;padding:0;list-style:none}
+.levels li{display:grid;grid-template-columns:30px 1fr;gap:4px 12px}
+.levels .num{grid-row:span 2;margin:0}
+.levels span:not(.num){color:var(--vf-muted);font-size:var(--vf-text-sm)}
+.map{margin-top:var(--vf-space-8);border:1px solid var(--vf-border);border-radius:var(--vf-radius-lg);padding:var(--vf-space-6);background:var(--vf-bg)}
+.map .ex{color:var(--vf-muted);font-size:var(--vf-text-sm);font-style:italic;margin-bottom:var(--vf-space-4)}
+.lvl{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))}
+.lvl-1{max-width:560px;margin:0 auto}
+.lvl-1 .box{grid-column:1/-1}
+.box{border:2px solid var(--box,var(--vf-primary));border-radius:var(--vf-radius);padding:12px 14px;background:var(--vf-bg);display:flex;flex-direction:column;gap:4px}
+.box .ty{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--box,var(--vf-primary))}
+.box b{font-weight:600;line-height:1.3}
+.box p,.box small{margin:0;color:var(--vf-muted);font-size:var(--vf-text-sm);line-height:1.4}
+.box .m{color:var(--vf-ink);font-weight:500}
+.box .st{align-self:flex-start;margin-top:4px;font-size:.75rem;font-weight:600;border:1px solid var(--vf-border);border-radius:999px;padding:1px 8px;color:var(--vf-muted)}
+.box.out{--box:var(--vf-accent)}
+.box.slice.on{box-shadow:0 0 0 4px color-mix(in srgb,var(--vf-primary) 18%,transparent)}
+.box.sc{--box:var(--vf-muted);border-width:1px}
+.verb{display:flex;align-items:center;justify-content:center;gap:8px;margin:10px 0;color:var(--vf-muted);font-size:var(--vf-text-sm);font-style:italic}
+.verb::before,.verb::after{content:"";height:1px;width:40px;background:var(--vf-border)}
+.zoom{border-top:1px dashed var(--vf-border);margin-top:16px;padding-top:4px}
+.mapfoot{display:grid;gap:var(--vf-space-8);grid-template-columns:1fr;margin-top:var(--vf-space-8)}
+@media (min-width:900px){.mapfoot{grid-template-columns:1fr 1fr}}
+.mapfoot ol{padding-left:1.3em;margin:0}.mapfoot li{margin-bottom:6px}
 footer{padding:var(--vf-space-8) 0;color:var(--vf-muted);font-size:var(--vf-text-sm)}
 footer p{max-width:none}
 </style>
@@ -80,7 +103,7 @@ footer p{max-width:none}
 <a class="skip" href="#main">Pular para o conteúdo</a>
 <header class="top"><div class="wrap">
 <a class="brand" href="#top" aria-label="Value-First Development"><img class="light" src="../assets/logo-horizontal.svg" alt="" width="200" height="34"><img class="dark" src="../assets/logo-horizontal-dark.svg" alt="" width="200" height="34"></a>
-<nav aria-label="Seções"><ul><li><a href="#problem">Problema</a></li><li><a href="#idea">A ideia</a></li><li><a href="#principles">Princípios</a></li><li><a href="#ai">Specs e IA</a></li><li><a href="#check">Checklist</a></li></ul></nav>
+<nav aria-label="Seções"><ul><li><a href="#problem">Problema</a></li><li><a href="#idea">A ideia</a></li><li><a href="#principles">Princípios</a></li><li><a href="#ai">Specs e IA</a></li><li><a href="#check">Checklist</a></li><li><a href="#map">Mapa de Valor</a></li></ul></nav>
 <a class="lang" href="../" hreflang="en" lang="en">English</a>
 </div></header>
 <main id="main">
@@ -130,13 +153,26 @@ footer p{max-width:none}
 <a class="more" href="https://github.com/andrelaf/deliver-value-methodology/blob/main/docs/pt/adoption.md">Checklist e modelo de maturidade →</a>
 </div></section>
 
-<section id="canvas" aria-labelledby="canvas-h"><div class="wrap">
-<div class="two"><div>
-<h2 id="canvas-h">Canvas de Alinhamento Valor-Tecnologia</h2>
-<p>Para iniciativas maiores: um workshop opcional, em uma página, que coloca as visões de negócio e de tecnologia lado a lado antes de escrever as Value Specs.</p>
-<a class="more" href="https://github.com/andrelaf/deliver-value-methodology/blob/main/docs/pt/canvas/value-technology-alignment-canvas.svg">Baixar o canvas (SVG) →</a>
+<section id="map" aria-labelledby="map-h"><div class="wrap">
+<h2 id="map-h">Mapa de Valor</h2>
+<p class="lead">Para iniciativas maiores que uma spec. Como o C4 faz com a arquitetura: três níveis de zoom, quatro regras, e dá para desenhar no quadro branco.</p>
+<ol class="levels"><li><span class="num" aria-hidden="true">1</span><b>Resultado</b><span>Por quê, e como saberemos?</span></li><li><span class="num" aria-hidden="true">2</span><b>Fatias</b><span>O que primeiro, e em que apostamos?</span></li><li><span class="num" aria-hidden="true">3</span><b>Critérios</b><span>Como sabemos que esta fatia funciona?</span></li></ol>
+<div class="map">
+<p class="ex">Exemplo fictício, baseado no exemplo de template da VS-014.</p>
+<div class="lvl lvl-1"><div class="box out"><span class="ty">1 · Resultado</span><b>Clientes obtêm as próprias faturas</b><p>Contatos financeiros pedem faturas ao suporte.</p><p class="m">Tickets de fatura: ~120 → ≤ 40 / semana, 6 semanas após o lançamento</p><small>Fora: pagamento, edição de faturas</small></div></div>
+<p class="verb">↑ contribuem para</p>
+<div class="lvl"><div class="box slice on"><span class="ty">2 · VS-014</span><b>Baixar faturas no portal</b><p>Aposta: clientes usam o portal em vez de mandar e-mail ao suporte (validada 5/6)</p><span class="st">Em construção</span></div><div class="box slice"><span class="ty">2 · VS-015</span><b>Filtrar faturas por data</b><p>Aposta: auditorias precisam de intervalos de datas (2 de 6 pediram)</p><span class="st">Próxima</span></div><div class="box slice"><span class="ty">2 · VS-016</span><b>Fatura mensal por e-mail</b><p>Aposta: receber é melhor que procurar (não validada)</p><span class="st">Talvez</span></div></div>
+<div class="zoom"><p class="verb">↓ zoom na VS-014</p>
+<div class="lvl"><div class="box sc"><span class="ty">3 · SC-1</span><b>Lista os últimos 24 meses da conta</b><small>verificado por: teste ponta a ponta</small></div><div class="box sc"><span class="ty">3 · SC-2</span><b>Entrega o PDF armazenado sem alterações</b><small>verificado por: teste de integração</small></div><div class="box sc"><span class="ty">3 · SC-3</span><b>403 sem billing_admin, tentativa registrada</b><small>verificado por: teste de segurança</small></div><div class="box sc"><span class="ty">3 · SC-4</span><b>p95 &lt; 1 s com até 500 faturas</b><small>verificado por: teste de carga</small></div></div></div>
 </div>
-<figure class="canvas" style="margin:0"><img src="../assets/canvas-pt.png" alt="O Canvas de Alinhamento Valor-Tecnologia, uma grade de uma página com blocos de negócio e de tecnologia." loading="lazy"></figure></div>
+<div class="mapfoot"><div>
+<h3>Quatro regras</h3>
+<ol><li>Toda caixa tem tipo, nome e uma frase.</li><li>Todo resultado e toda fatia têm uma métrica ou um sinal.</li><li>Toda seta tem um verbo.</li><li>Um desenho por nível. Aproxime só onde precisar.</li></ol>
+<p class="note" style="margin-top:12px">O nível 4, código, não se desenha: testes e PRs citam os IDs dos SC.</p>
+</div><div>
+<div class="ctas" style="margin-top:0"><a class="btn primary" href="map.html">Mapa em branco para imprimir</a></div>
+<a class="more" style="margin-top:0" href="https://github.com/andrelaf/deliver-value-methodology/blob/main/docs/pt/value-map.md">Como conduzir uma sessão de Mapa de Valor →</a>
+</div></div>
 </div></section>
 
 <section id="start" aria-labelledby="start-h"><div class="wrap">

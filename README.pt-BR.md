@@ -82,7 +82,7 @@ O Value-First não compete com Scrum, Kanban, Shape Up nem com ferramentas de de
 | [Por que Value-First](docs/pt/why.md) | A tese e o papel do Tech Lead |
 | [Specs na era da IA](docs/pt/ai-and-specs.md) | Desenvolvimento orientado a specs, agentes, limites e riscos |
 | [Princípios](docs/pt/principles.md) · [Práticas](docs/pt/practices.md) | O núcleo |
-| [Papéis e artefatos](docs/pt/roles-and-artifacts.md) | Par de Valor, Value Spec, snippet para agentes, Canvas |
+| [Papéis e artefatos](docs/pt/roles-and-artifacts.md) | Par de Valor, Value Spec, snippet para agentes, Mapa de Valor |
 | [Adoção](docs/pt/adoption.md) | Checklist, modelo de maturidade, primeira semana, quando não usar |
 | [Comparação](docs/pt/comparison.md) · [FAQ](docs/pt/faq.md) | Scrum, Kanban, Shape Up, SDD |
 | [Cenários](docs/pt/case-studies.md) · [Templates](docs/pt/templates.md) · [Fontes](docs/pt/sources.md) | Exemplos e referências |
