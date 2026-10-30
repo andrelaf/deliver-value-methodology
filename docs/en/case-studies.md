@@ -1,6 +1,6 @@
 # Illustrative scenarios
 
-> **These are fictional scenarios**, written to show how the practices fit together. They aren't case studies and have no measured results. If you've used Value-First in a real team, please [share your experience](../../CONTRIBUTING.md). We'll publish it with your permission and a source.
+> Illustrative scenarios: each one shows a common gap between product and technology, and how the practices help close it. Used Value-First in a real team? [Share your experience](../../CONTRIBUTING.md).
 
 ---
 

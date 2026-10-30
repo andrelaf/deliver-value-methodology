@@ -1,6 +1,6 @@
 # Cenários ilustrativos
 
-> **Estes são cenários fictícios**, escritos para mostrar como as práticas se encaixam. Não são estudos de caso e não têm resultados medidos. Se você já usou o Value-First em um time real, [compartilhe sua experiência](../../CONTRIBUTING.md). Vamos publicá-la com sua permissão e com a fonte.
+> Cenários ilustrativos: cada um mostra um gap comum entre produto e tecnologia, e como as práticas ajudam a fechá-lo. Já usou o Value-First em um time real? [Compartilhe sua experiência](../../CONTRIBUTING.md).
 
 ---
 
