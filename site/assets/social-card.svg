@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="t d">
   <title id="t">Value-First Development</title>
-  <desc id="d">From ritual to value. From spec to software. The loop: intent, value spec, build, validate, learn.</desc>
+  <desc id="d">From ritual to value. From spec to software. The cycle: specify, validate, build, check value.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
       <path d="M1 1 L8 5 L1 9" fill="none" stroke="#4F5D6A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -17,19 +17,16 @@
   <text x="92" y="314" font-family="'IBM Plex Sans', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="96" font-weight="600" letter-spacing="-1.5" fill="#16212B">Value<tspan fill="#C97A16">-</tspan>First</text>
   <text x="96" y="374" font-family="'IBM Plex Sans', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="52" font-weight="400" fill="#4F5D6A">Development</text>
   <text x="96" y="440" font-family="'IBM Plex Sans', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="32" font-weight="400" fill="#16212B">From ritual to value. From spec to software.</text>
-  <rect x="96" y="490" width="160" height="40" rx="8" fill="#FFFFFF" stroke="#0B6E63" stroke-width="2"/>
-  <text x="176" y="516" text-anchor="middle" font-family="'IBM Plex Mono', 'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="18" fill="#16212B">intent</text>
-  <path d="M264 510 H300" stroke="#4F5D6A" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
-  <rect x="308" y="490" width="160" height="40" rx="8" fill="#0B6E63" stroke="#0B6E63" stroke-width="2"/>
-  <text x="388" y="516" text-anchor="middle" font-family="'IBM Plex Mono', 'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="18" fill="#FFFFFF">value spec</text>
-  <path d="M476 510 H512" stroke="#4F5D6A" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
-  <rect x="520" y="490" width="160" height="40" rx="8" fill="#FFFFFF" stroke="#0B6E63" stroke-width="2"/>
-  <text x="600" y="516" text-anchor="middle" font-family="'IBM Plex Mono', 'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="18" fill="#16212B">build</text>
-  <path d="M688 510 H724" stroke="#4F5D6A" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
-  <rect x="732" y="490" width="160" height="40" rx="8" fill="#FFFFFF" stroke="#0B6E63" stroke-width="2"/>
-  <text x="812" y="516" text-anchor="middle" font-family="'IBM Plex Mono', 'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="18" fill="#16212B">validate</text>
-  <path d="M900 510 H936" stroke="#4F5D6A" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
-  <rect x="944" y="490" width="160" height="40" rx="8" fill="#FFFFFF" stroke="#0B6E63" stroke-width="2"/>
-  <text x="1024" y="516" text-anchor="middle" font-family="'IBM Plex Mono', 'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="18" fill="#16212B">learn</text>
-  <path d="M1024 530 V556 Q1024 564 1016 564 H184 Q176 564 176 556 V540" stroke="#4F5D6A" stroke-width="2" stroke-dasharray="6 6" fill="none" marker-end="url(#arrow)"/>
+  <rect x="96" y="490" width="210" height="40" rx="8" fill="#0B6E63" stroke="#0B6E63" stroke-width="2"/>
+  <text x="201" y="516" text-anchor="middle" font-family="'IBM Plex Mono', 'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="18" fill="#FFFFFF">specify</text>
+  <path d="M314 510 H354" stroke="#4F5D6A" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <rect x="362" y="490" width="210" height="40" rx="8" fill="#FFFFFF" stroke="#0B6E63" stroke-width="2"/>
+  <text x="467" y="516" text-anchor="middle" font-family="'IBM Plex Mono', 'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="18" fill="#16212B">validate</text>
+  <path d="M580 510 H620" stroke="#4F5D6A" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <rect x="628" y="490" width="210" height="40" rx="8" fill="#FFFFFF" stroke="#0B6E63" stroke-width="2"/>
+  <text x="733" y="516" text-anchor="middle" font-family="'IBM Plex Mono', 'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="18" fill="#16212B">build</text>
+  <path d="M846 510 H886" stroke="#4F5D6A" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <rect x="894" y="490" width="210" height="40" rx="8" fill="#FFFFFF" stroke="#0B6E63" stroke-width="2"/>
+  <text x="999" y="516" text-anchor="middle" font-family="'IBM Plex Mono', 'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="18" fill="#16212B">check value</text>
+  <path d="M999 530 V556 Q999 564 991 564 H209 Q201 564 201 556 V540" stroke="#4F5D6A" stroke-width="2" stroke-dasharray="6 6" fill="none" marker-end="url(#arrow)"/>
 </svg>
