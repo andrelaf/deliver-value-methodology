@@ -27,6 +27,10 @@ Thank you for your interest. Value-First is a young framework, and the most usef
 
 For larger changes, such as a new principle or practice, open an issue first so we can discuss it.
 
+## License of contributions
+
+By contributing, you agree that docs changes are licensed under [CC BY 4.0](LICENSE-DOCS) and code and template changes under [MIT](LICENSE).
+
 ## Repository layout
 
 ```
@@ -71,3 +75,7 @@ Para mudanças maiores, como um princípio ou uma prática nova, abra uma issue 
 ## Estrutura do repositório
 
 A mesma da seção [Repository layout](#repository-layout) acima: `README.pt-BR.md`, `docs/pt`, `templates/pt`, `assets/`, `site/`, `docs/archive/v1`, `DECISIONS.md` e `CHANGELOG.md`.
+
+## Licença das contribuições
+
+Ao contribuir, você concorda que mudanças na documentação ficam sob [CC BY 4.0](LICENSE-DOCS) e mudanças em código e templates ficam sob [MIT](LICENSE).

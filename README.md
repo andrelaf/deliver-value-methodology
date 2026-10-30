@@ -9,7 +9,7 @@
   <a href="docs/en/why.md">Why</a> ·
   <a href="docs/en/principles.md">Principles</a> ·
   <a href="templates/en/value-spec.md">Value Spec template</a> ·
-  <a href="LICENSE">MIT</a>
+  <a href="#license">License</a>
 </p>
 
 ---
@@ -91,4 +91,8 @@ Value-First doesn't compete with Scrum, Kanban, Shape Up or spec-driven tools li
 
 Ideas, critiques, translations and real-world experience are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) and the [changelog](CHANGELOG.md).
 
-Created by [André Lara Amorim](https://github.com/andrelaf). Formerly *Deliver-Value Framework*. The v1 text is preserved in [docs/archive/v1](docs/archive/v1/). Licensed under [MIT](LICENSE).
+Created by [André Lara Amorim](https://github.com/andrelaf). Formerly *Deliver-Value Framework*. The v1 text is preserved in [docs/archive/v1](docs/archive/v1/). 
+
+## License
+
+Docs under [CC BY 4.0](LICENSE-DOCS); code and templates under [MIT](LICENSE). The name and logo are not covered by either license.

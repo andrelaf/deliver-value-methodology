@@ -5,6 +5,7 @@
 The framework is repositioned and renamed. The v1 text is preserved verbatim in [docs/archive/v1](docs/archive/v1/). Every decision and its reason are in [DECISIONS.md](DECISIONS.md).
 
 ### Changed
+- **License:** docs under CC BY 4.0 ([LICENSE-DOCS](LICENSE-DOCS)); code and templates stay MIT.
 - **Name:** *Deliver-Value Framework* (DV / FDCV) → **Value-First Development** (short form **Value-First**). Name-collision research is in [docs/research/name-collision.md](docs/research/name-collision.md).
 - **Thesis:** one sentence, with spec quality in the AI era at the center of the argument (not an appendix). See [Why Value-First](docs/en/why.md) and [Specs in the AI era](docs/en/ai-and-specs.md).
 - **Principles:** five v1 principles plus the Value Analyst role → six principles ([principles](docs/en/principles.md)).
